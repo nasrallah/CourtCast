@@ -1,0 +1,87 @@
+
+does knowing that you talked more tell you anything about your chance of winning, all other things being equal?
+
+Say you are the petitioner, tie lawyers, and you are interrupted more. What is your chance of winning? P(w|ptp)  =  N(w,ptp) / N(w,ptp) + N(l,ptp)  =  N(w,ptp) / N(w,ptp) + N(w,rtp)
+
+What is your chance of winning given that you also talked more?
+P(w|ptpp)  =  N(w,ptpp / N(w,ptpp) + N(l,ptpp)  =  N(w,ptpp) / N(w,ptpp) + N(w,rtpp)
+
+
+p_w = r_l and r_w = p_l
+
+
+
+
+Comparison of which side utters more words.
+
+N(W|cond):  P	[ 19.  2.  62.  13.   
+	    T	  43.  21.  65.  37.   
+	    R	  10.  20.   3.   7.]
+
+N(L|cond):  P	[  7.  3.  11.   7.   
+	    T	  29.  19.  18.  17. 
+	    R	  12.  22.   4.   9.]
+
+P(W|cond):
+
+     Pet interrupted		Res interrupted
+     p_loq	 r_loq		p_loq	 r_loq
+
+P  [ 0.73076923  0.4         0.84931507  0.65      ]
+
+T  [ 0.59722222  0.525       0.78313253  0.68518519]
+
+R  [ 0.45454545  0.47619048  0.42857143  0.4375    ]
+
+
+Nothing is significant.
+
+
+
+
+Comparison of interrupted individuals and interrupted sides
+
+
+    Individual:    Pet 	       Res 
+    Side:	P      R     P     R
+		--------------------		Amicus
+N(w|cond): [  	26.    0.   39.   71.   	P
+		85.    0.    5.  124.   	T
+		16.   21.    0.   11.]		R
+
+N(l|cond): [ 	12.    0.   13.   11.  
+		56.    0.    2.   44.  
+		34.   15.    0.   18.]
+
+P(w|cond):
+
+[ 0.68421053         nan  0.75        0.86585366]
+
+[ 0.60283688         nan  0.71428571  0.73809524]
+
+[ 0.32        0.58333333  	 nan  0.37931034]
+
+
+
+## Interrupted individuals
+N(w|cond): [  27.  111.   86.  130.   37.   11.]
+N(l|cond): [ 12.  24.  56.  46.  51.  18.]
+P(w|cond):
+		Pet	   Res
+P	[[ 0.69230769  0.82222222]
+T	 [ 0.6056338   0.73863636]
+R	 [ 0.42045455  0.37931034]]
+
+
+## Interrupted sides
+N(w|cond): [  68.   71.   91.  125.   16.   32.]
+N(l|cond): [ 25.  11.  58.  44.  35.  34.]
+P(w|cond):
+		Pet	   Res
+P	[[ 0.7311828   0.86585366]
+T	 [ 0.61073826  0.73964497]
+R	 [ 0.31372549  0.48484848]]
+
+I’m not sure why the tied elements change between these two. Maybe there are some with 2 lawyers on each side; one side has the most-interrupted individual but the other side is more interrupted in total? The marginals are all the same. 
+
+The problem is with how ties are handled.

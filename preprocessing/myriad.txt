@@ -1,0 +1,7817 @@
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+IN THE SUPREME COURT OF THE UNITED STATES
+
+- - - - - - - - - - - - - - - - - x
+
+ASSOCIATION FOR MOLECULAR                :
+
+PATHOLOGY, ET AL.,                           :
+
+Petitioners                   :     No. 12-398
+
+v.                                         :
+
+MYRIAD GENETICS, INC., ET AL.          :
+
+- - - - - - - - - - - - - - - - - x
+
+Washington, D.C.
+
+Monday, April 15, 2013
+
+The above-entitled matter came on for oral
+
+argument before the Supreme Court of the United States
+
+at 10:04 a.m.
+
+APPEARANCES:
+
+CHRISTOPHER A. HANSEN, ESQ., New York, New York; on
+
+behalf of Petitioners.
+
+DONALD B. VERRILLI, JR., ESQ., Solicitor General,
+
+Department of Justice, Washington, D.C.; for United
+
+States, as amicus curiae, supporting neither
+
+party.
+
+GREGORY A. CASTANIAS, ESQ., Washington, D.C.; on behalf
+
+of Respondents.
+
+1  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 1-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+C O N T E N T S  
+
+ORAL ARGUMENT OF                                                        PAGE
+
+GREGORY A. CASTANIAS
+
+On behalf of the Petitioners                                   3
+
+ORAL ARGUMENT OF
+
+DONALD B. VERRILLI, JR., ESQ.
+
+For United States, as amicus curiae,
+
+supporting neither party                                         24
+
+ORAL ARGUMENT OF
+
+GREGORY A. CASTANIAS, ESQ.
+
+On behalf of the Respondents                                   33
+
+REBUTTAL ARGUMENT OF
+
+GREGORY A. CASTANIAS
+
+On behalf of the Petitioners                                   61
+
+2  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 2-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+P R O C E E D I N G S
+
+(10:04 a.m.)
+
+CHIEF JUSTICE ROBERTS:     We'll hear argument
+
+first this morning in Case 12-398, Association for
+
+Molecular Pathology v. Myriad Genetics, Inc.
+
+Mr. Hansen?
+
+ORAL ARGUMENT OF CHRISTOPHER A. HANSEN
+
+ON BEHALF OF THE PETITIONERS
+
+MR. HANSEN:     Mr. Chief Justice, and may it
+
+please the Court:
+
+One way to address the question presented by
+
+this case is what exactly did Myriad invent?     And the
+
+answer is nothing.
+
+Myriad unlocked the secrets of two human
+
+genes.     These are genes that correlate with an increased
+
+risk of breast or ovarian cancer.     But the genes
+
+themselves, their -- where they start and stop, what
+
+they do, what they are made of, and what happens when
+
+they go wrong are all decisions that were made by
+
+nature, not by Myriad.
+
+Now, Myriad deserves credit for having
+
+unlocked these secrets.     Myriad does not deserve a
+
+patent for it.
+
+JUSTICE GINSBURG:     Mr. Hansen, Respondents
+
+say that isolating or extracting natural products, that
+
+3  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 3-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+has long been considered patentable, and give -­
+
+examples were aspirin and whooping cough vaccine.     How
+
+is this different from -- those start with natural -­
+
+natural products.
+
+MR. HANSEN:     Well, in -- in essence, Your
+
+Honor, everything starts with a natural product.     And
+
+this Court has said repeatedly that just extracting a
+
+natural product is insufficient.     For example, this
+
+Court has used the example of gold.     You can't patent
+
+gold because it's a natural product.
+
+The examples that you cite all involve
+
+further manipulation of a product of nature, so that the
+
+product of nature is no longer what it was in nature;
+
+it's become something different.     And in many instances
+
+has taken on a new function.
+
+But -­
+
+CHIEF JUSTICE ROBERTS:     Do you dispute that
+
+you can patent, however, a process for extracting
+
+naturally-occurring things?
+
+MR. HANSEN:     Of course.     I think that is
+
+totally acceptable.     And what's interesting in this case
+
+is, the process that Myriad uses to extract the genes is
+
+not at issue in this case.     It's a process that's used
+
+by geneticists every day all over this country.     It is
+
+routine, conventional science.
+
+4  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 4-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+CHIEF JUSTICE ROBERTS:     So isn't that -- why
+
+isn't that a way to, in effect, have patent protection
+
+for the product?     Does somebody who wants to use the
+
+product, the DNA -- extracted DNA in this case, have to
+
+find a new process from -- to extract it if they want to
+
+have it available?
+
+MR. HANSEN:     Well, the -- the process by
+
+which it's extracted is now very routine.
+
+CHIEF JUSTICE ROBERTS:     Oh, no -- yes, I
+
+know.     I'm assuming it isn't, that they discover this
+
+process and it leads to a -- a particular product.     Does
+
+anybody who wants to use the product either have to get
+
+a license for the process or find a different way of
+
+extracting it?
+
+MR. HANSEN:     I think they have to find a
+
+different way of extracting it, in the same way that
+
+finding a method of extracting gold does entitle you to
+
+a patent on the method of extracting gold, it may also
+
+entitle you to a patent on the use of gold.     For
+
+example, if you find a new way of using gold to make
+
+earrings, or if you find a new way of using DNA to do
+
+something, you may be entitled to a patent on that
+
+because -­
+
+JUSTICE SOTOMAYOR:     Can you tell me why
+
+their test wasn't given a patent?     I know the method of
+
+5  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 5-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+extraction wasn't, and why.     Why would the tests -­
+
+would the tests be subject to a patent?
+
+MR. HANSEN:     The tests are also routine and
+
+conventional science, but in this particular case, there
+
+were some method claims that we challenged.     The method
+
+claims in this case involved taking the genes that you
+
+extracted from the woman and the gene that you -- the
+
+way you think it should be, and simply looking back and
+
+forth to see if they're the same or different.     And the
+
+Federal Circuit that -- found that that was an abstract
+
+idea and not patentable.
+
+And, in fact, that's -­
+
+JUSTICE SCALIA:     Well, I'm curious as to why
+
+the methodology of extracting the gene has not been
+
+patented.     You say everybody -- everybody uses it.     Why
+
+wasn't that patented?
+
+MR. HANSEN:     The original -- the original
+
+methodology was patented, and is -- is patentable.     In
+
+fact, if they came up with a new process, it would be
+
+patentable.     But it has -- but that -- it has been very
+
+freely licensed.     In fact, the patent may now have
+
+expired.     And so it's used all over the country every
+
+day.
+
+JUSTICE ALITO:     Can I take you back to -- to
+
+Justice Ginsburg's question because I'm -- I don't -­
+
+6  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 6-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+I'm not sure you got at what troubles me about that.
+
+Suppose there is a substance, a -- a
+
+chemical, a molecule in the -- the leaf -- the leaves of
+
+a plant that grows in the Amazon, and it's discovered
+
+that this has tremendous medicinal purposes.     Let's say
+
+it -- it treats breast cancer.
+
+A new discovery, a new way -- a way is
+
+found, previously unknown, to extract that.     You make a
+
+drug out of that.     Your answer is that cannot be
+
+patent -- patented, it's not eligible for patenting
+
+because the chemical composition of the -- of the drug
+
+is the same as the chemical that exists in the leaves of
+
+the plant.
+
+MR. HANSEN:     If there is no alteration, if
+
+we simply pick the leaf off of the tree and swallow it
+
+and it has some additional value, then I think it is not
+
+patentable.     You might be able to get a method patent on
+
+it, you might be able to get a use patent on it, but you
+
+can't get a composition patent.
+
+But as -­
+
+JUSTICE ALITO:     But you're making -- you
+
+keep making the hypotheticals easier than they're
+
+intended to be.     It's not just the case of taking the
+
+leaf off the tree and chewing it.     Let's say if you do
+
+that, you'd have to eat a whole forest to get the -- the
+
+7  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 7-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+value of this.     But it's extracted and -- and reduced to
+
+a concentrated form.     That's not patent -- that's not
+
+eligible?
+
+MR. HANSEN:     No, that may well be eligible
+
+because you have now taken what was in nature and you've
+
+transformed it in two ways.     First of all, you've made
+
+it substantially more concentrated than it was in
+
+nature; and second, you've given it a function.     If it
+
+doesn't work in the diluted form but does work in a
+
+concentrated form, you've given it a new function.     And
+
+the -- by both changing its nature and by giving it a
+
+new function, you may well have patent -­
+
+JUSTICE ALITO:     Well, when you concede that,
+
+then I'm not sure how you distinguish the isolated DNA
+
+here because it has a different function.     Will you
+
+dispute that?     Isolated DNA has a very different
+
+function from the DNA as it exists in nature.     And
+
+although the chemical composition may not be different,
+
+it -- it certainly is in a different form.     So what is
+
+the distinction?
+
+MR. HANSEN:     Well, I don't think it has a
+
+new function, Your Honor, with respect.     I believe that
+
+what -- Myriad has proffered essentially three functions
+
+for the DNA outside the body as opposed to inside the
+
+body.     The first is we can look at it.     And that's true,
+
+8  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 8-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+but that's not really a new function.     That's simply the
+
+nature of when you extract something you can look at it
+
+better.
+
+The second two rationales that Myriad has
+
+proffered are that it can be used as probes and primers.
+
+Three of the -- three of lower court judges found that
+
+full-length DNA, which all of these patent claims
+
+include, cannot be used as probes and primers.     But more
+
+important, finding a new use for a product of nature, if
+
+you don't change the product of nature, is not
+
+patentable.     If I find a new way of taking gold and
+
+making earrings out of it, that doesn't entitle me to a
+
+patent on gold.     If I find a new way of using lead, it
+
+doesn't entitle me to a new -- to a patent on lead.
+
+JUSTICE KENNEDY:     From what you know and
+
+from what the record shows, would the process of tagging
+
+the isolated DNA be patentable?     The process of tagging,
+
+we just don't know about that or is there a patent on
+
+that?
+
+MR. HANSEN:     The very patents in this case
+
+include claims on -- on DNA that is tagged so that it
+
+can be used as a probe.     We have not challenged that.
+
+We are not asking the Court to strike down that.
+
+JUSTICE KENNEDY:     Under our -- our law, is a
+
+patent ever divisible so that if it's valid in part but
+
+9  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 9-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+invalid in another part, it can still stand as to the
+
+part?
+
+MR. HANSEN:     No, it is not permissible under
+
+patent law to do essentially a narrowing -- narrowing
+
+construction of the -- of the claim.
+
+JUSTICE KENNEDY:     But if you haven't
+
+challenged this, then -- then where are we with respect
+
+to the tagging?     I don't quite understand.     Because
+
+the -- the entire patent, which includes tagging, would
+
+fail under your argument.
+
+MR. HANSEN:     Oh, I'm sorry, no.     I
+
+misunderstood.     The claims that we are challenging do
+
+not -- are not limited to tagging, are not limited to
+
+use as probes.     There are other claims that we are not
+
+challenging that are limited to probes.     Those would
+
+remain, but the -- but the claims that we're challenging
+
+would in fact be struck down because they're not so
+
+limited.     In fact -­
+
+JUSTICE SOTOMAYOR:     Then -- then explain
+
+when you said you can't narrow.     You said earlier you
+
+can't narrow.
+
+MR. HANSEN:     Yes.     If a claim reaches
+
+something that is both impermissible and permissible,
+
+it -- the claim is invalid, period.
+
+JUSTICE SOTOMAYOR:     All right, that
+
+10  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 10-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+individual claim is invalid.
+
+MR. HANSEN:     That individual claim.
+
+JUSTICE SOTOMAYOR:     But the patent with
+
+respect to claims that are not invalid would still
+
+stand.
+
+MR. HANSEN:     That is correct, Your Honor.
+
+JUSTICE SOTOMAYOR:     The primers and probes
+
+stand.
+
+MR. HANSEN:     Would -- would still remain.
+
+Even if you were to rule for Petitioners, you would not
+
+have to rule concerning the use of DNA as a probe or a
+
+primer.
+
+JUSTICE KAGAN:     Mr. Hansen, could you tell
+
+me what you think the incentives are for a company to do
+
+what Myriad did?     If you assume that it takes a lot of
+
+work and takes a lot of investment to identify this
+
+gene, but the gene is not changed in composition, and
+
+what you just said is that discovering uses for that
+
+gene would not be patentable, even if those new -- even
+
+if those uses are new, what does Myriad get out of this
+
+deal?     Why shouldn't we worry that Myriad or companies
+
+like it will just say, well, you know, we're not going
+
+to do this work anymore?
+
+MR. HANSEN:     Well, we know that would not
+
+have happened in this particular case, Your Honor.     We
+
+11  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 11-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+know that there were other labs looking for the BRCA
+
+genes and they had announced that they would not patent
+
+them if they were the first to find it.     We also know
+
+that prior to the patent actually being issued, there
+
+were other labs doing BRCA testing and Myriad shut all
+
+that testing down.     So we know in this particular case
+
+that problem would not have arisen.
+
+But the point of the whole -- the whole
+
+point of the product of nature doctrine is that when you
+
+lock up a product of nature, it prevents industry from
+
+innovating and -- and making new discoveries.     It -­
+
+that's the reason we have the product of nature
+
+doctrine, is because there may be a million things you
+
+can do with the BRCA gene, but nobody but Myriad is
+
+allowed to look at it and that is impeding science
+
+rather than advancing science.
+
+JUSTICE SCALIA:     But you still haven't
+
+answered her question.     Why?     Why would a company incur
+
+massive investment if it -- if it cannot patent?
+
+MR. HANSEN:     Well, taxpayers paid for much
+
+of the investment in Myriad's work, but -­
+
+JUSTICE SCALIA:     You're still not answering
+
+the question.
+
+MR. HANSEN:     But -- yeah.     But I think
+
+scientists look for things for a whole variety of
+
+12  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 12-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+reasons, sometimes because they're curious about the
+
+world as a whole, sometimes because -­
+
+JUSTICE SCALIA:     Curiosity is your answer.
+
+JUSTICE KAGAN:     I thought you were going
+
+to -­
+
+MR. HANSEN:     Sometimes because they want a
+
+Nobel Prize.     Sometimes -­
+
+JUSTICE KAGAN:     I thought you were going to
+
+say something else, Mr. Hansen, and I guess I -- I hoped
+
+you were going to say something else, which is that,
+
+notwithstanding that you can't get a patent on this
+
+gene, that -- that there are still, you know, various
+
+things that you could get a patent on that would make
+
+this kind of investment worthwhile, in the usual case.
+
+But if that's the case, I want to know what those things
+
+are rather than you're just saying, you know, we're
+
+supposed to leave it to scientists who want Nobel
+
+Prizes.
+
+And I agree that there are those scientists,
+
+but there are also, you know, companies that do
+
+investments in these kinds of things that you hope won't
+
+just shut them down.
+
+MR. HANSEN:     Let me give a specific example
+
+that may be helpful in doing a better job of answering
+
+the question.     One of the -- one of the amici has
+
+13  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 13-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+worried a lot about whether a decision for the
+
+Petitioners in this case would invalidate recombinant
+
+DNA.     Recombinant DNA is in fact what all the major
+
+innovations in the industry are doing these days.     It's
+
+DNA where the scientist decides the sequence rather than
+
+nature deciding the sequence.
+
+There is nothing in our position that would
+
+prevent recombinant DNA from being patented, but there
+
+is -- it is the cases that if the patents are upheld,
+
+recombinant DNA is frustrated.
+
+People can't use pieces of the BRCA gene to
+
+recombine them and find new treatments and find new
+
+diagnoses and find new things that will advance medicine
+
+and science as a result of these patents.     It's a
+
+perfect example of what the point of the product of
+
+nature doctrine is.
+
+JUSTICE SCALIA:     Yes.     But, of course, to
+
+profit from -- from that recombinant DNA, you have to
+
+not just isolate the gene, but then you have to do
+
+something with it afterwards.     So you really haven't
+
+given us a reason why somebody would try to isolate the
+
+gene.
+
+MR. HANSEN:     Well -­
+
+JUSTICE SCALIA:     I mean, sure, yes, I can do
+
+stuff with it afterwards, but so can everybody else.
+
+14  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 14-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+What advantage do I get from being the person that or
+
+the company that isolated that -- that gene.     You say
+
+none at all.
+
+MR. HANSEN:     No, I think you get enormous
+
+recognition, but I don't think -­
+
+JUSTICE SCALIA:     Well, that's lovely.
+
+MR. HANSEN:     But I think that we know that
+
+that's sufficient.     We know it's sufficient with respect
+
+to these two genes.     We also know it's sufficient with
+
+respect to the human genome project.
+
+JUSTICE KENNEDY:     Well, I'm not sure the
+
+Court can decide the case on -- on that basis.     I'm sure
+
+that there are substantial arguments in the amicus brief
+
+that this investment is necessary and that -- and that
+
+makes sense.     To say, oh, well, the taxpayers will do
+
+it, don't worry, is, I think, an insufficient answer.
+
+As Justice Kagan's follow-up questions
+
+indicated, I thought you might say, well, there are
+
+process patents that they can have, that this is
+
+sufficient.
+
+MR. HANSEN:     And that's certainly true.
+
+JUSTICE KENNEDY:     But I -- I just don't
+
+think we can decide the case on the ground, oh, don't
+
+worry about investment, it'll come.     I -- I just don't
+
+think we can do that.     It may be that the law allows you
+
+15  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 15-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+to prevail on the fact that this is -- occurs in nature
+
+and there's nothing new here, but that's quite
+
+different.
+
+MR. HANSEN:     And it is certainly true, as
+
+Your Honor suggests, that one of the incentives here is
+
+a process patent or a development patent.     If you -- if
+
+you've isolated the gene and you find a new use for it,
+
+you could get a patent on the new use for the patent.
+
+JUSTICE SOTOMAYOR:     That's the whole point,
+
+isn't it?     The isolation itself is not valuable, it's
+
+the use you put the isolation to.     That's the answer,
+
+isn't it?
+
+MR. HANSEN:     That's exactly correct.     Thank
+
+you.     Yes, that is the answer.
+
+JUSTICE SOTOMAYOR:     And so that is the
+
+answer, which is in isolation it has no value.     It's
+
+just nature sitting there.
+
+MR. HANSEN:     Interestingly, it has one
+
+value.     And that is you can look at it to see if there's
+
+a mutation in it.     And when you find a mutation in the
+
+isolated gene, you write back to the woman who provided
+
+the sample and you say to her because the isolated gene
+
+is the same as the gene in your body, I can tell you
+
+that there's a mutation in your body.
+
+JUSTICE SOTOMAYOR:     That's a failure of the
+
+16  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 16-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+patent law.     It doesn't patent ideas.
+
+MR. HANSEN:     And it shouldn't patent ideas,
+
+and -- but it also makes the point that isolated gene
+
+and the gene in the body are the same.
+
+JUSTICE SOTOMAYOR:     Can we go to -- can we
+
+go to cDNA a moment?
+
+MR. HANSEN:     Sure.
+
+JUSTICE SOTOMAYOR:     That is artificially
+
+created in the laboratory, so it's not bound in nature.
+
+It's not taking a gene and snipping something that's in
+
+nature.     And yet you claim that can't be patented.     The
+
+introns are taken out, the exons are left in, and
+
+they're sequenced together.     Give me your brief argument
+
+on that.     I read your brief, but it is not a product of
+
+nature, it's a product of human invention.
+
+MR. HANSEN:     There are two big differences
+
+between cDNA and DNA.     The first is exactly the one Your
+
+Honor just discussed, which is that the introns, the
+
+noncoding regions, have been removed.     That is done in
+
+the body, by the body.     That's done in the process of
+
+DNA going to mRNA.
+
+What the scientist does who's creating the
+
+cDNA is they take the mRNA out of the body and then they
+
+simply have the natural nature-driven nucleotide binding
+
+processes complement the mRNA.     So that if the mRNA has
+
+17  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 17-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+a C, the scientist just puts a -- the corresponding
+
+nucleotide in there and nature causes them to bind up.
+
+The scientist does not decide -­
+
+JUSTICE BREYER:     I know, but I don't see the
+
+answer because I gather, if I -- if I've read it
+
+correctly, that when you have an R -- the messenger RNA
+
+does not have the same base pairs.     There's a U or
+
+something instead of an A or whatever it is.
+
+MR. HANSEN:     Yes.
+
+JUSTICE BREYER:     So when you actually look,
+
+if you could get a super-microscope and look at what
+
+they have with the cDNA, with their cDNA, you would
+
+discover something with an A, not a U.     Is it AU?     Is
+
+that the one?
+
+MR. HANSEN:     Yes.
+
+JUSTICE BREYER:     Okay.     Okay.     So -- so you
+
+would discover something with an A there, you see, and
+
+you wouldn't discover something with a U there.     And
+
+there is no such thing in nature as the no-introns AGG,
+
+whatever, okay?     It's not there.     That's not truly
+
+isolated DNA.     But you can go look up the Amazon,
+
+wherever you want.     Hence the question.     Now, on that
+
+one, how?     How is that found in nature?     The answer is
+
+it isn't.
+
+MR. HANSEN:     Well, but I would suggest, Your
+
+18  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 18-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+Honor, that the question is not whether it is identical
+
+to something in nature.     The question is whether there
+
+was a human invention involved, whether it is markedly
+
+different from what is found in nature.
+
+JUSTICE SOTOMAYOR:     But that goes to
+
+obviousness.     That does not in my mind go to the issue
+
+of whether it's patent eligible.     You may have a very
+
+strong argument on obviousness, but why does it not -­
+
+it's creating something that's not found in nature at
+
+all.
+
+MR. HANSEN:     The sequence of the nucleotides
+
+is dictated by nature.     The order that they go in is
+
+dictated by nature.
+
+JUSTICE SOTOMAYOR:     Well, that's a separate
+
+question -­
+
+MR. HANSEN:     It is true -­
+
+JUSTICE SOTOMAYOR: -- about whether this
+
+claim is too expansive because it's claiming every 15
+
+nucleotides and nature produces 15 randomly.     But
+
+assuming the claim was for the entire mutated gene and
+
+not the small snippet that they want to capture the
+
+whole gene with, that's -- that whole gene without the
+
+introns is just not found in nature.
+
+MR. HANSEN:     It is not -- the -- the exons
+
+with the exact same composition and in the exact same
+
+19  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 19-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+order are found in nature, and the question is whether
+
+when the body removes the introns, has the body made
+
+something markedly different than what is in nature, and
+
+it is our view -­
+
+JUSTICE KENNEDY:     When I first looked at
+
+this case, I -- I thought that maybe the cDNA was kind
+
+of an economy class gene, was -- it wasn't.     But my
+
+understanding is that it may have a functionality that
+
+the -- the DNA isolate does not, easier to tag, et
+
+cetera.     That may be incorrect for the record, but that
+
+was my present understanding.
+
+MR. HANSEN:     It is somewhat easier to work
+
+with cDNA to make recombinant DNA, and it's recombinant
+
+DNA that is the place where all of the innovation and
+
+all the efforts are taking place.     And if we lock -­
+
+JUSTICE KENNEDY:     Is all the tagging done on
+
+recombinant DNA?
+
+MR. HANSEN:     All of the change -- all of the
+
+useful things that we are inventing is done -- is done
+
+through the process of recombinant DNA.     And if we lock
+
+up the cDNA, it makes it harder to do the recombinant
+
+DNA.     So that if someone owns all the cDNA, I can't do
+
+recombinant DNA using what the company owns.
+
+JUSTICE GINSBURG:     Mr. Hansen, you answered
+
+my initial question by saying they start -- everything
+
+20  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 20-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+starts with a national -- natural product, but these
+
+others, the examples that I gave, you said they involve
+
+manipulation.     The -- the cDNA can't be characterized as
+
+involving manipulation?
+
+MR. HANSEN:     It certainly -- there's -­
+
+there is some manipulation, although it's -- it's
+
+letting nature manipulate, not doing -- not the
+
+scientist manipulating.     But it -- what the other factor
+
+that distinguishes aspirin and the other examples you
+
+use from cDNA is that they have -- the alteration of the
+
+substance has also altered the function, and cDNA has
+
+exactly the same function as DNA with the exception of
+
+Justice Kennedy's, that it's easier to use with.
+
+JUSTICE SCALIA:     Do you -- you've really
+
+lost me when you say that it's nature that does the
+
+alteration rather than the scientist.     I mean, whenever
+
+a scientist does an alteration, he does it, you know, by
+
+some force of nature.
+
+MR. HANSEN:     No -­
+
+JUSTICE SCALIA:     I mean, he doesn't do it
+
+unnaturally, does he?     I mean, there's some -­
+
+MR. HANSEN:     Well, let me try an analogy,
+
+Your Honor, that might be helpful.     In our view, it's
+
+like Funk Brothers in the sense that the five bacteria
+
+in Funk Brothers didn't sit together in nature.
+
+21  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 21-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+The scientists took them and put them
+
+together in nature.     Here the scientist takes the exons
+
+and lets the natural processes of the body put them
+
+together in -- in the laboratory.     It's exactly the same
+
+as Funk Brothers.
+
+If I could reserve the remainder of my time,
+
+Your Honor.
+
+JUSTICE BREYER:     Can I ask a question, which
+
+I don't think will be taken from your time.
+
+MR. HANSEN:     Sure, of course.
+
+JUSTICE BREYER:     But I have to ask you this.
+
+Look, you say don't reach the cDNA issue and the reason
+
+is because of the nature of the claim.     Okay, I look at
+
+their claim.     Their claim says they want, "the isolated
+
+DNA of claim 1 wherein said DNA has the nucleotide
+
+sequence set forth in SEQ ID No. 1."
+
+Then we turn to that and the first thing it
+
+says right there is it says, "The molecule involved
+
+is" -- "Molecule type:     cDNA."     And then it has a long
+
+list and that long list is a list of the basis, okay.
+
+So molecule type, cDNA.     So they say what do
+
+you mean they aren't claiming cDNA?     That's what they
+
+say they're claiming.
+
+MR. HANSEN:     No -­
+
+JUSTICE BREYER:     Because of the word
+
+22  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 22-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+"wherein."     So I go back to the "wherein" in Prometheus
+
+and the "wherein" -- you read "wherein" as in context,
+
+and in this context you mean to say that a person who
+
+makes isolated DNA that has lots of introns in it as
+
+well as the sequence is going to be an infringer under
+
+claim 2?
+
+MR. HANSEN:     Yes, Your Honor.
+
+JUSTICE BREYER:     Is there any support for
+
+that other than the treatise that you cited?
+
+MR. HANSEN:     There -­
+
+JUSTICE BREYER:     I mean, I looked at that
+
+and it said read the "wherein" depending on context.
+
+MR. HANSEN:     Well, that certainly -­
+
+JUSTICE BREYER:     And then depending on -­
+
+okay.     Then you got -- you heard what I said, so I want
+
+to know is there anything else I should read?
+
+MR. HANSEN:     Yes.     The other support for it
+
+is the definition of the DNA in the patent itself, which
+
+we cite, which says that whenever we use the term "DNA"
+
+we mean both.
+
+JUSTICE BREYER:     Yes, I saw that.     I saw
+
+that.
+
+CHIEF JUSTICE ROBERTS:     Thank you, counsel.
+
+MR. HANSEN:     Thank you, Your Honor.
+
+CHIEF JUSTICE ROBERTS:     General Verrilli?
+
+23  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 23-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+ORAL ARGUMENT OF DONALD B. VERRILLI, JR.,
+
+FOR THE UNITED STATES, AS AMICUS CURIAE,
+
+SUPPORTING NEITHER PARTY
+
+GENERAL VERRILLI:     Mr. Chief Justice, and
+
+may it please the Court:
+
+Enforcing the distinction between human
+
+invention and a product of nature preserves a necessary
+
+balance in the patent system between encouraging
+
+individual inventors and keeping the basic building
+
+blocks of innovation free for all to use.     Isolated DNA
+
+falls on the ineligible side of that divide because it
+
+is simply native DNA extracted from the body.     The claim
+
+that it is a -­
+
+JUSTICE SOTOMAYOR:     Are we fighting over
+
+nothing?     Are you fighting over nothing?     If -- if they
+
+can patent this cDNA in the way they have, what does it
+
+matter, since it appears as if research has to rely on
+
+the cDNA to be effective?
+
+GENERAL VERRILLI:     I actually think that --
+
+I think we're -- we're fighting about something of
+
+importance.     That question gets right to it.     I want to
+
+answer the question directly, Your Honor.     I'd like to
+
+make a prefatory point before doing so.
+
+The claim that isolated DNA is a human
+
+invention rests entirely on the fact that it is no
+
+24  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 24-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+longer connected at the molecular level to what
+
+surrounded it in the body.     But allowing a patent on
+
+that basis would effectively preempt anyone else from
+
+using the gene itself for any medical or scientific
+
+purpose.     That is not true about a patent on cDNA.     A
+
+patent on cDNA leaves the isolated DNA available for
+
+other scientists and other -- and others in the medical
+
+profession to try to generate new uses.
+
+JUSTICE KAGAN:     Mr. Hansen -- Mr. Hansen
+
+just said that to do recombinant technology, you have to
+
+use the cDNA rather than the native D -- the isolated
+
+DNA.     Do you disagree with that?
+
+GENERAL VERRILLI:     That's not my
+
+understanding, Justice Kagan.     My understanding is that
+
+you -- that the native DNA can be used for recombinant
+
+DNA without the step of cDNA.     We do think cDNA is
+
+important and the position of the United States is that
+
+cDNA is patent eligible.     We disagree -­
+
+JUSTICE KENNEDY:     Well, suppose his
+
+understanding is correct.     Suppose your
+
+misunderstanding -- suppose your understanding is not
+
+correct.
+
+GENERAL VERRILLI:     Our position, though, is
+
+that cDNA is patent eligible because we think, unlike
+
+the isolated DNA which is just taken from your body,
+
+25  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 25-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+cDNA is an artificial creation in the laboratory that
+
+doesn't correspond to anything in your body.
+
+JUSTICE GINSBURG:     But Mister -- General
+
+Verrilli, I got the distinct impression from your brief
+
+that your view was that, although the cDNA may be
+
+patentable, it might very well be rejected as obvious.
+
+GENERAL VERRILLI:     That's true now, Justice
+
+Ginsburg, but obviousness is determined at the time that
+
+the patent is issued, so what may be true now might not
+
+have been true at the time the patents were initially
+
+issued.     And -­
+
+JUSTICE SOTOMAYOR:     I understand -­
+
+CHIEF JUSTICE ROBERTS:     But I -- I thought
+
+the basic general approach here was we have a very
+
+expansive view of what is patent eligible and then we
+
+narrow things through things -- issues like obviousness
+
+and so on.     Why -- wouldn't it make more sense to
+
+address the questions at issue here in the obviousness
+
+realm?
+
+GENERAL VERRILLI:     That's a little -­
+
+CHIEF JUSTICE ROBERTS:     If you got something
+
+that's big, it seems to me pretty obvious that you could
+
+take a smaller part of it.     That the idea -- a smaller
+
+part of something that's bigger is obvious.     Now, yes,
+
+you can have a patent on the process of extracting that
+
+26  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 26-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+small part, but I don't understand how a small part of
+
+something bigger isn't obvious.     And if it is, I don't
+
+understand why this -- these issues aren't addressed at
+
+that stage.
+
+GENERAL VERRILLI:     Well, I think my answer
+
+to that, I guess, Your Honor, would -- would point first
+
+to Mayo, in which the Court recognized that the
+
+threshold test under Section 101 for patent eligibility
+
+does do work that the obviousness test and a novelty
+
+test and a specification test do not do, and the work
+
+that it does here, I would respectfully submit, is to
+
+ensure that the natural substance, the product of nature
+
+itself, is not subjected effectively to a monopoly
+
+because if it can be deemed to be a human invention
+
+solely as a result of the change that occurs when you
+
+extract it from the body, then that means, as a -- as a
+
+practical matter that you have granted a patent on the
+
+gene itself because no one else can extract it because
+
+extracting it is isolating it, isolating it violates the
+
+patent.
+
+And so as a result of that, no one else can
+
+try to develop competing tests for breast cancer, no one
+
+else can try to use this gene for recombinant DNA.
+
+CHIEF JUSTICE ROBERTS:     I'm -- I'm not sure
+
+that's responsive to my concern.     Your answer said well,
+
+27  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 27-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+here are a lot of reasons why this shouldn't have patent
+
+protection.     My question goes to whether we ought to
+
+focus on those reasons at the eligibility stage or at
+
+the obviousness stage.
+
+GENERAL VERRILLI:     Well, the Court
+
+identified in Chakrabarty and then reiterated in Mayo
+
+that -- that it is -- that the right answer to that
+
+question, Your Honor, is to focus on them at the
+
+eligibility stage because the -- because getting the
+
+balance right is of critical importance.
+
+JUSTICE ALITO:     Well, the issue here is a
+
+very difficult one.     It's one on which the government
+
+has changed its position, isn't that correct?
+
+GENERAL VERRILLI:     Yes, Your Honor.
+
+JUSTICE ALITO:     It seems that there is
+
+disagreement within the Executive Branch about it.     This
+
+case has been structured in an effort to get us to
+
+decide this on the broadest possible ground, that
+
+there's no argument, that it's just about 101, it's not
+
+about any other provision of the Patent Act.
+
+Why -- why should we -- why should we do
+
+that?     We have claims that if patent eligibility is
+
+denied here it will prevent investments that are
+
+necessary for the development of new drugs or it will
+
+lead those who develop the new drugs to -- new
+
+28  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 28-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+diagnostic techniques, to keep those secret, not
+
+disclose them to the public.     Why -- why should we jump
+
+in and -- and decide the broadest possible question?
+
+GENERAL VERRILLI:     Well, I would -- again, I
+
+would point the Court to what the Court said last term
+
+in Mayo, which is that the determination of patent
+
+eligibility really is a double-edged sword.
+
+And it may be that in a -- in a particular
+
+case, maybe this case, although we are not expressing a
+
+view on it, you could sort the issue out on some of the
+
+other criteria, but that won't generally be true, and
+
+the proposition of whether you can patent the gene
+
+itself is a question we think of fundamental importance,
+
+and it raises exactly the two-edged sword concern that
+
+led the Court to conclude what it did in Mayo.     And Mayo
+
+was a situation very much -- I'm sorry.
+
+JUSTICE GINSBURG:     General Verrilli, there's
+
+an assertion made in Respondents' brief that the United
+
+States would be in a singular position.     That is, they
+
+suggest that in every other industrialized nation this
+
+could be subject -- could be patentable.
+
+GENERAL VERRILLI:     Yes, and that -­
+
+JUSTICE GINSBURG:     Is that so?
+
+GENERAL VERRILLI:     No.     I think the picture
+
+is much more complicated than that.     In many other
+
+29  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 29-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+nations it wouldn't be patentable and the patent law is
+
+different from nation to nation.
+
+I'll give one example I think helps
+
+illustrate the point.     In Germany and France, for
+
+example, you can get a patent on isolated genomic DNA,
+
+but only for a particular use.     So you would get what is
+
+the equivalent of a use patent, which is a patent that
+
+we would think under our patent laws is acceptable, too.
+
+If you -- just as with the question that
+
+Justice Alito asked earlier about identifying a -- a
+
+useful substance in a plant in the Amazon, if you
+
+isolate that and it proves to have therapeutic effects,
+
+you can get a patent on that use of it, but what you
+
+can't do is get a patent on the substance itself so that
+
+no one else can explore it for different uses and for -­
+
+and for different therapeutic purposes or to try to
+
+recombine it and turn it into a -- an even more
+
+therapeutic -- therapeutically valuable substance.     And
+
+that's -­
+
+JUSTICE SOTOMAYOR:     I understand why you are
+
+saying cDNA is patentable as a subject matter.     I am
+
+looking at the way the claim is phrased, however, and it
+
+says that it's patenting a DNA segment 15 nucleotides
+
+long or longer.     The reality is that 15 nucleotides
+
+doesn't necessarily bridge a sequence that goes between
+
+30  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 30-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+exons.     It -- it can -- one exon can be 15 or more
+
+sequences long.     So are you arguing that this claim as
+
+written is sustainable?
+
+GENERAL VERRILLI:     Your Honor, as a -- I am
+
+going to invoke my privilege as an amicus in this
+
+situation.     I think that's a fight between the parties.
+
+The point that we wanted to make is that as a conceptual
+
+matter cDNA is patent eligible.
+
+JUSTICE SOTOMAYOR:     So you are not taking
+
+the position that this claim as written is patentable?
+
+GENERAL VERRILLI:     That's right, Your Honor.
+
+We're just saying as a conceptual matter that we think
+
+cDNA is a creation of the lab, it's an artificial
+
+creation, it's as a general matter patent eligible.
+
+JUSTICE SOTOMAYOR:     Because as I understand
+
+it, 15 nucleotides long exists naturally in nature.
+
+They get reproduced in that sequence of 15.
+
+GENERAL VERRILLI:     That -- that may well be
+
+right, Your Honor.     As I said, we're not taking a
+
+position on the particulars.
+
+But if I -- just to return to the point that
+
+Justice Alito made, the Court really was faced with a
+
+similar situation in Mayo.     On the one side you had
+
+the -- the industry coming in and saying, look, we have
+
+got a lot of reliance issue, PTO has issued more than
+
+31  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 31-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+150,000 patents here.     You are going to really disrupt
+
+those reliance issues.     On the other side you had the
+
+American Medical Association, as you have here, coming
+
+in and saying, actually, these patents inhibit much more
+
+innovation than they incent.
+
+And what the Court said is that -- as
+
+Justice Kennedy alluded to earlier, that the Court's not
+
+in a position to resolve that dispute conclusively.     It
+
+doesn't have the institutional wherewithal to do it.
+
+But what the Court is in a position to do is to apply
+
+the general principles of law as they were articulated
+
+in Mayo, and then if there needs to be a particular
+
+different set of rules for the biotech industry,
+
+Congress can provide that different set of rules.
+
+JUSTICE KAGAN:     General Verrilli, could
+
+I understand what you said because I think it might be a
+
+little bit different from Mr. Hansen and I just want to
+
+understand your position.     You said that a company can't
+
+get a -- a patent on the thing, but can get it on the
+
+uses.     So if I find this plant, let's say, in the Amazon
+
+and I can't get a patent on the thing itself, but can I
+
+get a patent when I discover that if you eat this plant
+
+it has therapeutic effects?
+
+GENERAL VERRILLI:     May I answer briefly,
+
+Mr. Chief Justice?
+
+32  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 32-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+CHIEF JUSTICE ROBERTS:     Briefly, please.
+
+GENERAL VERRILLI:     Yes, you certainly can,
+
+and that illustrates the difference.     That patent is
+
+just for the use, it doesn't tie up all other potential
+
+uses of the substance and that's the key.
+
+Thank you.
+
+CHIEF JUSTICE ROBERTS:     Thank you, General.
+
+Mr. Castanias?
+
+ORAL ARGUMENT OF GREGORY A. CASTANIAS
+
+ON BEHALF OF THE RESPONDENTS
+
+MR. CASTANIAS:     Mr. Chief Justice, and may
+
+it please the Court:
+
+It is now 33 years after Chakrabarty,
+
+31 years after the first isolated gene molecule patents
+
+issued, and 12 years after the Patent and Trademark
+
+Office issued its carefully reasoned Utility Guidelines
+
+confirming that new isolated gene molecules are eligible
+
+for patents.     And it's almost 16 years after Myriad's
+
+patents began to issue, Patents which -- yes?
+
+JUSTICE SOTOMAYOR:     Is that on the basis of
+
+a new extraction process?
+
+MR. CASTANIAS:     On a -- a new extraction
+
+process, no.     Most of the processes are known.     But
+
+that's not relevant to patent eligibility or, for that
+
+matter, patentability.     As the last sentence, Justice
+
+33  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 33-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+Sotomayor, of Section 103A says, "Patentability shall
+
+not be negated by the manner in which the invention was
+
+created."
+
+JUSTICE SOTOMAYOR:     I -- I have a sort of
+
+analytical problem.     I find it very, very difficult to
+
+conceive how you can patent a sequential numbering
+
+system by nature, in the same way that I have a problem
+
+in thinking that someone could get a patent on the
+
+computer binary code merely because they throw a certain
+
+number of things on a piece of paper in a certain order.
+
+I always thought that to have a patent you
+
+had to take something and add to what nature does.     So
+
+how do you add to nature when all you are doing is
+
+copying its sequence?
+
+MR. CASTANIAS:     Well, I guess I'll -­
+
+JUSTICE SOTOMAYOR:     How do you add to it
+
+besides process or use?
+
+MR. CASTANIAS:     Sure.     Well, Justice
+
+Sotomayor, I guess I'll take issue with the notion that
+
+there is nothing additive here.     What Myriad inventors
+
+created in this circumstance was a new molecule that had
+
+never before been known to the world.     Now remember,
+
+genes are themselves human constructs.     And this points
+
+up some of the serious analytical problems with the
+
+Product of Nature Doctrine as the line-drawing exercise
+
+34  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 34-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+that you've asked General Verrilli and Mr. Hansen to
+
+engage in has illustrated.
+
+Now, the line-drawing is what is the product
+
+of nature to start with?     Is it me?     Is it the genome?
+
+Is it the chromosome?     Is it the -- and the gene
+
+ultimately -­
+
+JUSTICE SOTOMAYOR:     Look, I can bake -­
+
+MR. CASTANIAS:     -- is what was defined.
+
+JUSTICE SOTOMAYOR:     I can bake a chocolate
+
+chip cookie using natural ingredients -- salt, flour,
+
+eggs, butter -- and I create my chocolate chip cookie.
+
+And if I combust those in some new way, I can get a
+
+patent on that.     But I can't imagine getting a patent
+
+simply on the basic items of salt, flour and eggs,
+
+simply because I've created a new use or a new product
+
+from those ingredients.
+
+MR. CASTANIAS:     And that's -­
+
+JUSTICE SOTOMAYOR:     Explain to me -­
+
+MR. CASTANIAS:     Sure.
+
+JUSTICE SOTOMAYOR:     -- why gene sequences,
+
+whether in the actual numbers, why gene sequences are
+
+not those basic products that you can't patent.
+
+MR. CASTANIAS:     Okay.     I'll start by -- by
+
+showing you how this is actually a different structure.
+
+It actually has an entirely different chemical name when
+
+35  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 35-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+you give it the C -­
+
+JUSTICE SOTOMAYOR:     That's the cDNA.
+
+MR. CASTANIAS:     No, no, no.     That's
+
+absolutely true with regard to the isolated molecule as
+
+well.     Because if you were to write it out in those -­
+
+those interminable chemical equations that we had to do
+
+in high school, it's a "C" very different, "H" very
+
+different.
+
+JUSTICE SOTOMAYOR:     So I put salt and flour,
+
+and that's different?
+
+MR. CASTANIAS:     Well, that is -- that is the
+
+combination, yes, of two different things, and that's
+
+sort of like -- that's sort of like -­
+
+JUSTICE SOTOMAYOR:     So if I take them apart,
+
+now you can get a patent on the salt and now you can get
+
+a patent on the flour?
+
+MR. CASTANIAS:     Well, they were apart
+
+before, but they were both old.     But that's the problem
+
+with using the really simplistic analogies, with all due
+
+respect, Your Honor, about you know, like coal -­
+
+JUSTICE SOTOMAYOR:     Well, I guess -­
+
+MR. CASTANIAS:     -- like leaves and that sort
+
+of thing.
+
+JUSTICE ALITO:     Why is the chemical
+
+composition in the isolated DNA different?     You were
+
+36  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 36-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+about to explain that.
+
+MR. CASTANIAS:     Yes, thank you,
+
+Justice Alito.     It -- it's got 5,914 nucleotides.     The
+
+genome itself has over 3 billion.     It's arranged in the
+
+way set forth -- as set forth in the SEQ IDs number 1
+
+and 2.     Number 2 is the so-called genomic DNA, SEQ ID
+
+number 1 is the, as Justice Breyer understood, the cDNA
+
+molecule.
+
+When you look at those particular sequences,
+
+there was invention in the decision of where to begin
+
+the gene and where to end the gene.     That was not given
+
+by nature.     In fact -­
+
+JUSTICE SCALIA:     Well, well, well, well,
+
+this is something I was going to ask you.     I -- I assume
+
+that it's true that -- that those abridged genes,
+
+whatever you want to call them, do exist in the body.
+
+That they do exist.     You -- you haven't created a type
+
+of gene that does -- does not exist in the body
+
+naturally.
+
+MR. CASTANIAS:     But we've -- I'll -- I'll
+
+use my own simplistic analogy which we offered in our
+
+brief and which we offered to the lower court.     A
+
+baseball bat doesn't exist until it's isolated from a
+
+tree.     But that's still the product of human invention
+
+to decide where to begin the bat and where to end the
+
+37  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 37-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+bat.
+
+JUSTICE BREYER:     Well, that's true, but then
+
+you were saying something that I just didn't understand
+
+because I thought the -- the scientists who had filed
+
+briefs here, as I read it, said it's quite true that the
+
+chromosome has the BRCA gene in the middle of it and
+
+it's attached to two ends.
+
+But also in the body, perhaps because cells
+
+die, there is isolated DNA.     And that means that the DNA
+
+strand, the chromosome strand is cut when a cell dies,
+
+and then isolated bits get around, and there may be very
+
+few of them in the world, but there are some, by the
+
+laws of probability, that will in fact match precisely
+
+the BRCA1 gene.
+
+Now, have I misread what the scientists told
+
+us, or are you saying that the scientists are wrong?
+
+MR. CASTANIAS:     Well, I will tell you
+
+that -­
+
+JUSTICE BREYER:     I probably misread it.
+
+There's a better chance that I've misread it.
+
+(Laughter.)
+
+MR. CASTANIAS:     Well, no, I think -- I think
+
+you may have read some of the submissions correctly,
+
+Justice Breyer.     I think that's a question -­
+
+JUSTICE BREYER:     Well, which one have I not
+
+38  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 38-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+read -­
+
+MR. CASTANIAS:     I think that's a question of
+
+some dispute in this record.
+
+JUSTICE BREYER:     So in other words, you're
+
+saying that the Lander brief is wrong.
+
+MR. CASTANIAS:     Well, what I will tell
+
+you -­
+
+JUSTICE BREYER:     I want to know because I
+
+have to admit that I read it and I did assume that as a
+
+matter of science it was correct.     So I would like to
+
+know whether you agree, as a matter of science, that it
+
+is correct, not of law, but of science, or if you are
+
+disagreeing with it, as a matter of science.
+
+MR. CASTANIAS:     What I will tell you is that
+
+what are called pseudogenes -­
+
+JUSTICE BREYER:     I'd like a yes or no
+
+answer.
+
+MR. CASTANIAS:     Yes.     So the answer -- I
+
+would say the answer is no because there is no
+
+evidence -­
+
+JUSTICE BREYER:     Was the answer no, you do
+
+not disagree with it?     I wonder, I disagree or I do
+
+disagree?
+
+MR. CASTANIAS:     I do disagree with it with
+
+the following -­
+
+39  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 39-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+JUSTICE BREYER:     As a matter of science.
+
+MR. CASTANIAS:     As a matter of science with
+
+the following -- okay.
+
+JUSTICE BREYER:     Okay.     Very well.     If you
+
+are saying it is wrong, as a matter of science, since
+
+neither of us are scientists, I would like you to tell
+
+me what I should read that will, from a scientist, tell
+
+me that it's wrong.
+
+MR. CASTANIAS:     You want me to tell you
+
+something from a scientist that you should read that
+
+tells you that it is wrong?
+
+JUSTICE BREYER:     No, I need to know -­
+
+MR. CASTANIAS:     I think you could look at
+
+the declaration in the -- the Joint Appendix for
+
+Dr. Kay, for example.     Dr. Kay's declaration appears
+
+at -- starting at page 370.     You'll find an extensive
+
+discussion in there of the technology here and -- and of
+
+the genetics.
+
+But, Justice Breyer, just to explain the
+
+finishing thought, what -- what Dr. Lander says in his
+
+brief is that these pseudogenes, which are un -­
+
+undifferentiated fragments, exist in the body.     What
+
+hasn't been brought to the -- to the forefront is
+
+something that is new and useful and available to the
+
+public for -- for allowing women to determine whether
+
+40  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 40-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+they have breast or ovarian -­
+
+CHIEF JUSTICE ROBERTS:     Can I -­
+
+MR. CASTANIAS:     -- mutations that are likely
+
+to result in cancer.
+
+Yes, Mr. Chief Justice?
+
+CHIEF JUSTICE ROBERTS:     Can I get back to
+
+your baseball bat example?
+
+MR. CASTANIAS:     Sure.
+
+CHIEF JUSTICE ROBERTS:     My understanding -­
+
+my understanding is that here, what's involved,
+
+obviously through scientific processes, but we're not
+
+talking about process.     Here, what's involved is
+
+snipping.     You've got the thing there and you snip -­
+
+snip off the top and you snip off the bottom and there
+
+you've got it.
+
+The baseball bat is quite different.     You
+
+don't look at a tree and say, well, I've cut the branch
+
+here and cut it here and all of a sudden I've got a
+
+baseball bat.     You have to invent it, if you will.     You
+
+don't have to invent the particular segment of the -- of
+
+the strand, you just have to cut it off.
+
+MR. CASTANIAS:     Well, I -- I guess I'll even
+
+take issue with that because the -- the story of how the
+
+SEQ ID number 2, the genomic DNA segment came about is
+
+exactly the opposite of that.     If you look, for example,
+
+41  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 41-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+at page 488 of the Joint Appendix, that's the
+
+declaration of one of the inventors, Donna Shattuck, at
+
+paragraph 27, what -- what she explains is that the
+
+Myriad inventors first created the cDNA, which we agree
+
+at least on that score with the Solicitor General, is
+
+indeed eligible for patenting.     But then -- and by the
+
+way, that cDNA was created from hundreds of different
+
+patient samples to create what was called a consensus
+
+sequence.
+
+CHIEF JUSTICE ROBERTS:     Okay.     You've got
+
+the cDNA.
+
+MR. CASTANIAS:     And then what the -- what
+
+the Myriad inventors then did to create what is called
+
+SEQ ID number 2 and what is claimed in claim 1 of the
+
+'282 patent is to take -- actually manipulate that
+
+further to add in the introns.     It was in -- actually,
+
+the inventive process was additive.
+
+Now, ultimately, again, going back to the
+
+last sentence of section 103, the patentability should
+
+not be negative -- or negated by the manner in which an
+
+invention was made, maybe that shouldn't matter.     But it
+
+is a -­
+
+CHIEF JUSTICE ROBERTS:     I still don't
+
+understand what -- in what sense it's different than
+
+just snipping along -- along the line.
+
+42  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 42-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+MR. CASTANIAS:     Well, first of all, you
+
+wouldn't even know where to snip until the Myriad
+
+invention.     That's the first problem.
+
+CHIEF JUSTICE ROBERTS:     Okay.     So that's a
+
+particular -- where you snip.     We're talking about
+
+though the patentability of what's left -­
+
+MR. CASTANIAS:     Right.
+
+CHIEF JUSTICE ROBERTS:     -- after you've
+
+snipped it.
+
+MR. CASTANIAS:     And -- and that is indeed a
+
+product of human ingenuity and that has substantial new
+
+uses.     Now, my friends on the other side have said -­
+
+JUSTICE KAGAN:     Mr. Castanias, go back to
+
+Justice Alito's plant in the Amazon, right because it
+
+takes a lot of ingenuity and a lot of effort to actually
+
+find that plant, just as it takes a lot of effort and a
+
+lot of ingenuity to figure out where to snip on -- on
+
+the genetic material.
+
+But are you -- are you saying that you could
+
+patent that plant because it takes a lot of effort and a
+
+lot of ingenuity to find it?
+
+MR. CASTANIAS:     The plant itself, I think
+
+not, Justice Kagan, but I think the question that was -­
+
+that was posed was whether I could take an extract from
+
+that plant.
+
+43  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 43-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+JUSTICE KAGAN:     Well, but can you patent the
+
+thing itself?
+
+MR. CASTANIAS:     The thing itself I would -­
+
+in that hypothetical, I would say the answer is no.
+
+JUSTICE KAGAN:     Even though you know you
+
+have to extract the plant itself -­
+
+MR. CASTANIAS:     It's a lot of -­
+
+JUSTICE KAGAN:     -- from the Amazon forest.
+
+MR. CASTANIAS:     Ah, but you see, now you're
+
+adding the manipulation -­
+
+JUSTICE KAGAN:     I'm not -- I mean, I don't
+
+know what manipulation means.     I mean, you have to take
+
+the plant and uproot it, all right?
+
+MR. CASTANIAS:     Okay.
+
+JUSTICE KAGAN:     And carry it away and
+
+isolate it.     Can you now patent the thing itself?
+
+You've now taken it out of the Amazon forest.     Can you
+
+now patent it?
+
+MR. CASTANIAS:     Well, what I -- what I
+
+haven't done is isolated a new thing.     All I have done
+
+is isolate the plant from the forest.     And that's the
+
+distinction I think I'm trying to get across to the
+
+Court, not particularly well at least in my colloquy
+
+with Justice Breyer, but I'll try again.     And that is
+
+that what -- what was, quote, merely snipped out of the
+
+44  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 44-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+body here is fundamentally different in kind from what
+
+was in -- what is in the body.     The most important
+
+reason it's different in kind is that it cannot be used
+
+in the body to detect the risk of breast and ovarian
+
+cancers.
+
+JUSTICE KAGAN:     Well, the plant in the
+
+forest can't be used for any purpose either.     It only
+
+has a use when it's taken out -- you know, when it's
+
+uprooted and taken out of the forest.     But it's still
+
+the same thing.     And I guess what you haven't gotten me
+
+to understand is how this is different than that.     It's
+
+still the same thing, but now that you've isolated it,
+
+it in fact has lots of great uses.
+
+MR. CASTANIAS:     Well, I think there are two
+
+ways -- two ways to look at that.
+
+First of all, if you want to look at it from
+
+the -- the perspective of the so-called product of
+
+nature doctrine, which I think has some very dangerous
+
+consequences if it's not cabined and understood
+
+correctly.     But if you look at it strictly from a
+
+product of nature doctrine, you could say, well, that's
+
+the same plant and it says in the 1930 legislative
+
+history of the Plant Patent Act that plants that are
+
+unmanipulated by the hand of man are not eligible for
+
+patents, and that's fine, in terms of their breeding and
+
+45  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 45-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+genetics and that sort of thing.
+
+But the product of nature doctrine is
+
+troublesome for this reason, modern medicine -- go
+
+beyond just the isolated DNA patents here.     Modern
+
+medicine, particularly the area of personalized
+
+medicine, is trying to get to a point where what we are
+
+administering to individual patients is giving them the
+
+opportunity to mimic the actions of the body.     And -- so
+
+actually, the goal of medicine is to get closer to
+
+nature, rather than farther away.     And anything that
+
+takes the product of nature doctrine beyond the simple
+
+truism that the product of nature is something that is
+
+not a human invention, then that's very dangerous, not
+
+just for our case -­
+
+JUSTICE KENNEDY:     But when you -- when you
+
+isolate the DNA, that by itself cannot be used as -- as
+
+a probe until you add tags and -- and other chemicals
+
+that make it a probe.
+
+MR. CASTANIAS:     As a probe, that's true.     As
+
+a primer, that wouldn't be required.
+
+JUSTICE KENNEDY:     So it seemed to me your -­
+
+your answer was not quite accurate when you said, well,
+
+it can't be used in the body to detect breast cancer.
+
+Neither can the isolate without some additions.
+
+MR. CASTANIAS:     Well, since this Court -­
+
+46  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 46-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+I'm sorry.
+
+JUSTICE KENNEDY:     Now, if it's -- if it's
+
+the process or the additions that make it patentable,
+
+fine.     But you're say that the moment it's snipped, it's
+
+patentable, and that it seems to me was -- was the point
+
+of Justice Kagan's question.
+
+MR. CASTANIAS:     Well, I -- I will say that
+
+that is the final inventive act.     It's not the only
+
+inventive act.     It's the final inventive act.     If -- if
+
+indeed you were creating it -­
+
+JUSTICE GINSBURG:     Do you concede -­
+
+MR. CASTANIAS:     I'm sorry.
+
+JUSTICE GINSBURG:     Do you concede at least
+
+that the decision in the Federal Circuit, that Judge
+
+Lourie did make an incorrect assumption, or is the
+
+Lander brief inaccurate with respect to that, too?     That
+
+is, Judge Lourie thought that isolated DNA fragments did
+
+not exist in the human body and Dr. Lander says that
+
+wrong.
+
+MR. CASTANIAS:     No, what -- I think
+
+Justice -- Judge Lourie was exactly correct to say that
+
+there is nothing in this record that says that isolated
+
+DNA fragments of BRCA1 exist in the body.     Neither does
+
+Dr. Lander's brief, for that matter.     And for that
+
+matter, those isolated fragments that are discussed in
+
+47  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 47-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+Dr. Lander's brief again are -- are what are known
+
+not -- not in any way as isolated DNA, but as
+
+pseudogenes.     They're typically things that have been
+
+killed off or mutated by a virus, but they do not -­
+
+JUSTICE ALITO:     But isn't this just a
+
+question of probability?     To get back to your baseball
+
+bat example, which at least I -- I can understand better
+
+than perhaps some of this biochemistry, I suppose that
+
+in, you know, I don't know how many millions of years
+
+trees have been around, but in all of that time possibly
+
+someplace a branch has fallen off a tree and it's fallen
+
+into the ocean and it's been manipulated by the waves,
+
+and then something's been washed up on the shore, and
+
+what do you know, it's a baseball bat.
+
+Is that -­
+
+(Laughter.)
+
+JUSTICE ALITO:     -- is that what Dr. Lander
+
+is talking about?
+
+MR. CASTANIAS:     That's pretty much the same
+
+as what he's talking about, is that there might be
+
+something that was out there somewhere.     But -- but
+
+that's really -- the search for this sort of thing that
+
+might be very similar to the thing but never was known
+
+before.     The patent law has taught -- the patent law is
+
+all about pushing the frontiers.
+
+48  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 48-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+JUSTICE BREYER:     All right.     So when you are
+
+on that, that's good.     A more basic question to me is
+
+when you use the word "dangerous."     I had thought -- and
+
+you can -- I'd be interested in your view -- that the
+
+patent law is filled with uneasy compromises because on
+
+the one hand, we do want people to invent.     On the other
+
+hand, we're very worried about them tying up some kind
+
+of whatever it is, particularly a thing that itself
+
+could be used for further advance.
+
+And so that the compromise that has been
+
+built historically into this area is, of course, if you
+
+get a new satisfying process to extract the sap from the
+
+plant in the Amazon, patented.     Of course, if you get
+
+the sap out and you find that you can use it, you
+
+manipulate it, you use it, you figure out a way to use
+
+it to treat cancer, wonderful, patented.     But what you
+
+can't patent is the sap itself.
+
+Now, in any individual case that might be
+
+unfortunate or fortunate.     But consider it in the mine
+
+run of things.     It's important to keep products of
+
+nature free of the restrictions that patents there are,
+
+so when Captain Ferno goes to the Amazon and discovers
+
+50 new types of plants, saps and medicines, discovers
+
+them, although that expedition was expensive, although
+
+nobody had found it before, he can't get a patent on the
+
+49  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 49-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+thing itself.     He gets a patent on the process, on the
+
+use of the thing, but not the thing itself.
+
+Now, that's my understanding of what I'd
+
+call hornbook patent law, which you I confess probably
+
+understand better than I.
+
+MR. CASTANIAS:     Well -­
+
+JUSTICE BREYER:     And I would like you to
+
+express your view on that because that's the framework
+
+that I am bringing to the case.
+
+MR. CASTANIAS:     I -- I will offer the view,
+
+Justice Breyer.
+
+First of all, in this Court's decision in
+
+Brenner v. Manson, followed repeatedly by the Federal
+
+Circuit, it has been hornbook patent law, to use your
+
+term, that you do not need to -- to call out the utility
+
+of an invention in a particular claim.     What you do have
+
+to do is have utility for the invention itself described
+
+in the specification.
+
+And that's what the Patent Office looked to
+
+in its Utility Guidelines in 2001.     But ultimately,
+
+neither -- I think this case is very -- very easily
+
+decided on a straightforward ground that does not
+
+require the Court to go making fine distinctions between
+
+cDNA and DNA.
+
+And that ground is this:     The reasoned
+
+50  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 50-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+Utility Guidelines issued in 2001 by the Patent Office,
+
+who has not, in a very significant decision, joined the
+
+brief of the Solicitor General in this case -- and which
+
+they continue to apply under Section 2107 of the Manual
+
+of Patent Examining Procedure, this -- these guidelines
+
+not only tell examiners what to do, but in the Federal
+
+Register they had notice and comment and 23 specific
+
+reasoned, supported by case law, supported by science,
+
+responses to the objectors.     Almost every objection that
+
+is made to our patents here was made there and answered
+
+there.
+
+The PTO issued those guidelines to the
+
+public.     They have been relied on now for 12 years, and
+
+they confirm a practice that has been in place much
+
+longer than that.     And if you take -- whether you can
+
+call it the Skidmore deference or just giving respect to
+
+the agency that sits at the intersection of law and
+
+science -- Justice Breyer, as your opinion for the Court
+
+in Dickinson v. Zurko pointed out -- those -- that
+
+decision by the Patent Office is entitled to respect,
+
+the reliance that has been placed -­
+
+JUSTICE GINSBURG:     Even though -- even
+
+though the government has disavowed it, even though the
+
+government, representing the United States -­
+
+MR. CASTANIAS:     Even though, and -- and the
+
+51  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 51-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+reason for that is -­
+
+JUSTICE GINSBURG:     At least that the
+
+strength of the presumption would be diluted.
+
+MR. CASTANIAS:     I think you can dilute it a
+
+little bit, but you can't take away the fact that it is
+
+a 30-plus year practice that the Patent Office, despite
+
+the executive's position in this Court and in the
+
+Federal Circuit, continues to follow.
+
+JUSTICE KAGAN:     Mr. Castanias, could I take
+
+you away from the deference point and just ask again
+
+about the -- the kind of law that you would have us
+
+make.     Do you think that the first person who isolated
+
+chromosomes could have gotten a patent on that?
+
+MR. CASTANIAS:     I think in theory that is
+
+possible, but I should say this because this case is
+
+about Section 101, I'm trying -- I'm answering your
+
+question as though it's about 101, patent eligibility.
+
+JUSTICE KAGAN:     Yes.
+
+MR. CASTANIAS:     Would it be obvious, would
+
+it be novel?     I'm not sure.     Those are different -­
+
+those are different analytical structures.
+
+JUSTICE KAGAN:     Right.
+
+MR. CASTANIAS:     But would it -- and I think
+
+really, the -- the statute does the work here.     It is
+
+new and useful composition of matter -­
+
+52  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 52-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+JUSTICE KAGAN:     But the first -­
+
+MR. CASTANIAS:     -- if it had use.     If it had
+
+a new utility, then yes.
+
+JUSTICE KAGAN:     I'm sorry, because -­
+
+because -- because, like Justice Breyer, I consider
+
+uses -- patents on uses in a different category.
+
+So I'm just asking, could you patent the
+
+isolated chromosome?
+
+MR. CASTANIAS:     Again, I -- I perhaps am not
+
+making myself as clear as I should.     In Section 101, a
+
+patent claim must be shown to be useful.     And that -­
+
+that is a utility that it has to be shown -­
+
+JUSTICE KAGAN:     Yes.     Chromosomes are very
+
+useful.
+
+MR. CASTANIAS: -- in any case.
+
+(Laughter.)
+
+JUSTICE KAGAN:     The first person who found a
+
+chromosome and isolated it, I think we can all say that
+
+that was a very useful discovery.
+
+And the question is, can you then -- can the
+
+person who found that chromosome and isolated it from
+
+the body, could they have gone to the PTO?
+
+MR. CASTANIAS:     If they -- if -­
+
+JUSTICE KAGAN:     And the PTO seems very
+
+patent happy, so could, you know, would -- would they
+
+53  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 53-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+have had a good patentability argument?
+
+MR. CASTANIAS:     I think if -- to get through
+
+the Section 101 gateway, if that chromosome had a
+
+specific substantial and credible utility, in other
+
+words, it could be used in some -­
+
+JUSTICE KAGAN:     Yes, of course it does.
+
+MR. CASTANIAS:     -- diagnostic way in the way
+
+that we're talking about here, then yes, it would pass
+
+through the Section 101 gate.     Whether it would pass
+
+through the Section 102 gate or the 103 gate, I don't
+
+have any opinion on.
+
+JUSTICE KAGAN:     Would -- would -- okay.
+
+MR. CASTANIAS:     And then there's the
+
+further -­
+
+JUSTICE KAGAN:     And that's interesting -­
+
+MR. CASTANIAS:     Sure.
+
+JUSTICE KAGAN:     -- because then it's not a
+
+question about, you know, breaking these covalent bonds
+
+or whatever Judge Lourie thought it was about.     Right?
+
+So you know, if -- if not DNA, if -- if not
+
+the -- the more smaller unit in the chromosome, you
+
+know, we could just go up from there and talk about all
+
+kinds of parts of the human body, couldn't we?     Couldn't
+
+we get to, you know, the first person who found a liver?
+
+MR. CASTANIAS:     I -- I think -- I think,
+
+54  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 54-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+Justice Kagan, you're really putting your finger on the
+
+problem with this, again, I -- I keep wanting to refer
+
+to as the so-called Product of Nature Doctrine because I
+
+don't believe that as a separate doctrine it really
+
+exists.     It's just the flip side of the coin of
+
+something that shows a lack of invention.
+
+And, of course, that's where Section 103
+
+comes into full force as the Chief Justice mentioned
+
+earlier in the argument.     Section 103 allows you to make
+
+comparisons to what was old and what was new.     I don't
+
+think the organ, the liver, gets past 103 in that
+
+circumstance even if you say, well -­
+
+JUSTICE BREYER:     You are saying it gets past
+
+101.
+
+MR. CASTANIAS:     Even if it gets through the
+
+101 -­
+
+JUSTICE BREYER:     Well, that's -- that's the
+
+problem.     I mean, all parts of the human body?     Anything
+
+from inside the body that you snip out and isolate?
+
+MR. CASTANIAS:     No.
+
+JUSTICE BREYER:     And it gets through 101?
+
+Does it have to -- I mean, that's actually what's
+
+bothering me.
+
+MR. CASTANIAS:     Okay.     So let -- let me try
+
+to help you with that.     Because -- because the
+
+55  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 55-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+distinction is between the liver or the kidney, which
+
+was the one brought up in the federal circuit opinion,
+
+but liver, kidney, you know, gallbladder, pick your
+
+organ.     But it's the same thing.     It is the same thing
+
+when it's inside the body and it's out.     That's where
+
+our -­
+
+JUSTICE SOTOMAYOR:     But you're not
+
+suggesting if you cut off a piece of the liver or a
+
+piece of the kidney that that somehow makes that piece
+
+patentable.
+
+MR. CASTANIAS:     No.     Absolutely not.     It's
+
+the same thing.
+
+JUSTICE SOTOMAYOR:     So what's the
+
+difference?     I mean, if you cut off a piece of the whole
+
+in the kidney or liver, you're saying that's not
+
+patentable, but you take a gene and snip off a piece,
+
+that is?     What's the difference between the two -­
+
+MR. CASTANIAS:     I would say that -- I would
+
+say that under -- under your existing decisions in
+
+Chakrabarty, J.E.M., that set forth a broad
+
+understanding of Section 101 and an understanding of
+
+what is within the limited exception, then what -- I --
+
+I would -- I mean, honestly, I think that Section 103
+
+does this work better than Section 101, but to the point
+
+of Section 101, there's -- there is nothing different
+
+56  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 56-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+about that piece in the body.
+
+JUSTICE BREYER:     Ah.     Then -- then watch
+
+what you're doing.     That's very, very interesting.
+
+Because, really, we are reducing, then, 101 to anything
+
+under the sun, and -- and that, it seems to me, we've
+
+rejected more often than we've followed it.
+
+And particularly with a thing found in
+
+nature doctrine because, of course, it doesn't just -­
+
+human kidneys and so forth.     Everything is inside
+
+something else.     Plants, rocks, whatever you want.     And
+
+so everything will involve your vast taking something
+
+out of some other thing where it is, if only the
+
+environment.     And it's at that point that I look for
+
+some other test than just that it was found within some
+
+other thing.
+
+MR. CASTANIAS:     And I think, Justice Breyer,
+
+there is where I've -- I've tried to explain to you
+
+about the different functions, the different values.     If
+
+you think about patents as economic instruments, the
+
+different economic values that come out of this, the
+
+different things that patients now have as a result of
+
+this human ingenuity, they didn't have the BRCA1
+
+isolated gene before the Myriad invention.
+
+JUSTICE KENNEDY:     Well, we could have said
+
+that with atomic energy, with electric, but so far the
+
+57  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 57-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+choice -- electricity -- but so far the choice of the
+
+patent was that we have a uniform rule for all
+
+industries.
+
+MR. CASTANIAS:     Right, but in -­
+
+JUSTICE KENNEDY:     And -- and that avoids
+
+giving special industries special subsidies, which is
+
+very important it seems to me.
+
+Let me ask you this, and it's consistent
+
+with my -- my preface.     If we were to accept the
+
+government's position that the DNA is not patentable but
+
+the cDNA is, would that give the industry sufficient
+
+protection for innovation and research?     And if not, why
+
+not?
+
+MR. CASTANIAS:     The -- the problem of making
+
+that decision now is that so much has happened since
+
+these gene patents issued and since the Utility
+
+Guidelines.     I can't tell you for a certainty whether it
+
+will hurt the industry as a general matter to not have
+
+isolated gene but only have cDNA patents.
+
+But here's what I think it will hurt, and I
+
+think it ultimately will hurt the doctrine that this
+
+Court comes out of this case with.     Because what you
+
+will then be asking litigants to do and courts to do is
+
+to draw fine distinctions under Section 101 between,
+
+well, how much more manipulation.
+
+58  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 58-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+My friend on the other side used the term,
+
+in response to Justice Ginsburg, "further manipulation
+
+is required to take it out of the product of nature."
+
+He -- he said no alteration, to Justice Alito, would
+
+make it a product of nature.     But there's no dispute in
+
+this case that there has been some alteration of the
+
+isolated DNA molecules.
+
+And that brings me back to the Utility
+
+Guidelines.     This line was drawn.     It was drawn by an
+
+expert agency that sits at the intersection of law and
+
+science, and it has said, without any apparent -- other
+
+than the declarations and amicus briefs that have been
+
+put into this case -- without any apparent effect on the
+
+explosion in biotechnology and the successful,
+
+economically successful, technologically successful, and
+
+life-saving industry that is at the heart of these
+
+inventions.
+
+That has not -- those -- that parade of
+
+horribles has not happened.     And you don't have to
+
+hypothesize at this point because you've got all of
+
+these years of experience between the time these patents
+
+issued and the time that this -- this challenge
+
+belatedly came along.
+
+Justice Breyer, a point about no
+
+impermissible preemption before I sit down.     Your
+
+59  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 59-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+opinion for the Court in Mayo made that very much an
+
+important point, but I think what you -- what is
+
+important to understand here is that these patent claims
+
+aren't for methods.     They don't prevent -- present that
+
+problem that the Court identified in that argument and
+
+in the argument in Bilski.     These are for specific
+
+molecules that exist in the physical world.     That -­
+
+that concern that is present with method claims is not
+
+here, these patents cover -- these patent claims cover
+
+only what is claimed and no more.
+
+There is no risk of a natural law or a
+
+physical phenomenon like energy or electricity, neither
+
+of which falls within the statutory categories.     There
+
+is no risk of anything being preempted other than what
+
+the claims properly claim, which are human-made
+
+inventions of isolated molecules.
+
+And I think one last point to close on.
+
+It's important to note that molecules have been patented
+
+for a very long time.     That's what drugs are.     And drugs
+
+are often made by taking one molecule and another
+
+molecule, both of which are known, reacting them in a
+
+test tube, which is a very common thing, reactions have
+
+been around 100 years just like snipping has been, but
+
+they make something new and useful and life saving from
+
+that.
+
+60  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 60-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+CHIEF JUSTICE ROBERTS:     Well, I don't
+
+understand how this is at all like that because there
+
+you're obviously combining things and getting something
+
+new.     Here you're just snipping, and you don't have
+
+anything new, you have something that is a part of
+
+something that has existed previous to your
+
+intervention.
+
+MR. CASTANIAS:     Well, again,
+
+Mr. Chief Justice, I -- I -- the discussion we had
+
+earlier, the -- in -- in fact, the sequence that's
+
+claimed in Claim 1 of the '282 patent was not created by
+
+snipping.     If I can just conclude with one more
+
+sentence?
+
+CHIEF JUSTICE ROBERTS:     Sure.
+
+MR. CASTANIAS:     Only once it was created can
+
+a scientist ever know how and where to make the decision
+
+to snip.
+
+Thank you.
+
+CHIEF JUSTICE ROBERTS:     Thank you, counsel.
+
+Mr. Hansen, you have three minutes
+
+remaining.
+
+REBUTTAL ARGUMENT OF MR. HANSEN
+
+ON BEHALF OF THE PETITIONERS
+
+MR. HANSEN:     Thank you, Your Honor.
+
+JUSTICE SOTOMAYOR:     Is there some value to
+
+61  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 61-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+us striking down isolated DNA and upholding the cDNA?
+
+If we were to do what the government is proposing in
+
+this case, what's the consequences?
+
+MR. HANSEN:     Of -- of course there would be
+
+value in that in the sense that -- that, A, it
+
+reinforces the Product of Nature Doctrine, but more
+
+importantly, the effect of the patents in this case
+
+allows Myriad to stop all research on a part of the
+
+human body.     If you uphold the patents in this case,
+
+Myriad can -- has the authority given it by the
+
+government to stop anyone from doing research on a piece
+
+of the human body.     That would be a significant advance,
+
+if you were to -- to make it clear that was
+
+impermissible.
+
+JUSTICE SOTOMAYOR:     Now, how do you
+
+understand Judge Bryson's dissent with respect to cDNA?
+
+I think he's saying that a gene created from -- into
+
+cDNA as a whole is okay, but that he had a problem with
+
+the description of that claim because it included 15
+
+nucleotide long segments or fragments which he says
+
+reoccur in nature.
+
+MR. HANSEN:     Well, and yes, I -- I agree,
+
+Your Honor, that he was focusing on Claims 5 and 6,
+
+which are the ones that include 15 nucleotides or -- or
+
+longer.
+
+62  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 62-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+JUSTICE SOTOMAYOR:     Now, I'm making your job
+
+harder.     How could they write it to do what he thinks
+
+would be patentable?
+
+MR. HANSEN:     Well, all -­
+
+JUSTICE SOTOMAYOR:     So assuming we believe
+
+that there is some human invention in this process,
+
+whether it's obvious or not, separate question.     But
+
+he's not creating -- the cDNA is not in nature
+
+naturally.
+
+So make that assumption.     Make the
+
+assumption that they can make a claim for it.     How do we
+
+avoid his problem?
+
+MR. HANSEN:     Well -­
+
+JUSTICE SOTOMAYOR:     I know you are helping
+
+your adversary by answering this question.
+
+MR. HANSEN:     That's fine, Your Honor.     I
+
+think that the -- all of the claims in this case, all
+
+nine claims that we are challenging include both
+
+fragments and the whole gene.     So I don't think there is
+
+anything you can do with respect to these nine claims.
+
+JUSTICE SOTOMAYOR:     I am putting that aside.
+
+MR. HANSEN:     I think by saying that when
+
+genes are transformed in such a way that the scientist
+
+decides their sequence rather than the nature deciding
+
+their sequence -­
+
+63  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 63-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+JUSTICE SOTOMAYOR:     Only if they do a
+
+recombinant DNA, that's what you are saying.
+
+MR. HANSEN:     Right, right.     Now I don't
+
+think cDNA is recombinant DNA, that's what we've argued,
+
+but that's -- that's at least one plausible way of
+
+looking at it.
+
+The genes in this case, the patents on the
+
+genes in this case cover the genes of every man, woman,
+
+and child in the United States.     And as I just said, it
+
+gives the -- the government has given Myriad the
+
+authority to stop research on every one of our genes.
+
+That simply can't be right.
+
+And I would like to make one other point
+
+with respect to Dr. Lander's brief.     On page 16 of Dr.
+
+Lander's brief he discusses specifically that the BRCA
+
+genes appear in the body with covalent bonds in
+
+fragments.     There isn't any real -- there isn't any
+
+scientific dispute about that fact.
+
+CHIEF JUSTICE ROBERTS:     Why don't you take
+
+another minute.     You weren't afforded an opportunity to
+
+use the time you were reserved.
+
+MR. HANSEN:     Well, I guess the only other
+
+thing I would say then, Your Honor, is to respond to
+
+what I may have left a misimpression with Justice
+
+Kagan's questions.     We agree that you could get a patent
+
+64  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 64-----------------------------------------------------
+﻿
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+Official - Subject to Final Review
+
+on a use of the leaf that is pulled out of the Amazon or
+
+a plant that is pulled out of the Amazon.     We don't
+
+dispute that.     We don't think you cannot get a patent on
+
+the thing -- the plant itself just because you pulled it
+
+out of the ground and took it to the United States.
+
+CHIEF JUSTICE ROBERTS:     Thank you, counsel.
+
+The case is submitted.
+
+(Whereupon, at 11:11 a.m., the case in the
+
+above-entitled matter was submitted.)
+
+65  
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 65-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+66
+
+A
+
+able 7:17,18
+
+above-entitled
+
+1:12 65:9
+
+abridged 37:15 absolutely 36:4
+
+56:11
+
+abstract 6:10 accept 58:9
+
+acceptable 4:21
+
+30:8
+
+accurate 46:22 act 28:20 45:23
+
+47:8,9,9
+
+actions 46:8 actual 35:21
+
+add 34:12,13,16
+
+42:16 46:17 adding 44:10
+
+additional 7:16 additions 46:24
+
+47:3
+
+additive 34:20
+
+42:17
+
+address 3:11
+
+26:18
+
+addressed 27:3 administering
+
+46:7
+
+admit 39:9
+
+advance 14:13
+
+49:9 62:12
+
+advancing 12:16 advantage 15:1 adversary 63:15 afforded 64:20 agency 51:17
+
+59:10
+
+AGG 18:19 agree 13:19
+
+39:11 42:4
+
+62:22 64:25 Ah 44:9 57:2 AL 1:4,7
+
+Alito 6:24 7:21
+
+8:13 28:11,15 30:10 31:22
+
+36:24 37:3 48:5 48:17 59:4
+
+Alito's 43:14 allowed 12:15 allowing 25:2
+
+40:25
+
+allows 15:25 55:9
+
+62:8
+
+alluded 32:7
+
+alteration 7:14
+
+21:10,16,17 59:4,6
+
+altered 21:11 Amazon 7:4 18:21 30:11 32:20 43:14
+
+44:8,17 49:13 49:22 65:1,2
+
+American 32:3 amici 13:25
+
+amicus 1:20 2:7 15:13 24:2 31:5 59:12
+
+analogies 36:19 analogy 21:22
+
+37:21
+
+analytical 34:5
+
+34:24 52:21
+
+announced 12:2 answer 3:13 7:9
+
+13:3 15:16
+
+16:11,14,16
+
+18:5,23 24:22 27:5,25 28:7
+
+32:24 39:17,18 39:19,21 44:4 46:22
+
+answered 12:18
+
+20:24 51:10
+
+answering 12:22
+
+13:24 52:16 63:15
+
+anybody 5:12
+
+anymore 11:23 apart 36:14,17 apparent 59:11
+
+59:13
+
+appear 64:16
+
+APPEARANC...
+
+1:15
+
+appears 24:17
+
+40:15
+
+Appendix 40:14
+
+42:1
+
+apply 32:10 51:4 approach 26:14 April 1:10
+
+area 46:5 49:11 argued 64:4 arguing 31:2
+
+argument 1:13 2:2,5,9,12 3:3,7 10:10 17:13
+
+19:8 24:1 28:19 33:9 54:1 55:9 60:5,6 61:22
+
+arguments 15:13 arisen 12:7
+
+arranged 37:4
+
+articulated 32:11 artificial 26:1
+
+31:13
+
+artificially 17:8 aside 63:21
+
+asked 30:10 35:1 asking 9:23 53:7
+
+58:23
+
+aspirin 4:2 21:9 assertion 29:18 Association 1:3
+
+3:4 32:3
+
+assume 11:15
+
+37:14 39:9
+
+assuming 5:10
+
+19:20 63:5
+
+assumption
+
+47:15 63:10,11
+
+atomic 57:25
+
+attached 38:7 AU 18:13
+
+authority 62:10
+
+64:11
+
+available 5:6
+
+25:6 40:24
+
+avoid 63:12 avoids 58:5
+
+a.m 1:14 3:2 65:8
+
+B
+
+B 1:18 2:6 24:1 back 6:8,24
+
+16:21 23:1 41:6 42:18 43:13 48:6 59:8
+
+bacteria 21:24 bake 35:7,9 balance 24:8
+
+28:10
+
+base 18:7
+
+baseball 37:23 41:7,16,19 48:6 48:14
+
+basic 24:9 26:14
+
+35:14,22 49:2
+
+basis 15:12
+
+22:20 25:3 33:20
+
+bat 37:23,25 38:1
+
+41:7,16,19 48:7 48:14
+
+began 33:19
+
+behalf 1:17,22
+
+2:4,11,14 3:8 33:10 61:23
+
+belatedly 59:23 believe 8:22 55:4
+
+63:5
+
+better 9:3 13:24 38:20 48:7 50:5 56:24
+
+beyond 46:4,11 big 17:16 26:22 bigger 26:24
+
+27:2
+
+billion 37:4 Bilski 60:6 binary 34:9 bind 18:2
+
+binding 17:24 biochemistry
+
+48:8
+
+biotech 32:13 biotechnology
+
+59:14
+
+bit 32:17 52:5 bits 38:11
+
+blocks 24:10 body 8:24,25 16:23,24 17:4 17:20,20,23 20:2,2 22:3
+
+24:12 25:2,25 26:2 27:16
+
+37:16,18 38:8 40:22 45:1,2,4 46:8,23 47:18 47:23 53:22
+
+54:23 55:18,19 56:5 57:1 62:9 62:12 64:16 bonds 54:18
+
+64:16
+
+bothering 55:23 bottom 41:14 bound 17:9
+
+branch 28:16
+
+41:17 48:11
+
+BRCA 12:1,5,14
+
+14:11 38:6 64:15
+
+BRCA1 38:14
+
+47:23 57:22
+
+breaking 54:18 breast 3:16 7:6 27:22 41:1 45:4 46:23
+
+breeding 45:25 Brenner 50:13
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 66-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+67
+
+Breyer 18:4,10       27:22 41:4        category 53:6      chewing 7:24         9:21 10:12,14 18:16 22:8,11       46:23 49:16       causes 18:2        Chief 3:3,9 4:17      10:16 11:4 22:25 23:8,11     cancers 45:5       cDNA 17:6,17       5:1,9 23:23,25      28:22 60:3,8,9 23:14,21 37:7     Captain 49:22        17:23 18:12,12      24:4 26:13,21       60:15 62:23 38:2,19,24,25     capture 19:21        20:6,13,21,22      27:24 32:25        63:17,18,20 39:4,8,16,21      carefully 33:16       21:3,10,11         33:1,7,11 41:2    class 20:7 40:1,4,12,19      carry 44:15          22:12,19,21,22     41:5,6,9 42:10    clear 53:10 62:13 44:24 49:1 50:7   case 3:4,12 4:21      24:16,18 25:5,6     42:23 43:4,8      close 60:17 50:11 51:18        4:23 5:4 6:4,6       25:11,16,16,18     55:8 61:1,9,14    closer 46:9 53:5 55:13,17       7:23 9:20 11:25     25:24 26:1,5        61:19 64:19       coal 36:20 55:21 57:2,16       12:6 13:14,15       30:21 31:8,13       65:6             code 34:9 59:24              14:2 15:12,23       36:2 37:7 42:4     child 64:9          coin 55:5 bridge 30:25         20:6 28:17 29:9     42:7,11 50:24     chip 35:10,11       colloquy 44:23 brief 15:13 17:13     29:9 46:14         58:11,19 62:1     chocolate 35:9      combination 17:14 26:4         49:18 50:9,21       62:16,18 63:8       35:11              36:12 29:18 37:22        51:3,8 52:15        64:4             choice 58:1,1       combining 61:3 39:5 40:21         53:15 58:22       cell 38:10          CHRISTOPH...    combust 35:12 47:16,24 48:1       59:6,13 62:3,7    cells 38:8            1:16 3:7          come 15:24 51:3 64:14,15       62:9 63:17 64:7   certain 34:9,10     chromosome         57:20 briefly 32:24         64:8 65:7,8       certainly 8:19        35:5 38:6,10      comes 55:8 33:1             cases 14:9           15:21 16:4 21:5     53:8,18,21 54:3     58:22 briefs 38:5 59:12    Castanias 1:22       23:13 33:2         54:21            coming 31:24 bringing 50:9         2:3,10,13 33:8    certainty 58:17     chromosomes        32:3 brings 59:8          33:9,11,22        cetera 20:10         52:13 53:13       comment 51:7 broad 56:20          34:15,18 35:8     Chakrabarty       circuit 6:10 47:14   common 60:22 broadest 28:18       35:17,19,23        28:6 33:13         50:14 52:8 56:2   companies 11:21
+
+29:3               36:3,11,17,22       56:20            circumstance        13:20
+
+Brothers 21:24       37:2,20 38:17     challenge 59:22      34:21 55:12       company 11:14 21:25 22:5         38:22 39:2,6,14   challenged 6:5      cite 4:11 23:19       12:18 15:2 brought 40:23        39:18,24 40:2,9     9:22 10:7         cited 23:9            20:23 32:18 56:2               40:13 41:3,8,22   challenging        claim 10:5,22,24    comparisons Bryson's 62:16       42:12 43:1,7,10     10:12,15,16        11:1,2 17:11        55:10 building 24:9         43:13,22 44:3,7     63:18              19:18,20 22:13    competing 27:22 built 49:11           44:9,14,19        chance 38:20         22:14,14,15      complement butter 35:11         45:14 46:19,25    change 9:10          23:6 24:12,24       17:25
+
+C
+
+47:7,12,20         20:18 27:15        30:22 31:2,10     complicated 48:19 50:6,10     changed 11:17       42:14 50:16        29:25
+
+C 2:1 3:1 18:1        51:25 52:4,9,14    28:13           53:11 60:15     composition 7:11 36:1,7             52:19,23 53:2,9   changing 8:11      61:11 62:19       7:19 8:18 11:17 cabined 45:19        53:15,23 54:2,7   characterized      63:11           19:25 36:25 call 37:16 50:4        54:13,16,25       21:3           claimed 42:14      52:25 50:15 51:16        55:15,20,24     chemical 7:3,11     60:10 61:11     compromise called 39:15 42:8     56:11,18 57:16     7:12 8:18 35:25   claiming 19:18      49:10 42:13              58:4,14 61:8,15    36:6,24          22:22,23        compromises cancer 3:16 7:6     categories 60:13   chemicals 46:17    claims 6:5,6 9:7     49:5
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 67-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+68
+
+computer 34:9      correspond 26:2    curious 6:13 13:1 detect 45:4 46:23     28:16
+
+concede 8:13       corresponding      cut 38:10 41:17     determination      disavowed 51:23 47:11,13           18:1               41:18,21 56:8       29:6             disclose 29:2 conceive 34:6      cough 4:2            56:14            determine 40:25    discover 5:10 concentrated 8:2    counsel 23:23                       determined 26:8      18:13,17,18
+
+8:7,10             61:19 65:6               D        develop 27:22      32:22
+
+conceptual 31:7     country 4:24       D 3:1 25:11        28:25          discovered 7:4 31:12              6:22             dangerous 45:18 development      discoveries concern 27:25      course 4:20          46:13 49:3        16:6 28:24        12:11 29:14 60:8         14:17 22:10       day 4:24 6:23      diagnoses 14:13    discovering concerning 11:11     49:11,13 54:6     days 14:4        diagnostic 29:1      11:18 conclude 29:15       55:7 57:8 62:4     deal 11:21         54:7           discovers 49:22
+
+61:12            court 1:1,13 3:10    decide 15:12,23    Dickinson 51:19     49:23 conclusively         4:7,9 9:6,23        18:3 28:18 29:3 dictated 19:12     discovery 7:7 32:8               15:12 24:5 27:7     37:25           19:13           53:19
+
+confess 50:4         28:5 29:5,5,15    decided 50:22     die 38:9         discussed 17:18 confirm 51:14        31:22 32:6,10     decides 14:5      dies 38:10         47:25 confirming 33:17     33:12 37:22        63:24          difference 33:3    discusses 64:15 Congress 32:14      44:23 46:25       deciding 14:6       56:14,17        discussion 40:17 connected 25:1       50:23 51:18        63:24          differences        61:9
+
+consensus 42:8       52:7 58:22 60:1   decision 14:1       17:16          dispute 4:17 8:16 consequences       60:5               37:10 47:14     different 4:3,14     32:8 39:3 59:5 45:19 62:3        courts 58:23         50:12 51:2,20      5:13,16 6:9       64:18 65:3 consider 49:19     Court's 32:7         58:15 61:16       8:15,16,18,19    disrupt 32:1 53:5               50:12            decisions 3:19      16:3 19:4 20:3    dissent 62:16 considered 4:1      covalent 54:18       56:19           30:2,15,16      distinct 26:4 consistent 58:8       64:16            declaration        32:13,14,17     distinction 8:20 construction       cover 60:9,9 64:8     40:14,15 42:2      35:24,25 36:7,8    24:6 44:22 56:1 10:5             create 35:11       declarations        36:10,12,25     distinctions constructs 34:23     42:8,13            59:12           41:16 42:7,24      50:23 58:24 context 23:2,3      created 17:9        deemed 27:14      45:1,3,11 52:20   distinguish 8:14 23:12              34:3,21 35:15     deference 51:16     52:21 53:6      distinguishes continue 51:4        37:17 42:4,7        52:10           56:25 57:18,18     21:9 continues 52:8       61:11,15 62:17    defined 35:8        57:20,21        divide 24:11 conventional       creating 17:22      definition 23:18    difficult 28:12     divisible 9:25 4:25 6:4            19:9 47:10 63:8   denied 28:23       34:5           DNA 5:4,4,21 cookie 35:10,11    creation 26:1       Department 1:19 dilute 52:4         8:14,16,17,24 copying 34:14        31:13,14         depending 23:12   diluted 8:9 52:3      9:7,17,21 11:11 correct 11:6        credible 54:4         23:14          directly 24:22       14:3,3,5,8,10 16:13 25:20,22    credit 3:21         described 50:17    disagree 25:12      14:18 17:17,21 28:13 39:10,12    criteria 29:11       description        25:18 39:22,22     18:21 20:9,13 47:21            critical 28:10         62:19           39:23,24         20:14,17,20,22 correctly 18:6      curiae 1:20 2:7      deserve 3:22      disagreeing        20:23 21:12 38:23 45:20        24:2             deserves 3:21      39:13           22:15,15 23:4 correlate 3:15      Curiosity 13:3      despite 52:6      disagreement      23:18,19 24:10
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 68-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+69
+
+24:12,24 25:6     eat 7:25 32:22      environment       expedition 49:24     51:6 52:8 56:2 25:12,15,16,25    economic 57:19      57:13            expensive 49:24    Ferno 49:22 27:23 30:5,23       57:20            equations 36:6      experience         fight 31:6 36:25 37:6 38:9   economically       equivalent 30:7       59:21            fighting 24:14,15 38:9 41:24 46:4     59:15            ESQ 1:16,18,22     expert 59:10         24:20 46:16 47:17,23    economy 20:7        2:6,10           expired 6:22       figure 43:17 48:2 50:24        effect 5:2 59:13     essence 4:5        explain 10:19        49:15 54:20 58:10        62:7             essentially 8:23      35:18 37:1        filed 38:4 59:7 62:1 64:2     effective 24:18       10:4               40:19 57:17       filled 49:5 64:4             effectively 25:3     et 1:4,7 20:9        explains 42:3       final 47:8,9 doctrine 12:9,13      27:13            everybody 6:15     explore 30:15      find 5:5,13,15,20 14:16 34:25       effects 30:12         6:15 14:25        explosion 59:14      5:21 9:11,13 45:18,21 46:2       32:23            evidence 39:20     express 50:8         12:3 14:12,12 46:11 55:3,4      effort 28:17        exact 19:25,25      expressing 29:9      14:13 16:7,20 57:8 58:21 62:6     43:15,16,20      exactly 3:12        extensive 40:16      32:20 34:5 doing 12:5 13:24    efforts 20:15         16:13 17:17       extract 4:22 5:5      40:16 43:16,21
+
+14:4 21:7 24:23   eggs 35:11,14        21:12 22:4         7:8 9:2 27:16       49:14 34:13 57:3        either 5:12 45:7      29:14 41:25        27:18 43:24       finding 5:17 9:9 62:11            electric 57:25        47:21              44:6 49:12        fine 45:25 47:4 DONALD 1:18     electricity 58:1     examiners 51:6     extracted 5:4,8       50:23 58:24 2:6 24:1            60:12            Examining 51:5      6:7 8:1 24:12       63:16 Donna 42:2        eligibility 27:8      example 4:8,9      extracting 3:25     finger 55:1 double-edged        28:3,9,22 29:7      5:20 13:23         4:7,18 5:14,16    finishing 40:20 29:7               33:24 52:17        14:15 30:3,5        5:17,18 6:14      first 3:4 8:6,25 Dr 40:15,15,20     eligible 7:10 8:3      40:15 41:7,25       26:25 27:19        12:3 17:17 20:5 47:18,24 48:1       8:4 19:7 25:18      48:7             extraction 6:1        22:17 27:6 48:17 64:14,14      25:24 26:15       examples 4:2,11      33:21,22           33:14 42:4 43:1 draw 58:24          31:8,14 33:17       21:2,9                              43:3 45:16
+
+drawn 59:9,9         42:6 45:24        exception 21:12           F         50:12 52:12
+
+drug 7:9,11         encouraging         56:22            faced 31:22        53:1,17 54:24 drugs 28:24,25       24:8             Executive 28:16    fact 6:12,19,21     five 21:24 60:19,19         ends 38:7          executive's 52:7      10:17,18 14:3    flip 55:5 due 36:19          energy 57:25       exercise 34:25       16:1 24:25      flour 35:10,14 D.C 1:9,19,22        60:12            exist 37:16,17,18     37:12 38:13       36:9,16
+
+E
+
+Enforcing 24:6       37:23 40:22        45:13 52:5      focus 28:3,8 engage 35:2         47:18,23 60:7       61:10 64:18     focusing 62:23
+
+E 2:1 3:1,1         enormous 15:4     existed 61:6      factor 21:8       follow 52:8 earlier 10:20       ensure 27:12      existing 56:19     fail 10:10        followed 50:13
+
+30:10 32:7 55:9 entire 10:9 19:20   exists 7:12 8:17    failure 16:25       57:6
+
+61:10            entirely 24:25      31:16 55:5      fallen 48:11,11     following 39:25 earrings 5:21        35:25          exon 31:1        falls 24:11 60:13     40:3 9:12             entitle 5:17,19     exons 17:12      far 57:25 58:1     follow-up 15:17 easier 7:22 20:9      9:12,14          19:24 22:2 31:1   farther 46:10      force 21:18 55:8 20:12 21:13       entitled 5:22      expansive 19:18   federal 6:10      forefront 40:23 easily 50:21          51:20           26:15           47:14 50:13     forest 7:25 44:8
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 69-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+70
+
+44:17,21 45:7,9   gallbladder 56:3    getting 28:9          65:5             help 55:25 form 8:2,9,10,19    gate 54:9,10,10      35:13 61:3        grows 7:4          helpful 13:24 forth 6:9 22:16      gateway 54:3       Ginsburg 3:24      guess 13:9 27:6       21:23 37:5,5 56:20      gather 18:5          20:24 26:3,8        34:15,19 36:21    helping 63:14 57:9             gene 6:7,14          29:17,23 47:11     41:22 45:10       helps 30:3 fortunate 49:19      11:17,17,19        47:13 51:22        64:22            high 36:7 found 6:10 7:8        12:14 13:12        52:2 59:2         guidelines 33:16    historically 9:6 18:23 19:4      14:11,19,22      Ginsburg's 6:25      50:20 51:1,5,12     49:11 19:9,23 20:1        15:2 16:7,21,22   give 4:1 13:23        58:17 59:9        history 45:23 49:25 53:17,21      16:23 17:3,4,10     17:13 30:3 36:1                     honestly 56:23
+
+54:24 57:7,14       19:20,22,22        58:11                   H        Honor 4:6 8:22
+
+fragments 40:22      20:7 25:4 27:18   given 5:25 8:8,10   H 36:7            11:6,25 16:5 47:17,23,25        27:23 29:12        14:21 37:11       hand 45:24 49:6     17:18 19:1 62:20 63:19        33:14,17 35:5       62:10 64:10        49:7            21:23 22:7 23:7 64:17              35:20,21 37:11    gives 64:10        Hansen 1:16 3:6     23:24 24:22 framework 50:8      37:11,18 38:6     giving 8:11 46:7      3:7,9,24 4:5,20     27:6 28:8,14 France 30:4          38:14 56:16        51:16 58:6         5:7,15 6:3,17      31:4,11,19 free 24:10 49:21      57:23 58:16,19    go 3:19 17:5,6        7:14 8:4,21       36:20 61:24 freely 6:21           62:17 63:19        18:21 19:6,12       9:20 10:3,11,22    62:23 63:16 friend 59:1         general 1:18         23:1 43:13 46:3     11:2,6,9,13,24     64:23 friends 43:12         23:25 24:4,19       50:23 54:22        12:20,24 13:6,9   hope 13:21 frontiers 48:25       25:13,23 26:3,7   goal 46:9            13:23 14:23     hoped 13:9 frustrated 14:10      26:14,20 27:5     goes 19:5 28:2        15:4,7,21 16:4    hornbook 50:4 full 55:8             28:5,14 29:4,17     30:25 49:22        16:13,18 17:2,7    50:14 full-length 9:7        29:22,24 31:4     going 11:22 13:4      17:16 18:9,15    horribles 59:19 function 4:15 8:8      31:11,14,18        13:8,10 17:21       18:25 19:11,16   human 3:14 8:10,12,15,17      32:11,15,24        23:5 31:5 32:1      19:24 20:12,18     15:10 17:15 8:22 9:1 21:11      33:2,7 35:1         37:14 42:18        20:24 21:5,19      19:3 24:6,24 21:12              42:5 51:3 58:18   gold 4:9,10 5:17      21:22 22:10,24     27:14 34:23 functionality       generally 29:11      5:18,19,20 9:11     23:7,10,13,17     37:24 43:11 20:8             generate 25:8        9:13               23:24 25:9,9      46:13 47:18 functions 8:23      genes 3:15,15,16   good 49:2 54:1       32:17 35:1        54:23 55:18 57:18              4:22 6:6 12:2      gotten 45:10         61:20,22,24       57:9,22 62:9,12
+
+fundamental         15:9 34:23         52:13              62:4,22 63:4,13    63:6 29:13              37:15 63:23       government         63:16,22 64:3    human-made fundamentally       64:7,8,8,11,16      28:12 51:23,24      64:22           60:15 45:1             genetic 43:18        62:2,11 64:10     happened 11:25    hundreds 42:7 Funk 21:24,25      geneticists 4:24     government's        58:15 59:19     hurt 58:18,20,21 22:5             genetics 1:7 3:5      58:10            happens 3:18      hypothesize further 4:12          40:18 46:1        granted 27:17      happy 53:25        59:20 42:16 49:9        genome 15:10      great 45:13        harder 20:21      hypothetical 54:14 59:2         35:4 37:4         GREGORY 1:22     63:2            44:4
+
+G
+
+genomic 30:5        2:3,10,13 33:9    hear 3:3         hypotheticals
+
+37:6 41:24        ground 15:23       heard 23:15        7:22
+
+G 3:1              Germany 30:4      28:18 50:22,25   heart 59:16
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 70-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+71
+
+I          industries 58:3,6   invent 3:12 41:19     60:16 62:1       keep 7:22 29:1
+
+ID 22:16 37:6       industry 12:10      41:20 49:6      isolating 3:25       49:20 55:2 41:24 42:14        14:4 31:24      inventing 20:19     27:19,19        keeping 24:9 idea 6:11 26:23       32:13 58:11,18   invention 17:15    isolation 16:10     Kennedy 9:15,24 ideas 17:1,2          59:16           19:3 24:7,25      16:11,16         10:6 15:11,22 identical 19:1       ineligible 24:11     27:14 34:2      issue 4:23 19:6      20:5,16 25:19 identified 28:6      infringer 23:5       37:10,24 42:21     22:12 26:18       32:7 46:15,21 60:5             ingenuity 43:11     43:3 46:13        28:11 29:10       47:2 57:24 58:5 identify 11:16        43:15,17,21       50:16,17 55:6      31:25 33:19     Kennedy's 21:13 identifying 30:10     57:22           57:23 63:6        34:19 41:23     key 33:5 IDs 37:5           ingredients       inventions 59:17   issued 12:4 26:9    kidney 56:1,3,9 illustrate 30:4        35:10,16         60:16           26:11 31:25       56:15 illustrated 35:2     inhibit 32:4       inventive 42:17     33:15,16 51:1    kidneys 57:9 illustrates 33:3     initial 20:25        47:8,9,9         51:12 58:16     killed 48:4 imagine 35:13      initially 26:10     inventors 24:9      59:22          kind 13:14 20:6 impeding 12:15     innovating 12:11     34:20 42:2,4,13   issues 26:16 27:3    45:1,3 49:7 impermissible      innovation 20:14   investment        32:2            52:11 10:23 59:25        24:10 32:5        11:16 12:19,21   items 35:14       kinds 13:21 62:14              58:12           13:14 15:14,24   it'll 15:24          54:23
+
+importance 24:21 28:10 29:13
+
+important 9:9
+
+25:17 45:2
+
+49:20 58:7 60:2 60:3,18
+
+importantly 62:7 impression 26:4 inaccurate 47:16 incent 32:5
+
+incentives 11:14
+
+16:5
+
+include 9:8,21
+
+62:24 63:18
+
+included 62:19 includes 10:9
+
+incorrect 20:10
+
+47:15
+
+increased 3:15 incur 12:18
+
+indicated 15:18 individual 11:1,2 24:9 46:7 49:18 industrialized
+
+29:20
+
+innovations 14:4 inside 8:24 55:19
+
+56:5 57:9
+
+instances 4:14
+
+institutional 32:9 instruments
+
+57:19
+
+insufficient 4:8
+
+15:16
+
+intended 7:23 interested 49:4 interesting 4:21
+
+54:15 57:3
+
+Interestingly
+
+16:18
+
+interminable
+
+36:6
+
+intersection 51:17 59:10
+
+intervention 61:7 introns 17:12,18 19:23 20:2 23:4 42:16
+
+invalid 10:1,24
+
+11:1,4
+
+invalidate 14:2
+
+investments 13:21 28:23 invoke 31:5
+
+involve 4:11 21:2
+
+57:11
+
+involved 6:6 19:3
+
+22:18 41:10,12 involving 21:4
+
+isolate 14:19,21
+
+20:9 30:12
+
+44:16,21 46:16 46:24 55:19
+
+isolated 8:14,16
+
+9:17 15:2 16:7 16:21,22 17:3 18:21 22:14
+
+23:4 24:10,24
+
+25:6,11,25 30:5 33:14,17 36:4 36:25 37:23
+
+38:9,11 44:20 45:12 46:4
+
+47:17,22,25
+
+48:2 52:12 53:8 53:18,21 57:23 58:19 59:7
+
+J
+
+job 13:24 63:1 joined 51:2
+
+Joint 40:14 42:1 JR 1:18 2:6 24:1 Judge 47:14,17
+
+47:21 54:19 62:16
+
+judges 9:6 jump 29:2
+
+J.E.M 56:20
+
+K
+
+Kagan 11:13 13:4,8 25:9,14 32:15 43:13,23 44:1,5,8,11,15 45:6 52:9,18,22 53:1,4,13,17 53:24 54:6,12 54:15,17 55:1 Kagan's 15:17
+
+47:6 64:25 Kay 40:15
+
+Kay's 40:15
+
+know 5:10,25 9:15,18 11:22 11:24 12:1,3,6 13:12,15,16,20 15:7,8,9 18:4 21:17 23:16
+
+36:20 39:8,11
+
+40:12 43:2 44:5 44:12 45:8 48:9 48:9,14 53:25 54:18,20,22,24 56:3 61:16 63:14
+
+known 33:23 34:22 48:1,23 60:21
+
+L
+
+lab 31:13
+
+laboratory 17:9
+
+22:4 26:1 labs 12:1,5 lack 55:6
+
+Lander 39:5
+
+40:20 47:16,18 48:17
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 71-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+72
+
+Lander's 47:24       30:24 31:2,16       42:20            million 12:13         64:10 48:1 64:14,15       60:19 62:20       Manson 50:13      millions 48:9       Myriad's 12:21 Laughter 38:21     longer 4:13 25:1    Manual 51:4       mimic 46:8           33:18
+
+48:16 53:16        30:24 51:15       markedly 19:3      mind 19:6
+
+law 9:24 10:4         62:25              20:3             mine 49:19                N
+
+15:25 17:1 30:1   look 8:25 9:2       massive 12:19      minute 64:20       N 2:1,1 3:1 32:11 39:12        12:15,25 16:19    match 38:13        minutes 61:20      name 35:25 48:24,24 49:5       18:10,11,21      material 43:18      misimpression     narrow 10:20,21 50:4,14 51:8,17     22:12,13 31:24    matter 1:12          64:24              26:16
+
+52:11 59:10        35:7 37:9 40:13     24:17 27:17       misread 38:15      narrowing 10:4,4 60:11              41:17,25 45:15     30:21 31:8,12       38:19,20         nation 29:20 30:2
+
+laws 30:8 38:13       45:16,20 57:13     31:14 33:25       Mister 26:3          30:2 lead 9:13,14        looked 20:5          39:10,11,13      misunderstand...   national 21:1 28:25              23:11 50:19        40:1,2,5 42:21      25:21            nations 30:1 leads 5:11          looking 6:8 12:1      47:24,25 52:25    misunderstood     native 24:12 leaf 7:3,15,24        30:22 64:6         58:18 65:9         10:12              25:11,15 65:1             lost 21:15          Mayo 27:7 28:6     modern 46:3,4      natural 3:25 4:3 leave 13:17        lot 11:15,16 14:1      29:6,15,15        molecular 1:3 3:5     4:4,6,8,10 leaves 7:3,12        28:1 31:25         31:23 32:12        25:1               17:24 21:1 22:3 25:6 36:22         43:15,15,16,17     60:1             molecule 7:3         27:12 35:10 led 29:15            43:20,21 44:7     mean 14:24          22:18,19,21        60:11 left 17:12 43:6      lots 23:4 45:13       21:16,20,21        33:14 34:21       naturally 31:16 64:24            Lourie 47:15,17      22:22 23:3,11       36:4 37:8 60:20     37:19 63:9 legislative 45:22     47:21 54:19        23:20 44:11,12      60:21            naturally-occu... letting 21:7         lovely 15:6           55:18,22 56:14    molecules 33:17      4:19
+
+let's 7:5,24 32:20   lower 9:6 37:22       56:23              59:7 60:7,16,18   nature 3:20 4:12 level 25:1                           means 27:16       moment 17:6         4:13,13 8:5,8
+
+license 5:13               M         38:9 44:12       47:4           8:11,17 9:2,9
+
+licensed 6:21       major 14:3        medical 25:4,7     Monday 1:10       9:10 12:9,10,12 life 60:24          making 7:21,22     32:3           monopoly 27:13     14:6,16 16:1,17 life-saving 59:16     9:12 12:11      medicinal 7:5      morning 3:4        17:9,11,15 18:2 limited 10:13,13      50:23 53:10     medicine 14:13    mRNA 17:21,23     18:19,23 19:2,4 10:15,18 56:22     58:14 63:1        46:3,5,6,9        17:25,25         19:9,12,13,19 line 42:25 59:9      man 45:24 64:8    medicines 49:23    mutated 19:20      19:23 20:1,3 line-drawing       manipulate 21:7    mentioned 55:8     48:4            21:7,15,18,25 34:25 35:3         42:15 49:15     merely 34:9       mutation 16:20      22:2,13 24:7 list 22:20,20,20     manipulated       44:25           16:20,24         27:12 31:16 litigants 58:23        48:12          messenger 18:6    mutations 41:3      34:7,12,13,25 little 26:20 32:17    manipulating      method 5:17,18    Myriad 1:7 3:5      35:4 37:12 52:5               21:8            5:25 6:5,5 7:17     3:12,14,20,21     45:18,21 46:2 liver 54:24 55:11    manipulation       60:8            3:22 4:22 8:23     46:10,11,12 56:1,3,8,15         4:12 21:3,4,6     methodology       9:4 11:15,20,21    49:21 55:3 57:8 lock 12:10 20:15      44:10,12 58:25     6:14,18          12:5,14 34:20     59:3,5 62:6,21
+
+20:20              59:2           methods 60:4       42:4,13 43:2      63:8,24 long 4:1 22:19,20   manner 34:2      middle 38:6        57:23 62:8,10    nature-driven
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 72-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+73
+
+17:24              62:20            opportunity 46:8      42:19 43:6 54:1     61:23 necessarily        nucleotides          64:20            patentable 4:1      phenomenon 30:25              19:11,19 30:23    opposed 8:24        6:11,18,20 7:17     60:12 necessary 15:14      30:24 31:16       opposite 41:25       9:11,17 11:19     phrased 30:22 24:7 28:24         37:3 62:24        oral 1:12 2:2,5,9      26:6 29:21 30:1   physical 60:7,12 need 40:12 50:15   number 34:10        3:7 24:1 33:9       30:21 31:10       pick 7:15 56:3 needs 32:12          37:5,6,7 41:24    order 19:12 20:1      47:3,5 56:10,16   picture 29:24 negated 34:2         42:14              34:10              58:10 63:3        piece 34:10 56:8 42:20            numbering 34:6     organ 55:11 56:4    patented 6:15,16     56:9,9,14,16 negative 42:20     numbers 35:21     original 6:17,17      6:18 7:10 14:8      57:1 62:11 neither 1:20 2:8                      ought 28:2           17:11 49:13,16    pieces 14:11
+
+24:3 40:6 46:24          O        outside 8:24       60:18         place 20:14,15
+
+47:23 50:21       O 2:1 3:1         ovarian 3:16      patenting 7:10      51:14 60:12            objection 51:9      41:1 45:4         30:23 42:6      placed 51:21 never 34:22        objectors 51:9     owns 20:22,23     patents 9:20 14:9   plant 7:4,13 48:23            obvious 26:6,22                   14:14 15:19       30:11 32:20,22 new 1:16,16 4:15     26:24 27:2            P         26:10 32:1,4      43:14,16,20,22
+
+5:5,20,21 6:19      52:19 63:7      P 3:1             33:14,18,19,19     43:25 44:6,13 7:7,7 8:10,12      obviously 41:11    page 2:2 40:16      45:25 46:4        44:21 45:6,22 8:22 9:1,9,11       61:3            42:1 64:14        49:21 51:10       45:23 49:13 9:13,14 11:19     obviousness      paid 12:20         53:6 57:19        65:2,4 11:20 12:11        19:6,8 26:8,16    pairs 18:7         58:16,19 59:21   plants 45:23 14:12,12,13        26:18 27:9 28:4   paper 34:10        60:9 62:7,9       49:23 57:10 16:2,7,8 25:8      occurs 16:1       parade 59:18       64:7           plausible 64:5 28:24,25,25        27:15          paragraph 42:3    Pathology 1:4     please 3:10 24:5 33:17,21,22      ocean 48:12      part 9:25 10:1,2     3:5             33:1,12 34:21 35:12,15    offer 50:10         26:23,24 27:1,1   patient 42:8       point 12:8,9 35:15 40:24       offered 37:21,22     61:5 62:8       patients 46:7       14:15 16:9 17:3 43:11 44:20       Office 33:16      particular 5:11      57:21           24:23 27:6 29:5 49:12,23 52:25     50:19 51:1,20      6:4 11:25 12:6    people 14:11       30:4 31:7,21 53:3 55:10         52:6            29:8 30:6 32:12    49:6            46:6 47:5 52:10 60:24 61:4,5      oh 5:9 10:11        37:9 41:20 43:5   perfect 14:15       56:24 57:13 nine 63:18,20        15:15,23         50:16          period 10:24       59:20,24 60:2 Nobel 13:7,17      okay 18:16,16     particularly       permissible 10:3     60:17 64:13 noncoding 17:19      18:20 22:13,20     44:23 46:5 49:8    10:23          pointed 51:19 note 60:18           23:15 35:23       57:7           person 15:1 23:3   points 34:23 notice 51:7           40:3,4 42:10     particulars 31:20    52:12 53:17,21   posed 43:24 notion 34:19         43:4 44:14      parties 31:6        54:24          position 14:7 notwithstanding      54:12 55:24     parts 54:23       personalized       25:17,23 28:13 13:11              62:18           55:18           46:5            29:19 31:10,20 novel 52:20        old 36:18 55:10    party 1:21 2:8     perspective        32:8,10,18 52:7 novelty 27:9        once 61:15         24:3            45:17           58:10 no-introns 18:19    ones 62:24       pass 54:8,9       Petitioners 1:5     possible 28:18 nucleotide 17:24    opinion 51:18     patentability       1:17 2:4,14 3:8     29:3 52:15 18:2 22:15         54:11 56:2 60:1    33:25 34:1        11:10 14:2      possibly 48:10
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 73-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+74
+
+practical 27:17       62:18 63:12       pseudogenes       reaches 10:22      reiterated 28:6 practice 51:14      problems 34:24      39:15 40:21       reacting 60:21      rejected 26:6
+
+52:6             Procedure 51:5       48:3             reactions 60:22      57:6
+
+precisely 38:13     process 4:18,22     PTO 31:25 51:12    read 17:14 18:5     relevant 33:24 preempt 25:3        4:23 5:5,7,11       53:22,24           23:2,12,16 38:5   reliance 31:25 preempted 60:14     5:13 6:19 9:16     public 29:2 40:25     38:23 39:1,9        32:2 51:21 preemption          9:17 15:19 16:6     51:13              40:7,10          relied 51:13 59:25              17:20 20:20       pulled 65:1,2,4      real 64:17          rely 24:17 preface 58:9         26:25 33:21,23    purpose 25:5       reality 30:24       remain 10:16 prefatory 24:23      34:17 41:12        45:7             really 9:1 14:20      11:9
+
+present 20:11        42:17 47:3        purposes 7:5         21:14 29:7        remainder 22:6 60:4,8             49:12 50:1 63:6     30:16              31:22 32:1        remaining 61:21 presented 3:11     processes 17:25    pushing 48:25        36:19 48:22       remember 34:22 preserves 24:7       22:3 33:23        put 16:11 22:1,3      52:24 55:1,4      removed 17:19 presumption         41:11              36:9 59:13         57:4             removes 20:2 52:3             produces 19:19     puts 18:1           realm 26:19        reoccur 62:21 pretty 26:22        product 4:6,8,10    putting 55:1        reason 12:12       repeatedly 4:7
+
+48:19              4:12,13 5:3,4       63:21              14:21 22:12        50:13 prevail 16:1          5:11,12 9:9,10                       45:3 46:3 52:1     representing
+
+prevent 14:8         12:9,10,12              Q        reasoned 33:16     51:24
+
+28:23 60:4         14:15 17:14,15    question 3:11       50:25 51:8      reproduced prevents 12:10       21:1 24:7 27:12     6:25 12:18,23    reasons 13:1       31:17 previous 61:6        34:25 35:3,15       13:25 18:22       28:1,3         require 50:23 previously 7:8        37:24 43:11        19:1,2,15 20:1    REBUTTAL      required 46:20 primer 11:12         45:17,21 46:2       20:25 22:8        2:12 61:22        59:3 46:20              46:11,12 55:3       24:21,22 28:2,8 recognition 15:5    research 24:17 primers 9:5,8        59:3,5 62:6         29:3,13 30:9     recognized 27:7     58:12 62:8,11
+
+11:7             products 3:25 4:4     38:24 39:2      recombinant       64:11 principles 32:11      35:22 49:20        43:23 47:6 48:6    14:2,3,8,10,18    reserve 22:6 prior 12:4          profession 25:8       49:2 52:17        20:13,13,17,20   reserved 64:21 privilege 31:5      proffered 8:23       53:20 54:18       20:21,23 25:10   resolve 32:8 Prize 13:7            9:5                63:7,15          25:15 27:23     respect 8:22 10:7 Prizes 13:18        profit 14:18        questions 15:17     64:2,4           11:4 15:8,10 probability 38:13   project 15:10         26:18 64:25     recombine 14:12     36:20 47:16 48:6             Prometheus 23:1   quite 10:8 16:2      30:17           51:16,20 62:16 probably 38:19     properly 60:15       38:5 41:16      record 9:16        63:20 64:14 50:4             proposing 62:2       46:22           20:10 39:3      respectfully probe 9:22 11:11    proposition        quote 44:25        47:22           27:11
+
+46:17,18,19 probes 9:5,8 10:14,15 11:7 problem 12:7 34:5,7 36:18 43:3 55:2,18 58:14 60:5
+
+29:12
+
+protection 5:2
+
+28:2 58:12
+
+proves 30:12 provide 32:14 provided 16:21 provision 28:20
+
+R
+
+R 3:1 18:6
+
+raises 29:14
+
+randomly 19:19 rationales 9:4 reach 22:12
+
+reduced 8:1
+
+reducing 57:4 refer 55:2
+
+regard 36:4
+
+regions 17:19 Register 51:7 reinforces 62:6
+
+respond 64:23 Respondents 1:23 2:11 3:24 29:18 33:10
+
+response 59:2 responses 51:9
+
+responsive 27:25
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 74-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+75
+
+restrictions          20:25 30:21        18:4,17 44:9        9:1 17:24 24:12     35:20 36:2,9,14 49:21              31:12,24 32:4     segment 30:23       35:14,15 64:12     36:21 56:7,13 rests 24:25          38:3,16 39:5        41:20,24         singular 29:19        61:25 62:15 result 14:14          40:5 43:19        segments 62:20     sit 21:25 59:25       63:1,5,14,21
+
+27:15,21 41:4       55:13 56:15       sense 15:15        sits 51:17 59:10      64:1 57:21              62:17 63:22        21:24 26:17       sitting 16:17        so-called 37:6 return 31:21         64:2               42:24 62:5        situation 29:16       45:17 55:3 right 10:25 22:18    says 22:14,18,18    sentence 33:25       31:6,23          special 58:6,6 24:21 28:7,10       23:19 30:23        42:19 61:13       Skidmore 51:16    specific 13:23 31:11,19 43:7       34:1 40:20        separate 19:14     small 19:21 27:1      51:7 54:4 60:6 43:14 44:13        45:22 47:18,22      55:4 63:7           27:1             specifically 49:1 52:22         62:20            SEQ 22:16 37:5     smaller 26:23,23     64:15 54:19 58:4 64:3   SCALIA 6:13        37:6 41:24         54:21            specification 64:3,12            12:17,22 13:3       42:14            snip 41:13,14,14      27:10 50:18 risk 3:16 45:4        14:17,24 15:6     sequence 14:5,6      43:2,5,17 55:19   stage 27:4 28:3,4
+
+60:11,14           21:14,20 37:13     19:11 22:16        56:16 61:17        28:9
+
+RNA 18:6          school 36:7          23:5 30:25        snipped 43:9       stand 10:1 11:5,8 ROBERTS 3:3     science 4:25 6:4      31:17 34:14        44:25 47:4        start 3:17 4:3 4:17 5:1,9          12:15,16 14:14     42:9 61:10        snippet 19:21        20:25 35:4,23 23:23,25 26:13     39:10,11,12,13     63:24,25         snipping 17:10      starting 40:16 26:21 27:24        40:1,2,5 51:8      sequenced 17:13     41:13 42:25       starts 4:6 21:1 33:1,7 41:2,6,9      51:18 59:11       sequences 31:2       60:23 61:4,12     States 1:1,13,20 42:10,23 43:4,8   scientific 25:4        35:20,21 37:9     solely 27:15          2:7 24:2 25:17 61:1,14,19         41:11 64:18       sequential 34:6     Solicitor 1:18        29:19 51:24 64:19 65:6        scientist 14:5       serious 34:24        42:5 51:3           64:9 65:5 rocks 57:10          17:22 18:1,3      set 22:16 32:13     somebody 5:3      statute 52:24 routine 4:25 5:8      21:8,16,17 22:2     32:14 37:5,5        14:21            statutory 60:13 6:3                40:7,10 61:16       56:20            someplace 48:11    step 25:16 rule 11:10,11         63:23            Shattuck 42:2      something's        stop 3:17 62:8,11
+
+58:2             scientists 12:25     shore 48:13          48:13              64:11 rules 32:13,14        13:17,19 22:1     showing 35:24      somewhat 20:12    story 41:23 run 49:20            25:7 38:4,15,16   shown 53:11,12     sorry 10:11        straightforward
+
+S
+
+40:6             shows 9:16 55:6      29:16 47:1,12       50:22
+
+score 42:5         shut 12:5 13:22       53:4             strand 38:10,10
+
+S 2:1 3:1           search 48:22      side 24:11 31:23    sort 29:10 34:4      41:21 salt 35:10,14       second 8:8 9:4      32:2 43:12 55:5    36:13,13,22     strength 52:3 36:9,15          secret 29:1        59:1            46:1 48:22      strictly 45:20 sample 16:22       secrets 3:14,22    significant 51:2    Sotomayor 5:24    strike 9:23 samples 42:8       section 27:8 34:1    62:12           10:19,25 11:3,7   striking 62:1 sap 49:12,14,17      42:19 51:4      similar 31:23       16:9,15,25 17:5   strong 19:8 saps 49:23           52:16 53:10       48:23           17:8 19:5,14,17   struck 10:17 satisfying 49:12      54:3,9,10 55:7    simple 46:11       24:14 26:12     structure 35:24 saving 60:24         55:9 56:21,23    simplistic 36:19     30:20 31:9,15    structured 28:17 saw 23:21,21         56:24,25 58:24     37:21           33:20 34:1,4,16   structures 52:21 saying 13:16       see 6:9 16:19      simply 6:8 7:15      34:19 35:7,9,18   stuff 14:25
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 75-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+76
+
+subject 6:2 29:21    swallow 7:15       test 5:25 27:8,9       50:21 52:4,12     true 8:25 15:21 30:21            sword 29:7,14        27:10,10 57:14     52:14,23 53:18     16:4 19:16 25:5 subjected 27:13     system 24:8 34:7     60:22              54:2,25,25         26:7,9,10 29:11 submissions                         testing 12:5,6        55:11 56:23        36:4 37:15 38:2
+
+38:23                   T        tests 6:1,2,3       57:16,19 58:20    38:5 46:19
+
+submit 27:11       T 2:1,1           27:22           58:21 60:2,17    truism 46:12 submitted 65:7,9    tag 20:9         thank 16:13        62:17 63:17,19   truly 18:20 subsidies 58:6      tagged 9:21        23:23,24 33:6,7    63:22 64:4 65:3   try 14:21 21:22 substance 7:2      tagging 9:16,17     37:2 61:18,19    thinking 34:8       25:8 27:22,23 21:11 27:12        10:8,9,13 20:16    61:24 65:6      thinks 63:2        30:16 44:24 30:11,14,18      tags 46:17        theory 52:14      thought 13:4,8      55:24
+
+33:5             take 6:24 17:23    therapeutic        15:18 20:6      trying 44:22 46:6 substantial 15:13     26:23 34:12,19     30:12,16,18       26:13 34:11       52:16 43:11 54:4         36:14 41:23       32:23           38:4 40:20      tube 60:22 substantially 8:7      42:15 43:24     therapeutically     47:17 49:3      turn 22:17 30:17 successful 59:14     44:12 51:15       30:18           54:19          two 3:14 8:6 9:4 59:15,15           52:5,9 56:16     thing 18:19 22:17   three 8:23 9:6,6     15:9 17:16 sudden 41:18        59:3 64:19        32:19,21 36:23     61:20           36:12 38:7 sufficient 15:8,8    taken 4:15 8:5      41:13 44:2,3,16   threshold 27:8      45:14,15 56:17 15:9,20 58:11       17:12 22:9        44:20 45:10,12   throw 34:9        two-edged 29:14 suggest 18:25        25:25 44:17       46:1 48:22,23    tie 33:4          tying 49:7 29:20              45:8,9           49:8 50:1,2,2     time 22:6,9 26:8    type 22:19,21 suggesting 56:8     takes 11:15,16      56:4,4,12 57:7     26:10 48:10       37:17 suggests 16:5        22:2 43:15,16      57:12,15 60:22     59:21,22 60:19   types 49:23 sun 57:5             43:20 46:11       64:23 65:4        64:21          typically 48:3 super-microsc...    talk 54:22        things 4:19 12:13   told 38:15
+
+18:11            talking 41:12       12:25 13:13,15   top 41:14              U support 23:8,17      43:5 48:18,20      13:21 14:13     totally 4:21       U 18:7,13,18 supported 51:8,8     54:8            20:19 26:16,16   Trademark       ultimately 35:6 supporting 1:20     taught 48:24       34:10 36:12       33:15           42:18 50:20 2:8 24:3          taxpayers 12:20     48:3 49:20      transformed 8:6     58:21 suppose 7:2          15:15           57:21 61:3        63:23          un 40:21 25:19,20,21      techniques 29:1    think 4:20 5:15     treat 49:16       understand 10:8 48:8             technologically     6:8 7:16 8:21     treatise 23:9       26:12 27:1,3 supposed 13:17      59:15           11:14 12:24     treatments 14:12    30:20 31:15 Supreme 1:1,13     technology 25:10    15:4,5,7,16,23    treats 7:6          32:16,18 38:3 sure 7:1 8:14         40:17           15:25 22:9      tree 7:15,24        42:24 45:11 14:24 15:11,12    tell 5:24 11:13      24:19,20 25:16     37:24 41:17       48:7 50:5 60:3 17:7 22:10         16:23 38:17       25:24 27:5        48:11           61:2 62:16 27:24 34:18        39:6,14 40:6,7     29:13,24 30:3,8   trees 48:10       understanding 35:19 41:8         40:9 51:6 58:17    31:6,12 32:16    tremendous 7:5     20:8,11 25:14 52:20 54:16       tells 40:11         38:22,22,24     tried 57:17         25:14,20,21 61:14            term 23:19 29:5     39:2 40:13      troubles 7:1        41:9,10 50:3 surrounded 25:2      50:15 59:1        43:22,23 44:22   troublesome       56:21,21 sustainable 31:3    terms 45:25        45:14,18 47:20     46:3           understood 37:7
+
+Alderson Reporting Company
+
+-----------------------------------------------------Page 76-----------------------------------------------------
+﻿
+Official - Subject to Final Review
+
+77
+
+45:19            utility 33:16        Washington 1:9     wouldn't 18:18       62:24 undifferentiated     50:15,17,20        1:19,22            26:17 30:1 43:2   150,000 32:1 40:22              51:1 53:3,12      wasn't 5:25 6:1       46:20            16 33:18 64:14 uneasy 49:5          54:4 58:16 59:8     6:16 20:7         write 16:21 36:5    1930 45:22 unfortunate                         watch 57:2           63:2
+
+49:19                   V        waves 48:12      written 31:3,10         2
+
+uniform 58:2       v 1:6 3:5 50:13     way 3:11 5:2,13    wrong 3:19 38:16   2 23:6 37:6,6 unit 54:21           51:19           5:16,16,20,21     39:5 40:5,8,11     41:24 42:14 United 1:1,13,19    vaccine 4:2        6:8 7:7,7 9:11      47:19          2001 50:20 51:1 2:7 24:2 25:17     valid 9:25         9:13 24:16                    2013 1:10 29:18 51:24       valuable 16:10      30:22 34:7            X        2107 51:4
+
+64:9 65:5           30:18           35:12 37:5 42:7   x 1:2,8          23 51:7
+
+unknown 7:8
+
+unlocked 3:14,22 unmanipulated
+
+45:24
+
+unnaturally
+
+21:21
+
+upheld 14:9 uphold 62:9
+
+upholding 62:1 uproot 44:13 uprooted 45:9 use 5:3,12,19 7:18 9:9 10:14 11:11 14:11
+
+16:7,8,11 21:10 21:13 23:19 24:10 25:11
+
+27:23 30:6,7,13 33:4 34:17
+
+35:15 37:21
+
+value 7:16 8:1 16:16,19 61:25 62:5
+
+values 57:18,20 variety 12:25 various 13:12 vast 57:11
+
+Verrilli 1:18 2:6 23:25 24:1,4,19 25:13,23 26:4,7 26:20 27:5 28:5 28:14 29:4,17 29:22,24 31:4 31:11,18 32:15
+
+32:24 33:2 35:1 whooping 4:2
+
+view 20:4 21:23
+
+26:5,15 29:10 49:4 50:8,10 violates 27:19 virus 48:4
+
+Y
+
+yeah 12:24 year 52:6
+
+years 33:13,14
+
+33:15,18 48:9 51:13 59:21 60:23
+
+York 1:16,16
+
+Z
+
+Zurko 51:19
+
+1
+
+1 22:15,16 37:5,7
+
+42:14 61:11
+
+10:04 1:14 3:2 100 60:23
+
+101 27:8 28:19 52:16,17 53:10 54:3,9 55:14,16
+
+24 2:8
+
+27 42:3
+
+282 42:15 61:11
+
+3
+
+3 2:4 37:4
+
+30-plus 52:6 31 33:14
+
+33 2:11 33:13 370 40:16
+
+4
+
+488 42:1
+
+5
+
+5 62:23
+
+5,914 37:3 50 49:23
+
+6
+
+6 62:23
+
+45:8 49:3,14,15 49:15 50:2,14
+
+53:2 64:21 65:1
+
+useful 20:19 30:11 40:24
+
+52:25 53:11,14 53:19 60:24
+
+uses 4:22 6:15 11:18,20 25:8 30:15 32:20 33:5 43:12
+
+45:13 53:6,6 usual 13:14
+
+W
+
+want 5:5 13:6,15
+
+13:17 18:22 19:21 22:14 23:15 24:21 32:17 37:16
+
+39:8 40:9 45:16 49:6 57:10
+
+wanted 31:7 wanting 55:2 wants 5:3,12 washed 48:13
+
+word 22:25 49:3 words 39:4 54:5 work 8:9,9 11:16
+
+11:23 12:21
+
+20:12 27:9,10 52:24 56:24
+
+world 13:2 34:22
+
+38:12 60:7
+
+worried 14:1
+
+49:7
+
+worry 11:21
+
+15:16,24
+
+worthwhile 13:14
+
+55:21 56:21,24 56:25 57:4 58:24
+
+102 54:10
+
+103 42:19 54:10 55:7,9,11 56:23
+
+103A 34:1 11:11 65:8
+
+12 33:15 51:13 12-398 1:5 3:4
+
+15 1:10 19:18,19
+
+30:23,24 31:1 31:16,17 62:19
+
+61 2:14
+
+Alderson Reporting Company
+
+48:2 49:15 54:7
+
+54:7 63:23 64:5
+
+ways 8:6 45:15
+
+45:15
+
+weren't 64:20
+
+We'll 3:3
+
+we're 10:16
+
+11:22 13:16
+
+24:20,20 31:12
+
+31:19 41:11
+
+43:5 49:7 54:8
+
+we've 37:20 57:5
+
+57:6 64:4
+
+wherewithal 32:9
+
+woman 6:7 16:21
+
+64:8
+
+women 40:25
+
+wonder 39:22
+
+wonderful 49:16
+
+-----------------------------------------------------Page 77-----------------------------------------------------

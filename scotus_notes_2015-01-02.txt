@@ -1,0 +1,67 @@
+docket 12-307 has 5 people arguing. Only 2 show up in the oral_roles object. All show up in the cutoffs. Fixed this.
+
+docket 11-218 is not found in the SCDB. I suspect this is because it and another case 10-930 were decided together.
+
+
+Here are the results when looking at the combination of who was interrupted the most and which side had more lawyers. 
+(most interrupted, most lawyers)
+('L', 'W') 22
+('L', 'L') 5
+('W', 'L') 11
+('W', 'W') 5
+('L', 'T') 38
+('W', 'T') 14
+('Res', 'T') 1
+('Other', 'L') 1
+('Other', 'T') 1
+-----------------
+right 65 wrong 33
+two_W 27 two_L 17
+
+Notice that if you say “whichever lawyer gets interrupted most represents the losing side” then you will be correct 65/(65+33) ~= 66% of the time. But if you condition on there being only two lawyers (second entry is ’T’), then you would be correct 38/(38+14) ~= 73% of the time. 
+
+When there is an amicus on behalf of one side, such as the Solicitor General, they typically take 10 minutes of the 30 minutes allotted to that side. So when the winning side has an amicus, you expect that the single lawyer should get interrupted more than either of the other two, and you are correct 22/(22+5) ~= 81%. When the losing side has the amicus is when you are really wrong: 5/(5+11) ~= 31%, since it is more likely that the   single lawyer (in this case the winner) will have been interrupted the most. 
+
+Note that when there is an amicus involved, simply saying “The side with the amicus will win” will be correct (22+5)/(22+5+11+5) ~= 62.7% of the time.
+
+You could consider the fact that there is an amicus by normalizing the interruption score by the time allotted. 
+
+P(lose|are pet, amicus for pet, res most interrupted) #best chance of victory
+= P(lose|res most interrupted)P(are pet, amicus for pet)
+
+I think a decision tree leads you to the conditional probability by sequentially conditioning on different possible criteria. you want P(x|a,b,c), so you find out that A=a, B=b, and C=c, the have the prob of x given those things.
+
+There are several older (2006 and earlier) cases where the lawyers are introduced without a period at the end of each sentence. I was using the period to find line separations. When I have seen such a file I had added periods and changed the filename to xxx_edit.txt
+
+There re several other problems with the pdf to text translation of the earlier cases. 2004 and possibly 2005 may not be very useable because of this. Or require some additional cleanup.
+
+
+
+2015-01-07
+
+I’ve done some work trying to clean up transcription errors. There are several instances in which the lawyers names are misspelled, leading to discrepancies between the dictionary keys. I’ve edited some of these manually. I’ve also refined the functions to do more checking.
+
+Transcript 10-7387 is a mess. I’m not sure why, but it did not convert from pdf very well. I’ve removed it from the 2011 folder and put it into the ‘useless’ folder.
+
+
+Using info on who gets the most words in seems not at all useful when the respondent has more lowyers (no difference, or too little power) more useful when petitioner has more lawyers, and most useful when they have the same number of lawyers. P(loq|are pet, tie lawyers, int most) != P(not loq|are pet, tie lawyers, int least)
+recall: P(win|pet) = 1- P(
+N(w,ptpp) / N(w,ptpp)+ N(w,rtpp) = P(w,p|t,p,p), prob that being a petitioner matters in this case.
+
+want P(win|pet,tie,inter more, more loq) vs P(win|pet,tie,inter more, less loq)
+N(w|ptpp) / N(w|ptpp) + N(w|ptpr) = P()
+
+
+N(w,ptpp) = N(l,rtpp) so we can just think of this as N(w,tpp) and N(l,tpp) thinking of ourselves always as the petitioner and knowing that our probability of loss is the respondents probability of win.
+
+Want P(w,loq|ptp) = N(w,ptpp) / N(w,ptpp) + N(w/ptpr)
+
+
+N(a1,b1) / N(a1,b1) + N(a1,b2) = P(b1|a1)
+
+P(w|loq) = N(w,loq) / N(w,loq) + N(w,!loq)
+P(w,ptp|loq) = N(w,ptpp) / N(w,ptpp) + N(w,ptpr)
+
+does N(w,ptpp) vs N(ptpr). If getting more words in it didn’t matter, then the proportion of wins given you are petitioner, tied, interrupted more, and say more
+
+you should win more when you say more than when you say less given that you have the same other conditions (are pet, tied, interrupted). This ratio should not be 0.5 

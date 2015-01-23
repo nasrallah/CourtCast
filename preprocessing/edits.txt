@@ -1,0 +1,111 @@
+
+## Notes on differences in transcripts
+- Justices speaking were not identified prior to 2004
+- indexes begin in 2006
+- 'Whereupon' seems to be the keyword at the end of each oral argument, but before 2010 grep seems to be able to not detect it. There are likely many non-ascii characters around the word that confuse grep. So using unix to remove the indexes will only work after the non-ascii characters have been removed.
+
+
+
+## Trying a few possible pipelines:
+
+## Pipeline 1
+tr -cd '\11\12\15\40-\176' < greece.txt > temp1.txt
+sed 's/[0-9]*//' temp1.txt > temp2.txt
+egrep -v 'Official|Alderson Reporting|\-\-\-\-\-\-' temp2.txt > temp3.txt
+grep -v '^.$' temp3.txt > temp4.txt 
+   ## This leaves a blank line occasionally, presumably at the page breaks.
+
+## Pipeline 2
+sed 's/[0-9]*//' greece.txt > temp1.txt
+egrep -v 'Official|Alderson Reporting|\-\-\-\-\-\-' temp1.txt > temp2.txt
+tr -cd '\11\12\15\40-\176' < temp2.txt > temp3.txt
+grep -v '^.$' temp3.txt > temp4.txt 
+   ## This reordering of commands doesn't help ad may actually create more such empty lines.
+
+*****
+## Pipeline 3
+LC_CTYPE=C tr -cd '\11\12\15\40-\176' < greece.txt > temp1.txt
+sed 's/[0-9]*//' temp1.txt > temp2.txt
+egrep -v 'Official|Alderson Reporting|\-\-\-\-\-\-' temp2.txt > temp3.txt
+grep '[[:graph:]]' temp3.txt > temp4.txt
+   ## This pathway seems to work pretty well.
+*****
+
+LC_CTYPE=C tr -cd '\11\12\15\40-\176' < greece.txt > temp1.txt
+
+
+OBJECTIVES
+----------
+
+(1) remove all non-ASCII characters
+
+    LC_CTYPE=C tr -cd '\11\12\15\40-\176' < file-with-binary-chars > clean-file
+
+## The 'LC_CTYPE=C' bit is because mac os x has some difficulty with certain non-ascii characters. tr would produce an "Illegal byte sequence" error without it on the transcripts prior to 2010.
+
+
+(2) remove all blank (white space) lines from file
+
+sed '/^\s*$/d' input.txt > output.txt   --> this should work but doesn't for some reason. I think '\s' is not supported in my version of unix or something.
+
+grep -v '^.$' input.txt > output.txt    --> I'm not exactly sure why this works, but it seems to. However there are a few blank lines still left near the top of each page. I wonder why. These few blank lines are removed if non-ASCII characters are first removed.
+
+***    grep '[[:graph:]]' input.txt > output.txt   --> This command searches for any line containing only visible characters. This is better I think than the other way of looking for lines containing a single unknown character.
+
+
+
+
+(3) remove all occurences of: 
+- all lines containing "Alderson Reporting Company"
+- all lines containing '-' *53
+- "Official - Subject to Final Review" or "Official - Subject to Review" or "Official"
+## careful here, as the word 'Official' may occur in text.
+## Note: these three things occur in blocks in that order. There may be a way to remove the whole blocks.
+
+## use egrep to find lines that do not match 'Official', 'Alderson Reporting', or '-----' and write those lines to a new file called temp. egrep must be used because of the 'or' piping.
+
+***   egrep -v 'Official|Alderson Reporting|\-\-\-\-\-\-' input.txt > output.txt
+
+## Something is wrong. This leaves a 'Ôªø' wherever a line was excised. Specifically, it leaves this mark when removing lines containing "Official," meaning at the start of each page of the pdf. This mark is called a type of "Byte Order Mark" to indicate something about how data is stored (the endianness: ordering of memory storage). I suspect that this is added to the beginning of each page either in the pdf construction, or more likely in the transfer from pdf to txt file. 
+
+I don't think this should interfere with any subsequent processing. At least in unix it shouldn't (grep and sed can't see this character). Hopefully it wont in python either.
+
+
+
+
+
+(4) remove all numeric characters (0-9)
+	** This will likely remove any references to numbers in the text, such as "see the quote on page 37" --> "see the quote on page"
+
+   sed 's/[0-9]*//g' input.txt > output.txt  --> removes all numbers (without * does this too)
+
+*** use this one:
+   sed 's/[0-9]*//' input.txt > output.txt  --> removes full number (e.g. 34) if at start of line but leaves internal numbers (e.g. see page 34)
+
+   sed 's/[0-9]//' input.txt > output.txt  --> removes first numeric character in each line (only removes 3 from 34), regardless of its position
+
+'*' is the 'zero or more times' character, so [0-9]* looks for a number of unspecified length. I think it only removes it at the beginning of lines b/c it means 0 or more, and when the first character of a line is not a number it skips that line. Once it has encountered a number, it processes it and moves to the next line.  Without the '*' it looks for the first occurrence of a numeric character on the line; since '0 or more' is not used, it keeps looking until it finds one. But it will only remove the first character: not the whole number or multiple in a line.
+
+The second of these (s/[0-9]*//) will remove only the first occurrence of a number in a line. This may be ideal for removing only the line numbers while leaving other references, such as case numbers and references in text to amounts.  
+
+
+
+- remove whole index at end
+	** The word 'whereupon' appears in parenthesis after the case has been submitted. This might be a way to remove everything afterwards. Or "above-entitled."  Wait, 'above-entitled' appears in the foreward as well. I could look for the last occurence of the word 'CHIEF' in all caps, as he would typically (always?) be the one to have the last word.
+	** Maybe I don't need to do this at all. If I'm using python to look for speakers and them being cut off, then I will ignore the index at the end of each file anyhow.
+
+
+What to do with all the capitals up front for the section headings?  "PROCEEDINGS," "ORAL ARGUMENT OF THOMAS G. HUNGAR ON BEHALF OF THE PETITIONER," etc.  I may want this to extract the names of the speakers.
+
+
+Scan to make sure all capital blocks are preceded by end of line character?
+Maybe look for ":" which denoted speaker beginning. Obtain the speaker from before and the speech from after.
+Careful though, b/c there is not always an appropriate end of line character, so more than one speaker may occur on the same line. It might be a useful step to insert an end of line character before each speaker.
+
+Look for occurences of "-" at end of line (or end of speaker phrase) to denote when someone has been cut off.
+
+
+
+But wait.  There are some issues with ordering correctly.  Some words are appearing in the wrong lines entirely, for seemingly no reason.  For example, compare the bottom of page 7 / top of page 8 in the pdf to the copy/paste txt file.  A few phrases are misplaced, and some rearranged to obscure the fact that the speaker was cut off.
+
+This was fixed by using a different way to convert from pdf to text file. The program pdftotext does a much better job than pdfminer did.
