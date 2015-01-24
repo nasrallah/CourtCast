@@ -403,9 +403,9 @@ def main():
             #print('winner:', winning_side)
             #### Assumes there is a singular maximum. 08-205 reargued was a tie. 
             
-            ## Classify interrupted side as 'Pet' or 'Res'. If tied, call it 'Res.'
+            ## Classify interrupted side as 'Pet' (1) or 'Res' (-1). If tied, call it 'Res' (-1)
             #print(side_cuts)
-            int_side = 'Pet' if side_cuts['Pet'] > side_cuts['Res'] else 'Res'
+            int_side = 1 if side_cuts['Pet'] > side_cuts['Res'] else -1
             
             ## If the the most interrupted person is on the losing side, call that right. Else wrong.
             #print(docket, cutoffs)
@@ -417,18 +417,12 @@ def main():
             ## See if there were more lawyers on winning/losing side
             num_pet = sides.values().count('Pet')
             num_res = sides.values().count('Res')
-            amicus_side = 'No'
+            ## Create variable -1/0/1 for Res/None/Pet
+            amicus_side = 0
             if num_pet > num_res:
-                amicus_side = 'Pet'
+                amicus_side = 1
             elif num_pet < num_res:
-                amicus_side = 'Res'
-            
-            ## Try to figure out why the totals differ between using the most-interrupted-lawyer and most-interrupted-side when the number of lawyers is tied. It does not seem to be that the most interrupted lawyer is on the losing side when the number of lawyers is tied.
-            #if int_side == 'Tie':
-                #print('\ndocket:',docket)
-                #print('winner:', winning_side)
-                #for x in sides: print(x, sides[x], cutoffs[x])                 
-                #for x in side_cuts: print(x, side_cuts[x])            
+                amicus_side = -1          
             
             feature_key = (winning_side, amicus_side, int_side)
             #cases[docket] = feature_key
@@ -451,8 +445,8 @@ def main():
         print(f,factors[f])
     
     ## Define a few lists of labels for the different features
-    amicus_labels = ['Pet', 'No', 'Res']
-    interrupt_labels = ['Pet', 'Res']
+    amicus_labels = [1,0,-1]
+    interrupt_labels = [-1, 1]
     
     print('\nResults:\n', '_'*30)
     print('(winning_side, amicus_side, most_interrupted_side)') 
