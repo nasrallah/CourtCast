@@ -63,7 +63,7 @@ def get_SCDB_info(infile):
         if docket not in d:
             d[docket] = {}
             d[docket]['caseName'] = caseName
-            d[docket]['winner'] = winner
+            d[docket]['partyWinning'] = winner
             d[docket]['majVotes'] = majority_votes
             d[docket]['minVotes'] = minority_votes                   
     f.close()
@@ -437,8 +437,8 @@ def main():
                 case_features[docket]['amicus'] = amicus_side 
                 case_features[docket]['interrupted'] = int_side
                 #case_features[docket]['feature_key'] = feature_key
-                ## don't need to store the winning party since we took this from SCDB            
-                case_features[docket]['winning_side'] = winning_side
+                ## convert winning_side into -1/1
+                case_features[docket]['winner'] = 1 if winning_side == 'Pet' else -1
 
     
     for f in factors:
@@ -505,9 +505,9 @@ def main():
         ## get the prob the petitioner wins given these features. Note DataFrames typically index by column then row. .loc switches this.
         prob = P_pet_wins.loc[amicus, inter]
         ## get my prediction of who would have won (if > or < 0.5)
-        prediction = 'Pet' if prob > 0.5 else 'Res'
+        prediction = 1 if prob > 0.5 else -1
         ## Am I correct?
-        correct = 1 if prediction == case_features[docket]['winning_side'] else 0
+        correct = 1 if prediction == case_features[docket]['winner'] else 0
         ## Add these things to the case_features dictionary
         case_features[docket]['prediction'] = prediction
         case_features[docket]['confidence'] = prob
@@ -517,7 +517,7 @@ def main():
     ## Convert the case_features into a DataFrame and join with the info from SCDB
     case_features = pd.DataFrame.from_dict(case_features, orient='index')
     case_features = case_features.join(case_info,how='inner')
-    case_features.drop('winning_side', axis=1, inplace=True)
+    case_features.drop('partyWinning', axis=1, inplace=True)
     #print(case_features)
  
     print('p(correct) = ', case_features.correct.mean() )
