@@ -331,7 +331,7 @@ def count_cutoffs_and_words(text):
 def main():
 
     ## Define the years we want to analyze
-    first_year = '2013'
+    first_year = '2005'
     last_year = '2013'
 
     ## Get the main directory in which each years' cases are stored
@@ -391,8 +391,8 @@ def main():
             
             ## Print some stuff about this case
             print('\ndocket:',docket)
-            for x in sides: print(x, sides[x], cutoffs[x]) 
-            for x in outcomes: print(x, outcomes[x]) 
+            #for x in sides: print(x, sides[x], cutoffs[x]) 
+            #for x in outcomes: print(x, outcomes[x]) 
             #for c in cutoffs: print('\t', c, cutoffs[c])
             #for w in ind_phrases: print(w, sum(ind_phrases[w]))
             #for w in words: print(w, words[w])
@@ -404,10 +404,12 @@ def main():
                     words_to_sides[j] = {'Pet':0,'Res':0}
                     for lawyer in sides:
                         if lawyer in words[j]:
-                            words_to_sides[j][sides[lawyer]] += words[j][lawyer]
+                            if sides[lawyer] in ['Pet','Res']:
+                                words_to_sides[j][sides[lawyer]] += words[j][lawyer]
+            ## Convert to a DataFrame and calculate normalized word score
             words_to_sides = pd.DataFrame.from_dict(words_to_sides, orient='index')
             words_to_sides['score'] = (words_to_sides.Res - words_to_sides.Pet) / (words_to_sides.Res + words_to_sides.Pet)
-            
+            words_to_sides.replace(to_replace=float('inf'),value=0.0, inplace=True)
             print(words_to_sides)
             
             ## Create dictionary keyed by side with value the total interruptions of all lawyers on that side
@@ -457,8 +459,9 @@ def main():
                 #case_features[docket]['feature_key'] = feature_key
                 ## convert winning_side into -1/1
                 case_features[docket]['winner'] = 1 if winning_side == 'Pet' else -1
-                for j in words_to_sides.index.values:
-                    case_features[docket]['words_%s' % j] = words_to_sides.score[j]
+#                for j in words_to_sides.index.values:
+                for j in ['BREYER', 'GINSBURG', 'KENNEDY', 'ROBERTS', 'SCALIA']:
+                    case_features[docket]['words_%s' % j] = words_to_sides.score[j] if j in words_to_sides.index.values else 0
     
     for f in factors:
         print(f,factors[f])
