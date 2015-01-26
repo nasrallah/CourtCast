@@ -145,6 +145,7 @@ def main():
     print('Test Accuracy:', svm_fit.score(X_train, y_train))
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_train, svm_pred_self))
 
+
     
 if __name__ == '__main__':
     main()
