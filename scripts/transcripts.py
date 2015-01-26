@@ -390,7 +390,7 @@ def main():
             cutoffs, ind_phrases, words = count_cutoffs_and_words(text)
             
             ## Print some stuff about this case
-            print('\ndocket:',docket)
+            #print('\ndocket:',docket)
             #for x in sides: print(x, sides[x], cutoffs[x]) 
             #for x in outcomes: print(x, outcomes[x]) 
             #for c in cutoffs: print('\t', c, cutoffs[c])
@@ -410,7 +410,7 @@ def main():
             words_to_sides = pd.DataFrame.from_dict(words_to_sides, orient='index')
             words_to_sides['score'] = (words_to_sides.Res - words_to_sides.Pet) / (words_to_sides.Res + words_to_sides.Pet)
             words_to_sides.replace(to_replace=float('inf'),value=0.0, inplace=True)
-            print(words_to_sides)
+            #print(words_to_sides)
             
             ## Create dictionary keyed by side with value the total interruptions of all lawyers on that side
             side_cuts = {}
@@ -525,15 +525,15 @@ def main():
         inter = case_features[docket]['interrupted']
         #print(docket, amicus, inter)
         ## get the prob the petitioner wins given these features. Note DataFrames typically index by column then row. .loc switches this.
-        prob = P_pet_wins.loc[amicus, inter]
-        ## get my prediction of who would have won (if > or < 0.5)
-        prediction = 1 if prob > 0.5 else -1
-        ## Am I correct?
-        correct = 1 if prediction == case_features[docket]['winner'] else 0
-        ## Add these things to the case_features dictionary
-        case_features[docket]['prediction'] = prediction
-        case_features[docket]['confidence'] = prob
-        case_features[docket]['correct'] = correct
+#         prob = P_pet_wins.loc[amicus, inter]
+#         ## get my prediction of who would have won (if > or < 0.5)
+#         prediction = 1 if prob > 0.5 else -1
+#         ## Am I correct?
+#         correct = 1 if prediction == case_features[docket]['winner'] else 0
+#         ## Add these things to the case_features dictionary
+#         case_features[docket]['toy_prediction'] = prediction
+#         case_features[docket]['toy_confidence'] = prob
+#         case_features[docket]['toy_correct'] = correct
 
  
     ## Convert the case_features into a DataFrame and join with the info from SCDB
@@ -543,7 +543,7 @@ def main():
     case_features.sort(axis=1, inplace=True)
     #print(case_features)
  
-    print('p(correct) = ', case_features.correct.mean() )
+#    print('p(correct) = ', case_features.toy_correct.mean() )
 
     outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/feature_table.txt'
     case_features.to_csv(outfile, sep='\t')

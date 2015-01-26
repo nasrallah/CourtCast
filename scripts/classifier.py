@@ -152,10 +152,18 @@ def main():
     ## along with the case features as a database_table to put into mysql
     RF_final_predictions = RF_fit.predict(X)
     RF_final_probabilities = RF_fit.predict_proba(X)
+    ## Get max of each probability tuple
     RF_final_probabilities = np.apply_along_axis(max, arr=RF_final_probabilities,axis=1)
-    d_rest.drop('prediction', axis=1, inplace=True)  ## probably just remove these from the transcripts.py output instead of manually here. Same w/probs.
-    d_rest['prediction'] = RF_final_predictions
-    d_rest['probability'] = RF_final_probabilities
+    ## Drop old columns (fix this) and add new ones
+    #d_rest.drop('prediction', axis=1, inplace=True)  ## probably just remove these from the transcripts.py output instead of manually here. Same w/probs.
+    #d_rest.drop('confidence', axis=1, inplace=True)  ## probably just remove these from the transcripts.py output instead of manually here. Same w/probs.
+    #d_rest['prediction'] = RF_final_predictions
+    #d_rest['confidence'] = RF_final_probabilities
+
+    d_rest['prediction'] = pd.Series(RF_final_predictions, index=d_rest.index)
+    d_rest['confidence'] = pd.Series(RF_final_probabilities, index=d_rest.index)
+    ## Produces a warning b/c d_rest is a copy of d, so the warning is that d isn't being modified.
+    ## Doesn't really need to be a pd.Series...can just be: d_rest['prediction'] = RF_final_predictions
 
     outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/database_table.txt'
     d_rest.to_csv(outfile, sep='\t')
