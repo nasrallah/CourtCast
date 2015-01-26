@@ -67,6 +67,11 @@ def main():
     RF = RandomForestClassifier(n_estimators=100)
     RF_fit = RF.fit(X_train,y_train)
     RF_pred = RF_fit.predict(X_test)
+    RF_prob = RF_fit.predict_proba(X_test)
+
+    ## Classification probabilities
+    print('RF Prediction probabilities:')
+    for i,j in zip(RF_pred,RF_prob): print(i,j)
 
     ## Feature importances are helpful
     print('\n\tRF feature_importances:', RF_fit.feature_importances_)
@@ -109,7 +114,15 @@ def main():
     my_svm = svm.SVC(C=0.2, kernel='linear', probability=True)
     svm_fit = my_svm.fit(X_train, y_train)
     svm_pred = svm_fit.predict(X_test)
+    svm_prob = svm_fit.predict_proba(X_test)
+    svm_dist = svm_fit.decision_function(X_test)
     #SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0, degree=3, gamma=0.0, kernel='rbf', max_iter=-1, probability=False, random_state=None, shrinking=True, tol=0.001, verbose=False)
+
+    ## Classification probabilities
+    print('SVM Prediction probabilities:')
+    for i,j,k in zip(svm_pred, svm_prob, svm_dist): print(i,j,k)    
+
+
 
     print(metrics.classification_report(y_test, svm_pred))
     print(metrics.confusion_matrix(y_test, svm_pred))
@@ -122,6 +135,12 @@ def main():
     
     #print(my_svm.predict([[-1, 1]]))
 
+    ## Predict outcomes of the training data to see if do much better than cv data (overfitting)
+    svm_pred_self = svm_fit.predict(X_train)
+    print(metrics.classification_report(y_train, svm_pred_self))
+    print(metrics.confusion_matrix(y_train, svm_pred_self))
+    print('Test Accuracy:', svm_fit.score(X_train, y_train))
+    print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_train, svm_pred_self))
 
     
 if __name__ == '__main__':
