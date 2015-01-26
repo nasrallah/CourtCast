@@ -86,27 +86,27 @@ def main():
     #print(RF.transform(X))
 
     ##################### Decision Tree #####################
-    print('\nDecision Tree analyses:')
-    DT = tree.DecisionTreeClassifier(max_depth=None, min_samples_split=1, random_state=0)
-    DT_fit = DT.fit(X_train, y_train)
-    DT_pred = DT_fit.predict(X_test)
-
-    print(metrics.classification_report(y_test, DT_pred))
-    print(metrics.confusion_matrix(y_test, DT_pred))
-    print('Test Accuracy:', DT_fit.score(X_test,y_test))
-    print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_test, DT_pred))
-   
-    DT_scores = cross_val_score(DT, X, y, cv=5, scoring=mc_scorer)
-    print('\nCross-validation scores:', DT_scores)
-    print("CV Avg Matthews CC: %0.2f (+/- %0.2f)" % (DT_scores.mean(), DT_scores.std() * 2))    
-    print('-'*20)
-
-    #tree.export_graphviz(DT, out_file='tree.dot', feature_names=feature_names, max_depth=5) 
+#     print('\nDecision Tree analyses:')
+#     DT = tree.DecisionTreeClassifier(max_depth=None, min_samples_split=1, random_state=0)
+#     DT_fit = DT.fit(X_train, y_train)
+#     DT_pred = DT_fit.predict(X_test)
+# 
+#     print(metrics.classification_report(y_test, DT_pred))
+#     print(metrics.confusion_matrix(y_test, DT_pred))
+#     print('Test Accuracy:', DT_fit.score(X_test,y_test))
+#     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_test, DT_pred))
+#    
+#     DT_scores = cross_val_score(DT, X, y, cv=5, scoring=mc_scorer)
+#     print('\nCross-validation scores:', DT_scores)
+#     print("CV Avg Matthews CC: %0.2f (+/- %0.2f)" % (DT_scores.mean(), DT_scores.std() * 2))    
+#     print('-'*20)
+# 
+#     #tree.export_graphviz(DT, out_file='tree.dot', feature_names=feature_names, max_depth=5) 
 
 
     ##################### SVM #####################
     print('\nSVM analyses:')
-    my_svm = svm.SVC(kernel='rbf', probability=True)
+    my_svm = svm.SVC(C=0.2, kernel='linear', probability=True)
     svm_fit = my_svm.fit(X_train, y_train)
     svm_pred = svm_fit.predict(X_test)
     #SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0, degree=3, gamma=0.0, kernel='rbf', max_iter=-1, probability=False, random_state=None, shrinking=True, tol=0.001, verbose=False)

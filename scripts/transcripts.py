@@ -235,14 +235,7 @@ def get_winning_lawyers(lawyers, winning_side):
     return outcomes
 
 
-def count_cutoffs_and_words(text): 
-    ''' This function parses the oral arguments. It identifies when someone has been cut off (-,--)
-        and counts both the number of these occurrences and the words spoken before another speaker begins,
-        whether they stopped talking due to interruption or not.
-        The function takes the oral transcript text as input and returns 2 dictionaries:
-        - one with key last name and value the number of times they were cut off
-        - one with key last name and value a list of the number of words spoken before stopping talking.
-    '''   
+def get_argument_portion(text):
     ## Get just the argument portion of the transcript
     start = text.find('P R O C E E D')
     if start == -1:
@@ -255,8 +248,19 @@ def count_cutoffs_and_words(text):
     if any(x == -1 for x in [start,end]):
         print('\n*** There was a problem finding the oral argument section')
         print(start,end)
-    #print(start,end)
-    arg_text = text[start:end]
+    return text[start:end]
+
+
+def count_cutoffs_and_words(text): 
+    ''' This function parses the oral arguments. It identifies when someone has been cut off (-,--)
+        and counts both the number of these occurrences and the words spoken before another speaker begins,
+        whether they stopped talking due to interruption or not.
+        The function takes the oral transcript text as input and returns 2 dictionaries:
+        - one with key last name and value the number of times they were cut off
+        - one with key last name and value a list of the number of words spoken before stopping talking.
+    '''   
+    ## get just the argument portion of the text
+    arg_text = get_argument_portion(text)
     
     ## A dictionary to store the word counts for each speaking turn for all speakers
     cutoffs = {}
@@ -320,7 +324,7 @@ def count_cutoffs_and_words(text):
 #         for j in words[i]:
 #             print('\t', j, words[i][j])
 
-    return cutoffs, phrases
+    return cutoffs, phrases, words
 
 
 
@@ -383,15 +387,31 @@ def main():
             outcomes = get_winning_lawyers(sides, winning_side)
              
             ## Analyze the oral argument text for the number of cutoffs and the sentence length distributions
-            cutoffs, ind_phrases = count_cutoffs_and_words(text)
+            cutoffs, ind_phrases, words = count_cutoffs_and_words(text)
             
             ## Print some stuff about this case
-            #print('\ndocket:',docket)
+            print('\ndocket:',docket)
             #for x in sides: print(x, sides[x], cutoffs[x]) 
             #for x in outcomes: print(x, outcomes[x]) 
             #for c in cutoffs: print('\t', c, cutoffs[c])
             #for w in ind_phrases: print(w, sum(ind_phrases[w]))
+            #for w in words: print(w, words[w])
 
+            ## For each speaker, if that speaker is not a lawyer, sum across al lawyers on each side the words spoken to them.
+            words_to_sides = {}                    
+            for j in words:
+                if j not in sides:
+                    words_to_sides[j] = {'Pet':0,'Res':0}
+                    for lawyer in sides:
+                        if lawyer in words[j]:
+                            if sides[lawyer] in ['Pet','Res']:
+                                words_to_sides[j][sides[lawyer]] += words[j][lawyer]
+            ## Convert to a DataFrame and calculate normalized word score
+            words_to_sides = pd.DataFrame.from_dict(words_to_sides, orient='index')
+            words_to_sides['score'] = (words_to_sides.Res - words_to_sides.Pet) / (words_to_sides.Res + words_to_sides.Pet)
+            words_to_sides.replace(to_replace=float('inf'),value=0.0, inplace=True)
+            print(words_to_sides)
+            
             ## Create dictionary keyed by side with value the total interruptions of all lawyers on that side
             side_cuts = {}
             for v in sides.values():
@@ -439,7 +459,9 @@ def main():
                 #case_features[docket]['feature_key'] = feature_key
                 ## convert winning_side into -1/1
                 case_features[docket]['winner'] = 1 if winning_side == 'Pet' else -1
-
+#                for j in words_to_sides.index.values:
+                for j in ['BREYER', 'GINSBURG', 'KENNEDY', 'ROBERTS', 'SCALIA']:
+                    case_features[docket]['words_%s' % j] = words_to_sides.score[j] if j in words_to_sides.index.values else 0
     
     for f in factors:
         print(f,factors[f])
@@ -518,6 +540,7 @@ def main():
     case_features = pd.DataFrame.from_dict(case_features, orient='index')
     case_features = case_features.join(case_info,how='inner')
     case_features.drop('partyWinning', axis=1, inplace=True)
+    case_features.sort(axis=1, inplace=True)
     #print(case_features)
  
     print('p(correct) = ', case_features.correct.mean() )
