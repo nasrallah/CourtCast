@@ -146,6 +146,21 @@ def main():
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_train, svm_pred_self))
 
 
+    #### ******* To DO: Do this for ALL cases, including gold set. - predict X_gold, save all d not just d_rest *******
+
+
+    ## Once I've picked a model, test all cases and save the predictions and probabilities
+    ## along with the case features as a database_table to put into mysql
+    RF_final_predictions = RF_fit.predict(X)
+    RF_final_probabilities = RF_fit.predict_proba(X)
+    RF_final_probabilities = np.apply_along_axis(max, arr=RF_final_probabilities,axis=1)
+    d_rest.drop('prediction', axis=1, inplace=True)  ## probably just remove these from the transcripts.py output instead of manually here. Same w/probs.
+    d_rest['prediction'] = RF_final_predictions
+    d_rest['probability'] = RF_final_probabilities
+
+    outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/database_table.txt'
+    d_rest.to_csv(outfile, sep='\t')
+    
     
 if __name__ == '__main__':
     main()
