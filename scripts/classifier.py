@@ -148,7 +148,6 @@ def main():
 
     #### ******* To DO: Do this for ALL cases, including gold set. - predict X_gold, save all d not just d_rest *******
 
-
     ## Once I've picked a model, test all cases and save the predictions and probabilities
     ## along with the case features as a database_table to put into mysql
     RF_final_predictions = RF_fit.predict(X)
