@@ -8,7 +8,7 @@ from sklearn import svm
 from sklearn.cross_validation import train_test_split, cross_val_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import tree
-import pymysql as mdb
+#import pymysql as mdb
 import numpy as np
 import pandas as pd
 
@@ -17,11 +17,14 @@ import pandas as pd
 
 def main():
 
-    db = mdb.connect(user="root", host="localhost", db="scotus", charset='utf8')
-    d = pd.read_sql("""SELECT docket, interrupted, amicus, words_BREYER, words_GINSBURG, 
-        words_KENNEDY, words_ROBERTS, words_SCALIA, winner 
-        FROM cases ORDER BY docket;""", con=db)
+#    db = mdb.connect(user="root", host="localhost", db="scotus", charset='utf8')
+#    d = pd.read_sql("""SELECT docket, interrupted, amicus, words_BREYER, words_GINSBURG, 
+#        words_KENNEDY, words_ROBERTS, words_SCALIA, winner 
+#        FROM cases ORDER BY docket;""", con=db)
 
+
+    infile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/feature_table.txt'
+    d = pd.read_csv(infile, sep='\t', index_col=0)
     
     feature_names = ['amicus', 'interrupted', 'words_BREYER', 'words_GINSBURG', 'words_KENNEDY', 'words_ROBERTS', 'words_SCALIA']
 #    feature_names = ['amicus','interrupted', 'words_KENNEDY']
@@ -67,7 +70,7 @@ def main():
     RF = RandomForestClassifier(n_estimators=100)
     RF_fit = RF.fit(X_train,y_train)
     RF_pred = RF_fit.predict(X_test)
-    RF_prob = RF_fit.predict_proba(X_test)
+    RF_prob = RF_fit.predict_proba(X_test)      ## Average outcome of all trees
 
     ## Classification probabilities
     print('RF Prediction probabilities:')
@@ -114,8 +117,8 @@ def main():
     my_svm = svm.SVC(C=0.2, kernel='linear', probability=True)
     svm_fit = my_svm.fit(X_train, y_train)
     svm_pred = svm_fit.predict(X_test)
-    svm_prob = svm_fit.predict_proba(X_test)
-    svm_dist = svm_fit.decision_function(X_test)
+    svm_prob = svm_fit.predict_proba(X_test)            ## Class probabilities, based on log regression on distance to hyperplane.
+    svm_dist = svm_fit.decision_function(X_test)        ## Distance from hyperplane for each point
     #SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0, degree=3, gamma=0.0, kernel='rbf', max_iter=-1, probability=False, random_state=None, shrinking=True, tol=0.001, verbose=False)
 
     ## Classification probabilities

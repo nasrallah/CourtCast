@@ -545,7 +545,7 @@ def main():
  
     print('p(correct) = ', case_features.correct.mean() )
 
-    outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/database_table.txt'
+    outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/feature_table.txt'
     case_features.to_csv(outfile, sep='\t')
 
 
