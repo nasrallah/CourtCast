@@ -436,12 +436,12 @@ def main():
             side_cuts = cutoffs_to_sides[['Pet','Res']].apply(sum, axis=0)
             #print(side_cuts)
 
+            ## Get the difference in cutoffs between the two sides. Also a binary indicating which side was most interrupted.
+            side_cuts_diff = side_cuts.Res - side_cuts.Pet
+            int_side = 1 if side_cuts_diff < 0 else 0
+            
             #print('winner:', winning_side)
             #### Assumes there is a singular maximum. 08-205 reargued was a tie. 
-            
-            ## Classify interrupted side as 'Pet' (1) or 'Res' (-1). If tied, call it 'Res' (-1)
-            #print(side_cuts)
-            int_side = 1 if side_cuts['Pet'] > side_cuts['Res'] else -1
             
             ## If the the most interrupted person is on the losing side, call that right. Else wrong.
             #print(docket, cutoffs)
@@ -454,12 +454,8 @@ def main():
             num_pet = sides.values().count('Pet')
             num_res = sides.values().count('Res')
             ## Create variable -1/0/1 for Res/None/Pet
-            amicus_side = 0
-            if num_pet > num_res:
-                amicus_side = 1
-            elif num_pet < num_res:
-                amicus_side = -1          
-            
+            amicus_side = 1 if num_pet > num_res else -1 if num_pet < num_res else 0
+
             feature_key = (winning_side, amicus_side, int_side)
             #cases[docket] = feature_key
             if feature_key not in factors:
@@ -471,8 +467,7 @@ def main():
             if docket not in case_features:
                 case_features[docket] = {}
                 case_features[docket]['amicus'] = amicus_side 
-                case_features[docket]['interrupted'] = int_side
-                #case_features[docket]['feature_key'] = feature_key
+                case_features[docket]['cutoffs_ALL'] = side_cuts_diff
                 ## convert winning_side into 0/1
                 case_features[docket]['winner'] = 1 if winning_side == 'Pet' else 0
 #                for j in words_to_sides.index.values:
@@ -535,12 +530,12 @@ def main():
     print('P(Pet wins|cond):')
     print(P_pet_wins)
     
-    ## For each case and its features, get the prob the Pet wins, make a prediction, and see if it is right. Store these.
-    for docket in case_features:
-        amicus = case_features[docket]['amicus']
-        inter = case_features[docket]['interrupted']
-        #print(docket, amicus, inter)
-        ## get the prob the petitioner wins given these features. Note DataFrames typically index by column then row. .loc switches this.
+#     ## For each case and its features, get the prob the Pet wins, make a prediction, and see if it is right. Store these.
+#     for docket in case_features:
+#         amicus = case_features[docket]['amicus']
+#         inter = case_features[docket]['interrupted']
+#         #print(docket, amicus, inter)
+#         ## get the prob the petitioner wins given these features. Note DataFrames typically index by column then row. .loc switches this.
 #         prob = P_pet_wins.loc[amicus, inter]
 #         ## get my prediction of who would have won (if > or < 0.5)
 #         prediction = 1 if prob > 0.5 else -1
