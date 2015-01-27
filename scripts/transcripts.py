@@ -457,8 +457,8 @@ def main():
                 case_features[docket]['amicus'] = amicus_side 
                 case_features[docket]['interrupted'] = int_side
                 #case_features[docket]['feature_key'] = feature_key
-                ## convert winning_side into -1/1
-                case_features[docket]['winner'] = 1 if winning_side == 'Pet' else -1
+                ## convert winning_side into 0/1
+                case_features[docket]['winner'] = 1 if winning_side == 'Pet' else 0
 #                for j in words_to_sides.index.values:
                 for j in ['BREYER', 'GINSBURG', 'KENNEDY', 'ROBERTS', 'SCALIA']:
                     case_features[docket]['words_%s' % j] = words_to_sides.score[j] if j in words_to_sides.index.values else 0
