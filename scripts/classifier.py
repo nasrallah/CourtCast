@@ -17,39 +17,25 @@ import pandas as pd
 
 def main():
 
-#    db = mdb.connect(user="root", host="localhost", db="scotus", charset='utf8')
-#    d = pd.read_sql("""SELECT docket, interrupted, amicus, words_BREYER, words_GINSBURG, 
-#        words_KENNEDY, words_ROBERTS, words_SCALIA, winner 
-#        FROM cases ORDER BY docket;""", con=db)
-
-
     infile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/feature_table.txt'
-    d = pd.read_csv(infile, sep='\t', index_col=0)
-    
-    feature_names = ['amicus', 'interrupted', 'words_BREYER', 'words_GINSBURG', 'words_KENNEDY', 'words_ROBERTS', 'words_SCALIA']
-## After adding the word counts, removing amicus seems to improve the estimates.
-## Interruptions do not have high feature weight (0.029) but removing them lowers precision, recall, and F1 across the board. 
-## Kennedy's words carry the least weight among the justices, indicating that perhaps his speech is the least predictive of the outcome. Doesn't reveal much. That is IF the order is preserved...
 
+    ## Kennedy's words carry low weight among the justices, indicating that perhaps his speech is the least predictive of the outcome. Doesn't reveal much. That is IF the order is preserved...
+    feature_names = ['amicus', 'cutoffs_ALL', 'cutoffs_BREYER', 'cutoffs_GINSBURG', 'cutoffs_KENNEDY', 'cutoffs_ROBERTS', 'cutoffs_SCALIA', 'words_BREYER', 'words_GINSBURG', 'words_KENNEDY', 'words_ROBERTS', 'words_SCALIA']
+    #print(feature_names)
 
-
-
-    print(feature_names)
-
-    print(d.shape)
+    ## get the feature table and partition into a 'gold' testing set and a training set (rest)
+    d = pd.read_csv(infile, sep='\t', index_col=0)    
+    #print(d.head())
+    #print(d.shape)
     d_gold_start = int(d.shape[0] * 0.8)
     d_gold = d.iloc[d_gold_start:]
     d_rest = d.iloc[:d_gold_start]
-    #print(d.head())
 
-
-
-
-
+    ## Get a numpy ndarray X (2d) of the case features and the labels y (1d) for the non-gold set
     X = d_rest[feature_names].values.astype(np.float)    
     y = preprocessing.LabelEncoder().fit_transform(d_rest.winner)
     
-    ## Split into training and testing sets
+    ## Split this into training and testing sets
 #    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)    
 
     ## Ensure the same split occurs every time we run the program, for now, to compare methods and hyperparameters
@@ -72,11 +58,12 @@ def main():
     RF_prob = RF_fit.predict_proba(X_test)      ## Average outcome of all trees
 
     ## Classification probabilities
-    print('RF Prediction probabilities:')
-    for i,j in zip(RF_pred,RF_prob): print(i,j)
+    #print('RF Prediction probabilities:')
+    #for i,j in zip(RF_pred,RF_prob): print(i,j)
 
     ## Feature importances are helpful
-    print('\n\tRF feature_importances:', RF_fit.feature_importances_)
+    print('RF feature_importances:')
+    for i, j in zip(feature_names, RF_fit.feature_importances_): print(i,j)
     
     print(metrics.classification_report(y_test, RF_pred))
     print(metrics.confusion_matrix(y_test, RF_pred))
@@ -84,7 +71,7 @@ def main():
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_test, RF_pred))
     
     RF_scores = cross_val_score(RF, X, y, cv=5, scoring=mc_scorer)
-    print('\nCross-validation scores:', RF_scores)
+    #print('\nCross-validation scores:', RF_scores)
     print("CV Avg Matthews CC: %0.2f (+/- %0.2f)" % (RF_scores.mean(), RF_scores.std() * 2))    
     print('-'*20)
     ## Transform removes the lower-importance features from the dataset and returns a trimmed input dataset. 
@@ -121,10 +108,8 @@ def main():
     #SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0, degree=3, gamma=0.0, kernel='rbf', max_iter=-1, probability=False, random_state=None, shrinking=True, tol=0.001, verbose=False)
 
     ## Classification probabilities
-    print('SVM Prediction probabilities:')
-    for i,j,k in zip(svm_pred, svm_prob, svm_dist): print(i,j,k)    
-
-
+    #print('SVM Prediction probabilities:')
+    #for i,j,k in zip(svm_pred, svm_prob, svm_dist): print(i,j,k)    
 
     print(metrics.classification_report(y_test, svm_pred))
     print(metrics.confusion_matrix(y_test, svm_pred))
@@ -132,7 +117,7 @@ def main():
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_test, svm_pred))
     
     SVM_scores = cross_val_score(my_svm, X, y, cv=5, scoring=mc_scorer)
-    print('\nCross-validation scores:', SVM_scores)
+    #print('\nCross-validation scores:', SVM_scores)
     print("CV Avg Matthews CC: %0.2f (+/- %0.2f)" % (SVM_scores.mean(), SVM_scores.std() * 2))    
     
     #print(my_svm.predict([[-1, 1]]))
