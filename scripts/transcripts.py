@@ -478,7 +478,7 @@ def main():
 #                for j in words_to_sides.index.values:
                 for j in ['BREYER', 'GINSBURG', 'KENNEDY', 'ROBERTS', 'SCALIA']:
                     case_features[docket]['words_%s' % j] = words_to_sides.score[j] if j in words_to_sides.index.values else 0
-    
+                    case_features[docket]['cutoffs_%s' % j] = cutoffs_to_sides.score[j] if j in cutoffs_to_sides.index.values else 0
     for f in factors:
         print(f,factors[f])
     
