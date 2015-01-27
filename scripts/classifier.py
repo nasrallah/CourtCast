@@ -27,7 +27,6 @@ def main():
     d = pd.read_csv(infile, sep='\t', index_col=0)
     
     feature_names = ['amicus', 'interrupted', 'words_BREYER', 'words_GINSBURG', 'words_KENNEDY', 'words_ROBERTS', 'words_SCALIA']
-#    feature_names = ['amicus','interrupted', 'words_KENNEDY']
 ## After adding the word counts, removing amicus seems to improve the estimates.
 ## Interruptions do not have high feature weight (0.029) but removing them lowers precision, recall, and F1 across the board. 
 ## Kennedy's words carry the least weight among the justices, indicating that perhaps his speech is the least predictive of the outcome. Doesn't reveal much. That is IF the order is preserved...

@@ -290,7 +290,7 @@ def count_cutoffs_and_words(text):
                     if speaker not in words:
                         words[speaker] = {}
                         phrases[speaker] = []
-                        cutoffs[speaker] = 0
+                        cutoffs[speaker] = {}
                     #print('old speaker:', speaker) 	
                     ## Process the data for the speaker	who just stopped talking
                     if potential_speaker not in words[speaker]:
@@ -298,7 +298,9 @@ def count_cutoffs_and_words(text):
                     words[speaker][potential_speaker] += word_count
                     phrases[speaker].append(word_count)
                     if prev_line_last_word[-1] == '-':
-                        cutoffs[speaker] += 1
+                        if potential_speaker not in cutoffs[speaker]:
+                            cutoffs[speaker][potential_speaker] = 0
+                        cutoffs[speaker][potential_speaker] += 1
                     
 				## reset the word count
                 word_count = 0	
@@ -397,7 +399,7 @@ def main():
             #for w in ind_phrases: print(w, sum(ind_phrases[w]))
             #for w in words: print(w, words[w])
 
-            ## For each speaker, if that speaker is not a lawyer, sum across al lawyers on each side the words spoken to them.
+            ## For each speaker, if that speaker is not a lawyer, sum across all lawyers on each side the words spoken to them.
             words_to_sides = {}                    
             for j in words:
                 if j not in sides:
@@ -411,15 +413,29 @@ def main():
             words_to_sides['score'] = (words_to_sides.Res - words_to_sides.Pet) / (words_to_sides.Res + words_to_sides.Pet)
             words_to_sides.replace(to_replace=float('inf'),value=0.0, inplace=True)
             #print(words_to_sides)
-            
-            ## Create dictionary keyed by side with value the total interruptions of all lawyers on that side
-            side_cuts = {}
-            for v in sides.values():
-                side_cuts[v] = 0
-            for x in sides:
-                if x in cutoffs:
-                    side_cuts[sides[x]] += cutoffs[x]
-            #for x in side_cuts: print(x, side_cuts[x])
+
+            cutoffs_to_sides = {}                    
+            for lawyer in cutoffs:
+                if lawyer in sides:
+                    this_side = sides[lawyer]
+                    if this_side in ['Pet','Res']:
+                        if this_side not in cutoffs_to_sides:
+                            cutoffs_to_sides[this_side] = {}
+                        for justice in cutoffs[lawyer]:
+                            if justice not in cutoffs_to_sides[this_side]:
+                                cutoffs_to_sides[this_side][justice] = 0
+                            cutoffs_to_sides[this_side][justice] += cutoffs[lawyer][justice]
+            ## Convert to a DataFrame and calculate normalized word score
+            cutoffs_to_sides = pd.DataFrame.from_dict(cutoffs_to_sides, orient='columns')
+            cutoffs_to_sides.replace(to_replace=float('NaN'),value=0.0, inplace=True)            
+            cutoffs_to_sides['score'] = (cutoffs_to_sides.Res - cutoffs_to_sides.Pet) / (cutoffs_to_sides.Res + cutoffs_to_sides.Pet)
+            cutoffs_to_sides.replace(to_replace=float('inf'),value=0.0, inplace=True)
+            #print(cutoffs_to_sides)
+                        
+            ## Get total interruptions of either side
+            side_cuts = cutoffs_to_sides[['Pet','Res']].apply(sum, axis=0)
+            #print(side_cuts)
+
             #print('winner:', winning_side)
             #### Assumes there is a singular maximum. 08-205 reargued was a tie. 
             
@@ -429,10 +445,10 @@ def main():
             
             ## If the the most interrupted person is on the losing side, call that right. Else wrong.
             #print(docket, cutoffs)
-            most_interrupted = max(cutoffs.iteritems(), key=operator.itemgetter(1))[0]
-            #print('most interrupted:', most_interrupted)
-            if most_interrupted not in outcomes:
-                print(docket, 'most_interrupted', most_interrupted, outcomes[most_interrupted])       
+#             most_interrupted = max(cutoffs.iteritems(), key=operator.itemgetter(1))[0]
+#             #print('most interrupted:', most_interrupted)
+#             if most_interrupted not in outcomes:
+#                 print(docket, 'most_interrupted', most_interrupted, outcomes[most_interrupted])       
 
             ## See if there were more lawyers on winning/losing side
             num_pet = sides.values().count('Pet')
