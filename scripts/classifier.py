@@ -185,13 +185,13 @@ def main():
     #d_rest['prediction'] = RF_final_predictions
     #d_rest['confidence'] = RF_final_probabilities
 
-#     d_rest['prediction'] = pd.Series(RF_final_predictions, index=d_rest.index)
-#     d_rest['confidence'] = pd.Series(RF_final_probabilities, index=d_rest.index)
-#     ## Produces a warning b/c d_rest is a copy of d, so the warning is that d isn't being modified.
-#     ## Doesn't really need to be a pd.Series...can just be: d_rest['prediction'] = RF_final_predictions
-# 
-#     outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/database_table.txt'
-#     d_rest.to_csv(outfile, sep='\t')
+    d_rest['prediction'] = pd.Series(RF_final_predictions, index=d_rest.index)
+    d_rest['confidence'] = pd.Series(RF_final_probabilities, index=d_rest.index)
+    ## Produces a warning b/c d_rest is a copy of d, so the warning is that d isn't being modified.
+    ## Doesn't really need to be a pd.Series...can just be: d_rest['prediction'] = RF_final_predictions
+
+    outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/database_table.txt'
+    d_rest.to_csv(outfile, sep='\t')
     
     
 if __name__ == '__main__':

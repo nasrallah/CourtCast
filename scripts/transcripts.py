@@ -78,6 +78,9 @@ def get_SCDB_info(infile):
         reargDate = sl[reargdatecol]
         if reargDate != 'NA':
             argDate = reargDate
+        ## If we still don't have an argument date, just use the decision date
+        if argDate == 'NA':
+            argDate = decDate
         argYear, argMonth = get_year_and_month(argDate)
 
         if docket not in d:
@@ -500,79 +503,65 @@ def main():
                 for j in ['BREYER', 'GINSBURG', 'KENNEDY', 'ROBERTS', 'SCALIA']:
                     case_features[docket]['words_%s' % j] = words_to_sides.score[j] if j in words_to_sides.index.values else 0
                     case_features[docket]['cutoffs_%s' % j] = cutoffs_to_sides.score[j] if j in cutoffs_to_sides.index.values else 0
-    for f in factors:
-        print(f,factors[f])
-    
-    ## Define a few lists of labels for the different features
-    amicus_labels = [1,0,-1]
-    interrupt_labels = [-1, 1]
-    
-    print('\nResults:\n', '_'*30)
-    print('(winning_side, amicus_side, most_interrupted_side)') 
-    for h in ['Pet', 'Res']:
-        for i in amicus_labels:
-            for j in interrupt_labels:
-                    t = (h,i,j)
-                    if t in factors:
-                        print(t, factors[t])
-                    else:
-                        print(t, '?')
-        print()
 
-    p = np.empty(0)
-    for i in amicus_labels:
-        for j in interrupt_labels:
-            t = ('Pet',i,j)
-            if t in factors:
-                p = np.append(p,factors[t])
-            else:
-                p = np.append(p,0)
-    
-    r = np.empty(0)
-    for i in amicus_labels:
-        for j in interrupt_labels:
-            t = ('Res',i,j)
-            if t in factors:
-                r = np.append(r,factors[t])
-            else:
-                r = np.append(r,0)
- 
-    ## Number of petitioner wins,respondent wins, and total cases for each feature combination
-    print('N(w,cond):', p)
-    print('N(l,cond):', r)
-    print('N(cond)', p+r)
-    print()
-    ## Number of correct guesses for each feature combination
-    N_correct = [max(p[i],r[i]) for i in range(len(p))]
-    print('N(correct|cond)', N_correct)
-    print('P(correct|cond)', N_correct/(p+r))
-    print()
-    ## Marginal probability the petitioner wins
-    P_correct = sum(N_correct) / (sum(p) + sum(r))
-    print('Marginal P(correct) = ', P_correct)
-    print()
-    ## Probability the petitioner wins given features
-    P_pet_wins = pd.DataFrame(np.reshape(p/(p+r), (3,2)), index = amicus_labels, columns = interrupt_labels)
-    print('P(Pet wins|cond):')
-    print(P_pet_wins)
-    
-#     ## For each case and its features, get the prob the Pet wins, make a prediction, and see if it is right. Store these.
-#     for docket in case_features:
-#         amicus = case_features[docket]['amicus']
-#         inter = case_features[docket]['interrupted']
-#         #print(docket, amicus, inter)
-#         ## get the prob the petitioner wins given these features. Note DataFrames typically index by column then row. .loc switches this.
-#         prob = P_pet_wins.loc[amicus, inter]
-#         ## get my prediction of who would have won (if > or < 0.5)
-#         prediction = 1 if prob > 0.5 else -1
-#         ## Am I correct?
-#         correct = 1 if prediction == case_features[docket]['winner'] else 0
-#         ## Add these things to the case_features dictionary
-#         case_features[docket]['toy_prediction'] = prediction
-#         case_features[docket]['toy_confidence'] = prob
-#         case_features[docket]['toy_correct'] = correct
 
- 
+#     for f in factors:
+#         print(f,factors[f])
+#     
+#     ## Define a few lists of labels for the different features
+#     amicus_labels = [1,0,-1]
+#     interrupt_labels = [-1, 1]
+#     
+#     print('\nResults:\n', '_'*30)
+#     print('(winning_side, amicus_side, most_interrupted_side)') 
+#     for h in ['Pet', 'Res']:
+#         for i in amicus_labels:
+#             for j in interrupt_labels:
+#                     t = (h,i,j)
+#                     if t in factors:
+#                         print(t, factors[t])
+#                     else:
+#                         print(t, '?')
+#         print()
+# 
+#     p = np.empty(0)
+#     for i in amicus_labels:
+#         for j in interrupt_labels:
+#             t = ('Pet',i,j)
+#             if t in factors:
+#                 p = np.append(p,factors[t])
+#             else:
+#                 p = np.append(p,0)
+#     
+#     r = np.empty(0)
+#     for i in amicus_labels:
+#         for j in interrupt_labels:
+#             t = ('Res',i,j)
+#             if t in factors:
+#                 r = np.append(r,factors[t])
+#             else:
+#                 r = np.append(r,0)
+#  
+#     ## Number of petitioner wins,respondent wins, and total cases for each feature combination
+#     print('N(w,cond):', p)
+#     print('N(l,cond):', r)
+#     print('N(cond)', p+r)
+#     print()
+#     ## Number of correct guesses for each feature combination
+#     N_correct = [max(p[i],r[i]) for i in range(len(p))]
+#     print('N(correct|cond)', N_correct)
+#     print('P(correct|cond)', N_correct/(p+r))
+#     print()
+#     ## Marginal probability the petitioner wins
+#     P_correct = sum(N_correct) / (sum(p) + sum(r))
+#     print('Marginal P(correct) = ', P_correct)
+#     print()
+#     ## Probability the petitioner wins given features
+#     P_pet_wins = pd.DataFrame(np.reshape(p/(p+r), (3,2)), index = amicus_labels, columns = interrupt_labels)
+#     print('P(Pet wins|cond):')
+#     print(P_pet_wins)
+    
+
     ## Convert the case_features into a DataFrame and join with the info from SCDB
     case_features = pd.DataFrame.from_dict(case_features, orient='index')
     case_features = case_features.join(case_info,how='inner')
