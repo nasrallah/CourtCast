@@ -53,6 +53,11 @@ def get_SCDB_info(infile):
     wcol = header.index('partyWinning')
     majcol = header.index('majVotes')
     mincol = header.index('minVotes')
+    issuecol = header.index('issueArea')
+    decdatecol = header.index('dateDecision')
+    argdatecol = header.index('dateArgument')
+    reargdatecol = header.index('dateRearg')
+    
     for line in f:
         sl = line.split('\t')
         docket = sl[dcol]
@@ -60,12 +65,20 @@ def get_SCDB_info(infile):
         winner = 'Pet' if sl[wcol] == '1' else 'Res'
         majority_votes = sl[majcol]
         minority_votes = sl[mincol]
+        decDate = sl[decdatecol]        ## Change to datetime object?
+        argDate = sl[argdatecol]        ## same
+        reargDate = sl[reargdatecol]
+        if reargDate != 'NA':
+            argDate = reargDate
+            
         if docket not in d:
             d[docket] = {}
             d[docket]['caseName'] = caseName
             d[docket]['partyWinning'] = winner
             d[docket]['majVotes'] = majority_votes
-            d[docket]['minVotes'] = minority_votes                   
+            d[docket]['minVotes'] = minority_votes 
+            d[docket]['decDate'] = decDate
+            d[docket]['argDate'] = argDate                  
     f.close()
     return pd.DataFrame.from_dict(d,orient='index')
 
