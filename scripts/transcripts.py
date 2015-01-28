@@ -18,6 +18,7 @@
 ## 2015-01-05 changed pattern matching for finding names of lawyers to allow for whitespace after '.' before '\n'
 
 from __future__ import division, print_function
+import datetime
 import numpy as np
 import pandas as pd
 import operator
@@ -36,6 +37,13 @@ def was_cut_off(w):
 	if w in ['-','--']:
 		return True
 	return False
+
+def get_year_and_month(datestring):
+    if datestring != 'NA':
+        argYear, argMonth, argDay = datestring.split('-')
+        return argYear, argMonth
+    else:
+        return 'NA', 'NA'
 
 
 def get_SCDB_info(infile):
@@ -70,15 +78,20 @@ def get_SCDB_info(infile):
         reargDate = sl[reargdatecol]
         if reargDate != 'NA':
             argDate = reargDate
-            
+        argYear, argMonth = get_year_and_month(argDate)
+
         if docket not in d:
             d[docket] = {}
             d[docket]['caseName'] = caseName
             d[docket]['partyWinning'] = winner
             d[docket]['majVotes'] = majority_votes
             d[docket]['minVotes'] = minority_votes 
+            d[docket]['argDate'] = argDate  
             d[docket]['decDate'] = decDate
-            d[docket]['argDate'] = argDate                  
+            d[docket]['argMonth'] = argMonth  
+            d[docket]['argYear'] = argYear 
+
+                        
     f.close()
     return pd.DataFrame.from_dict(d,orient='index')
 
