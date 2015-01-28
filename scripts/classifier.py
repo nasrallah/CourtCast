@@ -8,7 +8,6 @@ from sklearn import svm
 from sklearn.cross_validation import train_test_split, cross_val_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import tree
-#import pymysql as mdb
 import numpy as np
 import pandas as pd
 
@@ -52,7 +51,7 @@ def main():
 
     ##################### Random Forest #####################
     print('\nRandom Forest analyses:')   
-    RF = RandomForestClassifier(n_estimators=100)
+    RF = RandomForestClassifier(n_estimators=50)
     RF_fit = RF.fit(X_train,y_train)
     RF_pred = RF_fit.predict(X_test)
     RF_prob = RF_fit.predict_proba(X_test)      ## Average outcome of all trees
@@ -99,6 +98,9 @@ def main():
 
 
     ##################### SVM #####################
+
+#### class_weight='auto'
+
     print('\nSVM analyses:')
     my_svm = svm.SVC(C=0.2, kernel='linear', probability=True)
     svm_fit = my_svm.fit(X_train, y_train)
@@ -130,6 +132,45 @@ def main():
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_train, svm_pred_self))
 
 
+
+    ##################### Logistic Regression #####################
+
+
+    print('\nLR analyses:')
+    from sklearn.linear_model import LogisticRegression
+    # Train
+    LR = LogisticRegression(penalty='l2',C=1.0, fit_intercept=True)
+    LR_fit = LR.fit(X_train, y_train) 
+
+
+    LR_pred = LR_fit.predict(X_test)
+    LR_prob = LR_fit.predict_proba(X_test)            ## Class probabilities, based on log regression on distance to hyperplane.
+
+
+
+    print(metrics.classification_report(y_test, LR_pred))
+    print(metrics.confusion_matrix(y_test, LR_pred))
+    print('Test Accuracy:', LR_fit.score(X_test,y_test))
+    print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_test, LR_pred))
+    
+    LR_scores = cross_val_score(LR_fit, X, y, cv=5, scoring=mc_scorer)
+    #print('\nCross-validation scores:', LR_scores)
+    print("CV Avg Matthews CC: %0.2f (+/- %0.2f)" % (LR_scores.mean(), LR_scores.std() * 2))    
+    
+    #print(LR_fit.predict([[-1, 1]]))
+
+    ## Predict outcomes of the training data to see if do much better than cv data (overfitting)
+    LR_pred_self = LR_fit.predict(X_train)
+    print(metrics.classification_report(y_train, LR_pred_self))
+    print(metrics.confusion_matrix(y_train, LR_pred_self))
+    print('Test Accuracy:', LR_fit.score(X_train, y_train))
+    print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_train, LR_pred_self))
+
+
+
+
+
+
     #### ******* To DO: Do this for ALL cases, including gold set. - predict X_gold, save all d not just d_rest *******
 
     ## Once I've picked a model, test all cases and save the predictions and probabilities
@@ -144,13 +185,13 @@ def main():
     #d_rest['prediction'] = RF_final_predictions
     #d_rest['confidence'] = RF_final_probabilities
 
-    d_rest['prediction'] = pd.Series(RF_final_predictions, index=d_rest.index)
-    d_rest['confidence'] = pd.Series(RF_final_probabilities, index=d_rest.index)
-    ## Produces a warning b/c d_rest is a copy of d, so the warning is that d isn't being modified.
-    ## Doesn't really need to be a pd.Series...can just be: d_rest['prediction'] = RF_final_predictions
-
-    outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/database_table.txt'
-    d_rest.to_csv(outfile, sep='\t')
+#     d_rest['prediction'] = pd.Series(RF_final_predictions, index=d_rest.index)
+#     d_rest['confidence'] = pd.Series(RF_final_probabilities, index=d_rest.index)
+#     ## Produces a warning b/c d_rest is a copy of d, so the warning is that d isn't being modified.
+#     ## Doesn't really need to be a pd.Series...can just be: d_rest['prediction'] = RF_final_predictions
+# 
+#     outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/database_table.txt'
+#     d_rest.to_csv(outfile, sep='\t')
     
     
 if __name__ == '__main__':
