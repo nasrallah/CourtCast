@@ -296,7 +296,8 @@ def count_cutoffs_and_words(text, sides):
     	
     ## Initialize some variables
     word_count = 0
-    speaker = "" 
+    cur_phrase = ''
+    speaker = ''
     arguing_side = 'Pet'
     for line in arg_text.split('\n'):
         line = line.strip()
@@ -330,7 +331,7 @@ def count_cutoffs_and_words(text, sides):
                     if speaker not in justice_questions:
                         justice_questions[speaker] = {'Pet':'','Res':''}
                     if arguing_side in ['Pet','Res']:
-                        justice_questions[speaker][arguing_side] += split_colon[1]                    
+                        justice_questions[speaker][arguing_side] += ' ' + cur_phrase                    
                     ## Process the data for the speaker	who just stopped talking
                     if potential_speaker not in words[speaker]:
                         words[speaker][potential_speaker] = 0
@@ -343,16 +344,20 @@ def count_cutoffs_and_words(text, sides):
                     
 				## reset the word count
                 word_count = 0	
+                cur_phrase = ''
 				## update the speaker
                 speaker = potential_speaker
 				## Add the rest of this line to the word count
                 if len(split_colon[1]) > 0:
                     word_count += count_words(split_colon[1])
+                    cur_phrase += ' ' + split_colon[1]
 			## if whatever precedes a maybe-existent colon is not all uppercase, it is speech. Add it to the running total.
             else:
                 word_count += count_words(line)
+                cur_phrase += ' ' + line
         else:
             word_count += count_words(line)
+            cur_phrase += ' ' + line
         ## store the last word of this line. If the next line is a new speaker, we will use it to see if this speaker was interrupted.
         prev_line_last_word = line.split()[-1]
         #print(prev_line_last_word)
@@ -372,7 +377,7 @@ def count_cutoffs_and_words(text, sides):
 def main():
 
     ## Define the years we want to analyze
-    first_year = '2005'
+    first_year = '2013'
     last_year = '2013'
 
     ## Get the main directory in which each years' cases are stored
@@ -438,7 +443,10 @@ def main():
             #for c in cutoffs: print('\t', c, cutoffs[c])
             #for w in ind_phrases: print(w, sum(ind_phrases[w]))
             #for w in words: print(w, words[w])
-
+            for j in justice_questions:
+                for s in ['Pet','Res']:
+                    #print(j, s, justice_questions[j][s])
+                    print(j, s)
             ## For each speaker, if that speaker is not a lawyer, sum across all lawyers on each side the words spoken to them.
             words_to_sides = {}                    
             for j in words:
@@ -516,62 +524,9 @@ def main():
                     case_features[docket]['cutoffs_%s' % j] = cutoffs_to_sides.score[j] if j in cutoffs_to_sides.index.values else 0
 
 
-#     for f in factors:
-#         print(f,factors[f])
-#     
-#     ## Define a few lists of labels for the different features
-#     amicus_labels = [1,0,-1]
-#     interrupt_labels = [-1, 1]
-#     
-#     print('\nResults:\n', '_'*30)
-#     print('(winning_side, amicus_side, most_interrupted_side)') 
-#     for h in ['Pet', 'Res']:
-#         for i in amicus_labels:
-#             for j in interrupt_labels:
-#                     t = (h,i,j)
-#                     if t in factors:
-#                         print(t, factors[t])
-#                     else:
-#                         print(t, '?')
-#         print()
-# 
-#     p = np.empty(0)
-#     for i in amicus_labels:
-#         for j in interrupt_labels:
-#             t = ('Pet',i,j)
-#             if t in factors:
-#                 p = np.append(p,factors[t])
-#             else:
-#                 p = np.append(p,0)
-#     
-#     r = np.empty(0)
-#     for i in amicus_labels:
-#         for j in interrupt_labels:
-#             t = ('Res',i,j)
-#             if t in factors:
-#                 r = np.append(r,factors[t])
-#             else:
-#                 r = np.append(r,0)
-#  
-#     ## Number of petitioner wins,respondent wins, and total cases for each feature combination
-#     print('N(w,cond):', p)
-#     print('N(l,cond):', r)
-#     print('N(cond)', p+r)
-#     print()
-#     ## Number of correct guesses for each feature combination
-#     N_correct = [max(p[i],r[i]) for i in range(len(p))]
-#     print('N(correct|cond)', N_correct)
-#     print('P(correct|cond)', N_correct/(p+r))
-#     print()
-#     ## Marginal probability the petitioner wins
-#     P_correct = sum(N_correct) / (sum(p) + sum(r))
-#     print('Marginal P(correct) = ', P_correct)
-#     print()
-#     ## Probability the petitioner wins given features
-#     P_pet_wins = pd.DataFrame(np.reshape(p/(p+r), (3,2)), index = amicus_labels, columns = interrupt_labels)
-#     print('P(Pet wins|cond):')
-#     print(P_pet_wins)
-    
+
+
+
 
     ## Convert the case_features into a DataFrame and join with the info from SCDB
     case_features = pd.DataFrame.from_dict(case_features, orient='index')
@@ -582,10 +537,12 @@ def main():
  
 #    print('p(correct) = ', case_features.toy_correct.mean() )
 
-    outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/feature_table.txt'
-    case_features.to_csv(outfile, sep='\t')
+    feature_outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/feature_table.txt'
+    case_features.to_csv(feature_outfile, sep='\t')
 
-
+    ## Output the justice speech to different files
+    for j in ['JUSTICE BREYER', 'JUSTICE GINSBURG', 'JUSTICE KENNEDY', 'CHIEF JUSTICE ROBERTS', 'JUSTICE SCALIA']:
+        for 
 
 if __name__ == '__main__':
     main()
