@@ -6,7 +6,6 @@ from sklearn import preprocessing
 from sklearn import metrics
 from sklearn import svm
 from sklearn.cross_validation import train_test_split, cross_val_score
-from sklearn.ensemble import RandomForestClassifier
 from sklearn import tree
 import numpy as np
 import pandas as pd

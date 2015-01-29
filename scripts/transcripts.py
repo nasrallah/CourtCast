@@ -383,7 +383,7 @@ def purge_dir(dir):
 def main():
 
     ## Define the years we want to analyze
-    first_year = '2013'
+    first_year = '2012'
     last_year = '2013'
 
     ## Get the main directory in which each years' cases are stored
@@ -554,13 +554,14 @@ def main():
     
     ## Output the justice speech to different files
     for j in ['JUSTICE BREYER', 'JUSTICE GINSBURG', 'JUSTICE KENNEDY', 'CHIEF JUSTICE ROBERTS', 'JUSTICE SCALIA']:
-        last_name = j.split()[-1]
         for s in ['Pet','Res']:
             num = '1' if s == 'Pet' else '0'
-            speech_file = q_dir + 'questions_' + last_name + '_' + num + '.txt'  
+            speech_file = q_dir + 'questions_' + j.split()[-1] + '_' + num + '.txt'  
             with open(speech_file, 'a') as f:
                 for docket in all_speech:
-                    f.write(docket + ' +++$+++ ' + all_speech[docket][j][s] + '\n')            
-
+                    if j in all_speech[docket] and s in all_speech[docket][j]:
+                        f.write(docket + ' +++$+++ ' + all_speech[docket][j][s] + '\n')            
+                    else:
+                        f.write(docket + ' +++$+++ ' + ' ' + '\n')
 if __name__ == '__main__':
     main()
