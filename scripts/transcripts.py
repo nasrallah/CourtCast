@@ -374,6 +374,12 @@ def count_cutoffs_and_words(text, sides):
 
 
 
+
+def purge_dir(dir):
+    for file in os.listdir(dir):
+    	os.remove(os.path.join(dir, file))
+
+
 def main():
 
     ## Define the years we want to analyze
@@ -387,6 +393,8 @@ def main():
     factors = {}
     ## Define a dictionary for all cases properties. Key is the docket, Values will be other dictionaries.
     case_features = {}
+    ## Define a dictionary for the speech for each case. Key is docket. Value is dictionary of {speaker:{side:speech}}
+    all_speech = {}
     scdb_file = '/Users/nasrallah/Desktop/Insight/scotus_predict/data/SCDB/SCDB_2014_01_justiceCentered_Citation_tab.txt'
     case_info = get_SCDB_info(scdb_file)
     winner_dict = get_docket_winners(scdb_file)
@@ -443,10 +451,11 @@ def main():
             #for c in cutoffs: print('\t', c, cutoffs[c])
             #for w in ind_phrases: print(w, sum(ind_phrases[w]))
             #for w in words: print(w, words[w])
-            for j in justice_questions:
-                for s in ['Pet','Res']:
-                    #print(j, s, justice_questions[j][s])
-                    print(j, s)
+            #for j in justice_questions:
+            #    for s in ['Pet','Res']:
+            #        #print(j, s, justice_questions[j][s])
+            #        print(j, s)
+            
             ## For each speaker, if that speaker is not a lawyer, sum across all lawyers on each side the words spoken to them.
             words_to_sides = {}                    
             for j in words:
@@ -510,7 +519,6 @@ def main():
                 factors[feature_key] = 0
             factors[feature_key] += 1
 
-            #print(docket, feature_key)
             
             if docket not in case_features:
                 case_features[docket] = {}
@@ -522,9 +530,9 @@ def main():
                 for j in ['BREYER', 'GINSBURG', 'KENNEDY', 'ROBERTS', 'SCALIA']:
                     case_features[docket]['words_%s' % j] = words_to_sides.score[j] if j in words_to_sides.index.values else 0
                     case_features[docket]['cutoffs_%s' % j] = cutoffs_to_sides.score[j] if j in cutoffs_to_sides.index.values else 0
-
-
-
+            ## Add the dictionary of speech to the 
+            if docket not in all_speech:
+                all_speech[docket] = dict.copy(justice_questions)
 
 
 
@@ -535,14 +543,24 @@ def main():
     case_features.sort(axis=1, inplace=True)
     #print(case_features)
  
-#    print('p(correct) = ', case_features.toy_correct.mean() )
 
     feature_outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/feature_table.txt'
     case_features.to_csv(feature_outfile, sep='\t')
 
+    ## directory to write question files
+    q_dir = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/questions/'
+    ## Purge the directory of question files from previous runs
+    purge_dir(q_dir)
+    
     ## Output the justice speech to different files
     for j in ['JUSTICE BREYER', 'JUSTICE GINSBURG', 'JUSTICE KENNEDY', 'CHIEF JUSTICE ROBERTS', 'JUSTICE SCALIA']:
-        for 
+        last_name = j.split()[-1]
+        for s in ['Pet','Res']:
+            num = '1' if s == 'Pet' else '0'
+            speech_file = q_dir + 'questions_' + last_name + '_' + num + '.txt'  
+            with open(speech_file, 'a') as f:
+                for docket in all_speech:
+                    f.write(docket + ' +++$+++ ' + all_speech[docket][j][s] + '\n')            
 
 if __name__ == '__main__':
     main()
