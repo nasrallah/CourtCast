@@ -18,7 +18,6 @@
 ## 2015-01-05 changed pattern matching for finding names of lawyers to allow for whitespace after '.' before '\n'
 
 from __future__ import division, print_function
-import datetime
 import numpy as np
 import pandas as pd
 import operator
@@ -93,8 +92,6 @@ def get_SCDB_info(infile):
             d[docket]['decDate'] = decDate
             d[docket]['argMonth'] = argMonth  
             d[docket]['argYear'] = argYear 
-
-                        
     f.close()
     return pd.DataFrame.from_dict(d,orient='index')
 
@@ -280,7 +277,7 @@ def get_argument_portion(text):
     return text[start:end]
 
 
-def count_cutoffs_and_words(text): 
+def count_cutoffs_and_words(text, sides): 
     ''' This function parses the oral arguments. It identifies when someone has been cut off (-,--)
         and counts both the number of these occurrences and the words spoken before another speaker begins,
         whether they stopped talking due to interruption or not.
@@ -295,10 +292,12 @@ def count_cutoffs_and_words(text):
     cutoffs = {}
     words = {}
     phrases = {}
+    justice_questions = {}
     	
     ## Initialize some variables
     word_count = 0
     speaker = "" 
+    arguing_side = 'Pet'
     for line in arg_text.split('\n'):
         line = line.strip()
         #print(line)
@@ -309,18 +308,29 @@ def count_cutoffs_and_words(text):
             #print(potential_speaker)
             ## Use only the last name of the speaker, because there is at least one instance of MR. X vs M R. X
             if potential_speaker != '':
+                if 'JUSTICE' not in potential_speaker:
                     potential_speaker = potential_speaker.split()[-1]
             ## If everything preceding a colon is all uppercase, we have a new speaker
             if potential_speaker.isupper():
                 #print('potential speaker:', potential_speaker)	
                 ## score the last entry if necessary
                 if speaker != '' and potential_speaker != speaker:
+                    ## Check to see if we have changed argumentation sides
+                    if potential_speaker in sides:
+                        if sides[potential_speaker] != arguing_side:
+                            arguing_side = sides[potential_speaker]
+                            #print(speaker, potential_speaker, arguing_side)
                     ## If a new speaker, initialize containers
                     if speaker not in words:
                         words[speaker] = {}
                         phrases[speaker] = []
                         cutoffs[speaker] = {}
                     #print('old speaker:', speaker) 	
+                    ## Add the speech to the right asker
+                    if speaker not in justice_questions:
+                        justice_questions[speaker] = {'Pet':'','Res':''}
+                    if arguing_side in ['Pet','Res']:
+                        justice_questions[speaker][arguing_side] += split_colon[1]                    
                     ## Process the data for the speaker	who just stopped talking
                     if potential_speaker not in words[speaker]:
                         words[speaker][potential_speaker] = 0
@@ -355,7 +365,7 @@ def count_cutoffs_and_words(text):
 #         for j in words[i]:
 #             print('\t', j, words[i][j])
 
-    return cutoffs, phrases, words
+    return cutoffs, phrases, words, justice_questions
 
 
 
@@ -391,10 +401,11 @@ def main():
             
             ## Change all pesky 'McGREGOR' 'McCONNELL and DiNARDO to all caps
             text = re.sub(r'[DM][aci]c*[A-Z]+', lambda pat: pat.group().upper(), text)
+#            test = re.sub(r'M R', r'MR', text)
             
             ## Find the docket number from the text file to look up the votes in the SCDB using the 'docket' column
             docket = find_docket_number(text)
-            #print('\ndocket:',docket)
+            print('\ndocket:',docket)
             if docket in case_features:
                 print(docket,'appears multiple times')
                 #continue   ## The second one encountered is likely a re-argument, and is probably the more useful one to examine, so let's replace the first one.
@@ -418,7 +429,7 @@ def main():
             outcomes = get_winning_lawyers(sides, winning_side)
              
             ## Analyze the oral argument text for the number of cutoffs and the sentence length distributions
-            cutoffs, ind_phrases, words = count_cutoffs_and_words(text)
+            cutoffs, ind_phrases, words, justice_questions = count_cutoffs_and_words(text, sides)
             
             ## Print some stuff about this case
             #print('\ndocket:',docket)
