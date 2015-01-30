@@ -383,7 +383,7 @@ def purge_dir(dir):
 def main():
 
     ## Define the years we want to analyze
-    first_year = '2012'
+    first_year = '2005'
     last_year = '2013'
 
     ## Get the main directory in which each years' cases are stored
@@ -558,7 +558,8 @@ def main():
             num = '1' if s == 'Pet' else '0'
             speech_file = q_dir + 'questions_' + j.split()[-1] + '_' + num + '.txt'  
             with open(speech_file, 'a') as f:
-                for docket in all_speech:
+                for docket in case_features.index:    ## for ordering correctly
+                    #print(j,s)
                     if j in all_speech[docket] and s in all_speech[docket][j]:
                         f.write(docket + ' +++$+++ ' + all_speech[docket][j][s] + '\n')            
                     else:
