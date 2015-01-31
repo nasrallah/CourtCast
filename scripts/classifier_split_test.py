@@ -25,10 +25,13 @@ def main():
     d = pd.read_csv(infile, sep='\t', index_col=0)    
     print(d.head())
     #print(d.shape)
+    d_gold_start = int(d.shape[0] * 0.8)
+    d_gold = d.iloc[d_gold_start:]
+    d_rest = d.iloc[:d_gold_start]
 
     ## Get a numpy ndarray X (2d) of the case features and the labels y (1d) for the non-gold set
-    X = d[feature_names].values.astype(np.float)    
-    y = preprocessing.LabelEncoder().fit_transform(d.winner)
+    X = d_rest[feature_names].values.astype(np.float32)    
+    y = preprocessing.LabelEncoder().fit_transform(d_rest.winner)
     
     ## Split this into training and testing sets
 #    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)    
@@ -40,7 +43,7 @@ def main():
     y_train = y[:this_test_start]
     y_test = y[this_test_start:]
 
-    #X_train = np.nan_to_num(X_train)
+    X_train = np.nan_to_num(X_train)
 
 
     ## Define a scoring function with the Matthew correlation coefficient for cross-validation with unbalanced data
@@ -49,7 +52,7 @@ def main():
     ##################### Random Forest #####################
     print('\nRandom Forest analyses:')   
     RF = RandomForestClassifier(n_estimators=50)
-    RF_fit = RF.fit(X_train,y_train)
+    RF_fit = RF.fit(X,y)
     RF_pred = RF_fit.predict(X_test)
     RF_prob = RF_fit.predict_proba(X_test)      ## Average outcome of all trees
 
@@ -170,25 +173,25 @@ def main():
 
     #### ******* To DO: Do this for ALL cases, including gold set. - predict X_gold, save all d not just d_rest *******
 
-    RF = RandomForestClassifier(n_estimators=80)
-    RF_fit = RF.fit(X,y)
-
     ## Once I've picked a model, test all cases and save the predictions and probabilities
     ## along with the case features as a database_table to put into mysql
     RF_final_predictions = RF_fit.predict(X)
     RF_final_probabilities = RF_fit.predict_proba(X)
-
     ## Get max of each probability tuple
     RF_final_probabilities = np.apply_along_axis(max, arr=RF_final_probabilities,axis=1)
+    ## Drop old columns (fix this) and add new ones
+    #d_rest.drop('prediction', axis=1, inplace=True)  ## probably just remove these from the transcripts.py output instead of manually here. Same w/probs.
+    #d_rest.drop('confidence', axis=1, inplace=True)  ## probably just remove these from the transcripts.py output instead of manually here. Same w/probs.
+    #d_rest['prediction'] = RF_final_predictions
+    #d_rest['confidence'] = RF_final_probabilities
 
-    ## Add prediction and confidence to DataFrame
-    d['prediction'] = pd.Series(RF_final_predictions, index=d.index)
-    d['confidence'] = pd.Series(RF_final_probabilities, index=d.index)
+    d_rest['prediction'] = pd.Series(RF_final_predictions, index=d_rest.index)
+    d_rest['confidence'] = pd.Series(RF_final_probabilities, index=d_rest.index)
     ## Produces a warning b/c d_rest is a copy of d, so the warning is that d isn't being modified.
     ## Doesn't really need to be a pd.Series...can just be: d_rest['prediction'] = RF_final_predictions
 
     outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/database_table.txt'
-    d.to_csv(outfile, sep='\t')
+    d_rest.to_csv(outfile, sep='\t')
     
     
 if __name__ == '__main__':

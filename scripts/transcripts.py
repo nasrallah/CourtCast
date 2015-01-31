@@ -460,7 +460,7 @@ def main():
             words_to_sides = {}                    
             for j in words:
                 if j not in sides:
-                    words_to_sides[j] = {'Pet':0,'Res':0}
+                    words_to_sides[j] = {'Pet':0.0,'Res':0.0}
                     for lawyer in sides:
                         if lawyer in words[j]:
                             if sides[lawyer] in ['Pet','Res']:
@@ -469,6 +469,7 @@ def main():
             words_to_sides = pd.DataFrame.from_dict(words_to_sides, orient='index')
             words_to_sides['score'] = (words_to_sides.Res - words_to_sides.Pet) / (words_to_sides.Res + words_to_sides.Pet)
             words_to_sides.replace(to_replace=float('inf'),value=0.0, inplace=True)
+            words_to_sides.replace(to_replace=float('nan'),value=0.0, inplace=True)
             #print(words_to_sides)
 
             cutoffs_to_sides = {}                    
@@ -480,7 +481,7 @@ def main():
                             cutoffs_to_sides[this_side] = {}
                         for justice in cutoffs[lawyer]:
                             if justice not in cutoffs_to_sides[this_side]:
-                                cutoffs_to_sides[this_side][justice] = 0
+                                cutoffs_to_sides[this_side][justice] = 0.0
                             cutoffs_to_sides[this_side][justice] += cutoffs[lawyer][justice]
             ## Convert to a DataFrame and calculate normalized word score
             cutoffs_to_sides = pd.DataFrame.from_dict(cutoffs_to_sides, orient='columns')
@@ -526,14 +527,13 @@ def main():
                 case_features[docket]['cutoffs_ALL'] = side_cuts_diff
                 ## convert winning_side into 0/1
                 case_features[docket]['winner'] = 1 if winning_side == 'Pet' else 0
-#                for j in words_to_sides.index.values:
-                for j in ['BREYER', 'GINSBURG', 'KENNEDY', 'ROBERTS', 'SCALIA']:
-                    case_features[docket]['words_%s' % j] = words_to_sides.score[j] if j in words_to_sides.index.values else 0
-                    case_features[docket]['cutoffs_%s' % j] = cutoffs_to_sides.score[j] if j in cutoffs_to_sides.index.values else 0
+                #for j in words_to_sides.index.values:
+                for j in ['JUSTICE BREYER', 'JUSTICE GINSBURG', 'JUSTICE KENNEDY', 'CHIEF JUSTICE ROBERTS', 'JUSTICE SCALIA']:
+                    case_features[docket]['words_%s' % j.split()[-1]] = words_to_sides.score[j] if j in words_to_sides.index.values else 0
+                    case_features[docket]['cutoffs_%s' % j.split()[-1]] = cutoffs_to_sides.score[j] if j in cutoffs_to_sides.index.values else 0
             ## Add the dictionary of speech to the 
             if docket not in all_speech:
                 all_speech[docket] = dict.copy(justice_questions)
-
 
 
     ## Convert the case_features into a DataFrame and join with the info from SCDB
