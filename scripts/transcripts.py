@@ -100,8 +100,10 @@ def find_docket_number(text):
     ''' Takes the oral argument text as input and returns the docket number for the case. '''
     match = re.search(r'No\.\s(\d+\-\d+)', text)
     if not match:
-        #print('*'*40,'no docket found in this text')
-        match = re.search(r'No\.\s*(\d+)', text)
+        print('*'*40,'no docket found in this text')
+        #match = re.search(r'No\.\s*(\d+)', text)
+        match = re.search(r'No\.\s*(.+)', text)
+        print(match.group(1)    )       ########## START FROM HERE FOR AKWARD DOCKET NUMBERS**********************
     return match.group(1)
 
 
@@ -387,7 +389,7 @@ def main():
     last_year = '2013'
 
     ## Get the main directory in which each years' cases are stored
-    main_path = '/Users/nasrallah/Desktop/Insight/scotus_predict/data/transcripts/'  
+    main_path = '/Users/nasrallah/Desktop/Insight/courtcast/data/transcripts/'  
     
     ## Define a container for the combination of most-interrupted and most-lawyers
     factors = {}
@@ -395,7 +397,7 @@ def main():
     case_features = {}
     ## Define a dictionary for the speech for each case. Key is docket. Value is dictionary of {speaker:{side:speech}}
     all_speech = {}
-    scdb_file = '/Users/nasrallah/Desktop/Insight/scotus_predict/data/SCDB/SCDB_2014_01_justiceCentered_Citation_tab.txt'
+    scdb_file = '/Users/nasrallah/Desktop/Insight/courtcast/data/SCDB/SCDB_2014_01_justiceCentered_Citation_tab.txt'
     case_info = get_SCDB_info(scdb_file)
     winner_dict = get_docket_winners(scdb_file)
 
@@ -418,7 +420,7 @@ def main():
             
             ## Find the docket number from the text file to look up the votes in the SCDB using the 'docket' column
             docket = find_docket_number(text)
-            print('\ndocket:',docket)
+            #print('\ndocket:',docket)
             if docket in case_features:
                 print(docket,'appears multiple times')
                 #continue   ## The second one encountered is likely a re-argument, and is probably the more useful one to examine, so let's replace the first one.
@@ -544,11 +546,11 @@ def main():
     #print(case_features)
  
 
-    feature_outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/feature_table.txt'
+    feature_outfile = '/Users/nasrallah/Desktop/Insight/courtcast/db/feature_table.txt'
     case_features.to_csv(feature_outfile, sep='\t')
 
     ## directory to write question files
-    q_dir = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/questions/'
+    q_dir = '/Users/nasrallah/Desktop/Insight/courtcast/db/questions/'
     ## Purge the directory of question files from previous runs
     purge_dir(q_dir)
     

@@ -15,7 +15,7 @@ import pandas as pd
 
 def main():
 
-    infile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/feature_table.txt'
+    infile = '/Users/nasrallah/Desktop/Insight/courtcast/db/feature_table_2.txt'
 
     ## Kennedy's words carry low weight among the justices, indicating that perhaps his speech is the least predictive of the outcome. Doesn't reveal much. That is IF the order is preserved...
     feature_names = ['amicus', 'argYear', 'argMonth', 'cutoffs_ALL', 'cutoffs_BREYER', 'cutoffs_GINSBURG', 'cutoffs_KENNEDY', 'cutoffs_ROBERTS', 'cutoffs_SCALIA', 'words_BREYER', 'words_GINSBURG', 'words_KENNEDY', 'words_ROBERTS', 'words_SCALIA']
@@ -187,7 +187,7 @@ def main():
     ## Produces a warning b/c d_rest is a copy of d, so the warning is that d isn't being modified.
     ## Doesn't really need to be a pd.Series...can just be: d_rest['prediction'] = RF_final_predictions
 
-    outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/database_table.txt'
+    outfile = '/Users/nasrallah/Desktop/Insight/courtcast/db/database_table.txt'
     d.to_csv(outfile, sep='\t')
     
     

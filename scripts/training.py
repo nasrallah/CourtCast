@@ -92,15 +92,15 @@ def get_training_features(text_file):
      
 def main():
  
-#    vote_file = '/Users/nasrallah/Desktop/Insight/scotus_predict/data/supreme_court_dialogs_corpus_v1.01/supreme.votes.txt'
+#    vote_file = '/Users/nasrallah/Desktop/Insight/courtcast/data/supreme_court_dialogs_corpus_v1.01/supreme.votes.txt'
 #    votes = get_justice_votes(vote_file)
 #    for v in votes: print(v, votes[v])
     
-#    win_file = '/Users/nasrallah/Desktop/Insight/scotus_predict/data/supreme_court_dialogs_corpus_v1.01/supreme.outcome.txt'
+#    win_file = '/Users/nasrallah/Desktop/Insight/courtcast/data/supreme_court_dialogs_corpus_v1.01/supreme.outcome.txt'
 #    winners = get_winners(win_file)
 #    for w in winners: print(w, winners[w])
 
-    text_file = '/Users/nasrallah/Desktop/Insight/scotus_predict/data/supreme_court_dialogs_corpus_v1.01/supreme.conversations.txt'
+    text_file = '/Users/nasrallah/Desktop/Insight/courtcast/data/supreme_court_dialogs_corpus_v1.01/supreme.conversations.txt'
     #text_file = '/Users/nasrallah/Desktop/some_text.txt'
     
     ## Extract the feature sets
