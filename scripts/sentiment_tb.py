@@ -76,5 +76,5 @@ feature_table = feature_table.join(Sd,how='inner')
 
 
 outfile = '/Users/nasrallah/Desktop/Insight/courtcast/db/feature_table_2.txt'
-d.to_csv(outfile, sep='\t')
+feature_table.to_csv(outfile, sep='\t')
 

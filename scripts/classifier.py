@@ -18,12 +18,12 @@ def main():
     infile = '/Users/nasrallah/Desktop/Insight/courtcast/db/feature_table_2.txt'
 
     ## Kennedy's words carry low weight among the justices, indicating that perhaps his speech is the least predictive of the outcome. Doesn't reveal much. That is IF the order is preserved...
-    feature_names = ['amicus', 'argYear', 'argMonth', 'cutoffs_ALL', 'cutoffs_BREYER', 'cutoffs_GINSBURG', 'cutoffs_KENNEDY', 'cutoffs_ROBERTS', 'cutoffs_SCALIA', 'words_BREYER', 'words_GINSBURG', 'words_KENNEDY', 'words_ROBERTS', 'words_SCALIA']
+    feature_names = ['amicus', 'argYear', 'argMonth', 'cutoffs_ALL', 'cutoffs_BREYER', 'cutoffs_GINSBURG', 'cutoffs_KENNEDY', 'cutoffs_ROBERTS', 'cutoffs_SCALIA', 'words_BREYER', 'words_GINSBURG', 'words_KENNEDY', 'words_ROBERTS', 'words_SCALIA', 'sentiment_BREYER', 'sentiment_GINSBURG', 'sentiment_KENNEDY', 'sentiment_ROBERTS', 'sentiment_SCALIA']
     #print(feature_names)
 
     ## get the feature table and partition into a 'gold' testing set and a training set (rest)
     d = pd.read_csv(infile, sep='\t', index_col=0)    
-    print(d.head())
+    #print(d.head())
     #print(d.shape)
 
     ## Get a numpy ndarray X (2d) of the case features and the labels y (1d) for the non-gold set
@@ -48,7 +48,7 @@ def main():
 
     ##################### Random Forest #####################
     print('\nRandom Forest analyses:')   
-    RF = RandomForestClassifier(n_estimators=50)
+    RF = RandomForestClassifier(n_estimators=80)
     RF_fit = RF.fit(X_train,y_train)
     RF_pred = RF_fit.predict(X_test)
     RF_prob = RF_fit.predict_proba(X_test)      ## Average outcome of all trees
@@ -127,6 +127,7 @@ def main():
     print(metrics.confusion_matrix(y_train, svm_pred_self))
     print('Test Accuracy:', svm_fit.score(X_train, y_train))
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_train, svm_pred_self))
+    print('-'*20)
 
 
 
@@ -162,6 +163,7 @@ def main():
     print(metrics.confusion_matrix(y_train, LR_pred_self))
     print('Test Accuracy:', LR_fit.score(X_train, y_train))
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_train, LR_pred_self))
+    print('-'*20)
 
 
 
@@ -181,14 +183,19 @@ def main():
     ## Get max of each probability tuple
     RF_final_probabilities = np.apply_along_axis(max, arr=RF_final_probabilities,axis=1)
 
+    RF_scores = cross_val_score(RF, X, y, cv=5)
+    #print('\nCross-validation scores:', RF_scores)
+    print("CV Avg Accuracy: %0.2f (+/- %0.2f)" % (RF_scores.mean(), RF_scores.std() * 2))    
+
+
     ## Add prediction and confidence to DataFrame
     d['prediction'] = pd.Series(RF_final_predictions, index=d.index)
     d['confidence'] = pd.Series(RF_final_probabilities, index=d.index)
     ## Produces a warning b/c d_rest is a copy of d, so the warning is that d isn't being modified.
     ## Doesn't really need to be a pd.Series...can just be: d_rest['prediction'] = RF_final_predictions
 
-    outfile = '/Users/nasrallah/Desktop/Insight/courtcast/db/database_table.txt'
-    d.to_csv(outfile, sep='\t')
+#    outfile = '/Users/nasrallah/Desktop/Insight/courtcast/db/database_table.txt'
+#    d.to_csv(outfile, sep='\t')
     
     
 if __name__ == '__main__':

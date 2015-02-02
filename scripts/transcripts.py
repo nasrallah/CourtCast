@@ -98,12 +98,14 @@ def get_SCDB_info(infile):
 
 def find_docket_number(text):
     ''' Takes the oral argument text as input and returns the docket number for the case. '''
-    match = re.search(r'No\.\s(\d+\-\d+)', text)
+    match = re.search(r'No\.\s*(\d+\-\d+)', text)
     if not match:
-        print('*'*40,'no docket found in this text')
         #match = re.search(r'No\.\s*(\d+)', text)
         match = re.search(r'No\.\s*(.+)', text)
-        print(match.group(1)    )       ########## START FROM HERE FOR AKWARD DOCKET NUMBERS**********************
+        #print(match.group(1)    )       ########## START FROM HERE FOR AKWARD DOCKET NUMBERS************************
+    if not match:
+        print('*'*40,'no docket found in this text')
+
     return match.group(1)
 
 
@@ -409,7 +411,7 @@ def main():
         ## for each file:
         for file in files:
             ## Get the argument text
-            #print(file)   
+            print(file)   
             ## Read in the whole file as string to search a few things
             with open(file, 'rU') as f:
                 text = f.read()
@@ -566,5 +568,7 @@ def main():
                         f.write(docket + ' +++$+++ ' + all_speech[docket][j][s] + '\n')            
                     else:
                         f.write(docket + ' +++$+++ ' + ' ' + '\n')
+
+
 if __name__ == '__main__':
     main()
