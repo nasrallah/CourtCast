@@ -1,0 +1,11 @@
+## Log into mysql
+mysql -u root -p
+
+## Create new database
+mysql> CREATE DATABASE cases;
+
+## Switch server to that database
+mysql> USE cases;
+
+## Load the data from a table that we’ve output
+mysql> SOURCE scotus_cases.sql;
