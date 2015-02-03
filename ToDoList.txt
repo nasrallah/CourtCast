@@ -1,0 +1,76 @@
+To Do List
+----------
+
+1. Front-end. Figure integration.
+2. Feature importance plot
+3. Recent data -> cases just argued but not decided. and important cases. others if time.
+4. Revisit classifier choice
+5. Figure of feature scores relative to average??
+6. Topic as feature
+7. Sentiment using specialized legal dictionary
+
+x AWS
+x sentiment using dictionaries -> scores as features
+- sentiment using Bag of words lists as features
+x SVM Classifier, lasso penalty or something
+x more features: justice_questions
+x feature selection
+ 
+- slides
+- data stories: aereo stock history, prediction
+x cv update (Wed)
+
+
+With the pdfs converted I can make predictions. But without the outcomes I can’t confirm them.
+- compile list of docket, case name, party_winning for recent cases not in scdb
+- convert new cases from pdf to text, clean up. 
+
+- scikit validation curve
+
+Examples:
+12-307 United State v Windsor (DOMA)
+12-398 Association for Molecular Pathology v. Myriad Genetics
+
+Affordable care act:
+11-393  National Federation of Independent Business, et al. v. Kathleen Sebelius, Secretary of Health and Human Services, et al.
+11-398  Department of Health and Human Services, et al. v. Florida, et al.
+11-400  Florida, et al., Petitioners v. Department of Health and Human Services, et al.
+
+
+more recent:
+13-354  Burwell v. Hobby Lobby Stores, Inc.  Res wins, 5-4 (Liberal 4)
+13-461  American Broadcasting Companies, Inc. v. Aereo, Inc.  Pet wins, 6-3 (Scalia, Thomas, Alito)
+
+
+x time features
+x store for each case the 1/0 prediction and probability from RF and/or SVM
+x More features: justice_interruptions
+x Random Forest Classifier
+x Cross validation
+x git commit
+x put data in mysql database
+x connect python to sql to enter information
+x front end up: sql -> python -> flask -> twitter bootstrap
+x resume
+x use pandas
+
+x Write P(Pet|features to file)
+x Write interrupted to file (with docket)
+x Get Docket, case_name, Outcome, Votecount from SCDB
+
+x Or just get those from SCDB initially, then add the interruptions. Maybe be a DataFrame? 
+
+
+Names?
+Supre(dict|me) Supre(me|dict)  SupremePredict,  A Court Supreme
+Supre(dict:me) Supre(me:dict)  
+Supre(dict/me) Supre(me/dict)  
+Supre(dict.me) Supre(me.dict)  
+
+CourtCast or SupremeCourtCast
+
+
+
+What to put in SQL database
+Docket  Case_name  P(Pet_win|words)  P(Pet_win|features)  P(Pet_win|words,features)  Outcome  Votecount
+

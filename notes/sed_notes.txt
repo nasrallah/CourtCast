@@ -1,0 +1,24 @@
+sed 's/^[0-9]*\s//' test.txt
+
+sed 's/^[0-9][[:space:]]//' test.txt > test2.txt
+sed ’s/^[0-9]\{1,\}//‘ test.txt > test2.txt
+
+sed ’s/^[0-9]\{1,\}[[:space:]]//' test.txt > test2.txt
+
+
+
+## finds lines with two consecutive or more numbers
+grep '[0-9]\{2\}' test.txt
+## finds lines starting with two consecutive or more numbers
+grep '^[0-9]\{2\}' test.txt
+
+## replaces two consecutive numbers at beginning of line with nothing
+sed 's/^[0-9]\{2\}//' test.txt
+
+## replaces one or more consecutive number at beginning of line with nothing
+sed 's/^[0-9]\{1,\}//' test.txt
+
+## replaces one or more consecutive digit at beginning of line followed by a whitespace with nothing
+sed 's/^[0-9]\{1,\}[[:space:]]//' test.txt > test2.txt
+
+

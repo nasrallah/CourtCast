@@ -1,0 +1,43 @@
+## Assuming the current working directory is ~/Desktop/Insight/courtcast/db/
+
+## dump local machine database to file
+mysqldump -u root scotus > scotus_dump.sql
+
+## Copy dump file from local machine to AWS server, using the identity key
+scp -i ./Insight2014C.pem scotus_dump.sql ubuntu@54.152.45.149:~/
+
+## Log into mysql on the AWS server and create database (once)
+mysql -u root -p 
+[enter password scipw]
+CREATE DATABASE scotus;
+
+## Copy the database from the dump file on the AWS server
+mysql -u root -p scotus < scotus_dump.sql
+
+
+## Edit the run.py file to not run in debug format:
+	#!/usr/bin/env python
+	from app import app
+	def main():
+	    app.run('0.0.0.0', port=80, debug = False)
+	if __name__ == '__main__':
+	    main()
+
+## Copy the run.py file and the app/ folder to the server
+scp -i ./Insight2014C.pem run.py ubuntu@54.152.45.149:~/
+scp -i ./Insight2014C.pem -r app/ ubuntu@54.152.45.149:~/
+
+
+## Set up domains.google.com to forward the domain name to the elastic IP address I set up at AWS. Now works, so courtcast.org is live. But the IP address has changed form the initial one. But instead of using an IP address I can ssh or scp in using ubuntu@courtcast.org:~/
+
+## Check what processes are running on server
+ps -e | grep gunicorn
+ps -e | grep supervisord
+
+## Kill processes running of we want to restart
+sudo pkill gunicorn
+sudo pkill supervisord
+
+## Restart the site
+sudo supervisord -c simple.conf
+

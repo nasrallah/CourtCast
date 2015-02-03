@@ -1,0 +1,13 @@
+RandomForestClassifier() has a function fit(), and this function can take an argument sample_weight, a list of weights for each sample. If you have unbalanced data this *should* help account for it. As a starting point, weighting samples by 1/# and normalizing is reasonable. For the scotus data this ends up being about 2:1 for the weights for 0/1 since there are nearly twice as many 1 decisions. But using these weights does not seem to improve the strong imbalance in recall between class 1 and 0. Nor does it improve overall accuracy. Even if we make those weights quite extreme.
+
+Notice. In the training set (first 80%) the balance of 0/1 is 154/328. In the last 20% it is 50/71. This means 32% vs 41% of cases were in favor of the Respondent in these two samples. not exactly similar.
+
+Random Forest seems to be the most robust to this difference in the datasets. SVM and Logistic Regression do very poorly on the latter 20%. RF does poorly as well, but not as abysmally.
+
+
+
+- classifier.py does some tests on different methods using implicit cross-validation
+- feature_selection_mod.py does something similar but is based on Leifur’s code. It does it more manually than classifier.py and explores less factors, but explores more models and a broader parameter space.
+- gold.py is a quick way to test the ‘holdout’ dataset (last 20%). May not be best way, since it is so different from the rest, as seen above.
+
+--> Best thing might be to use Leifur’s structure (manual k-fold cross-validation) to predict outcomes and probabilities for each of k sets, and store these as the data_table. Then can report average accuracy for the set.

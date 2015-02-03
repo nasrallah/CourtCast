@@ -411,7 +411,7 @@ def main():
         ## for each file:
         for file in files:
             ## Get the argument text
-            print(file)   
+            #print(file)   
             ## Read in the whole file as string to search a few things
             with open(file, 'rU') as f:
                 text = f.read()
@@ -471,7 +471,7 @@ def main():
                                 words_to_sides[j][sides[lawyer]] += words[j][lawyer]
             ## Convert to a DataFrame and calculate normalized word score
             words_to_sides = pd.DataFrame.from_dict(words_to_sides, orient='index')
-            words_to_sides['score'] = (words_to_sides.Res - words_to_sides.Pet) / (words_to_sides.Res + words_to_sides.Pet)
+            words_to_sides['score'] = (words_to_sides.Pet - words_to_sides.Res) / (words_to_sides.Res + words_to_sides.Pet)
             words_to_sides.replace(to_replace=float('inf'),value=0.0, inplace=True)
             words_to_sides.replace(to_replace=float('nan'),value=0.0, inplace=True)
             #print(words_to_sides)
@@ -490,7 +490,7 @@ def main():
             ## Convert to a DataFrame and calculate normalized word score
             cutoffs_to_sides = pd.DataFrame.from_dict(cutoffs_to_sides, orient='columns')
             cutoffs_to_sides.replace(to_replace=float('NaN'),value=0.0, inplace=True)            
-            cutoffs_to_sides['score'] = (cutoffs_to_sides.Res - cutoffs_to_sides.Pet) / (cutoffs_to_sides.Res + cutoffs_to_sides.Pet)
+            cutoffs_to_sides['score'] = (cutoffs_to_sides.Pet - cutoffs_to_sides.Res) / (cutoffs_to_sides.Res + cutoffs_to_sides.Pet)
             cutoffs_to_sides.replace(to_replace=float('inf'),value=0.0, inplace=True)
             #print(cutoffs_to_sides)
                         
@@ -515,8 +515,8 @@ def main():
             ## See if there were more lawyers on winning/losing side
             num_pet = sides.values().count('Pet')
             num_res = sides.values().count('Res')
-            ## Create variable -1/0/1 for Res/None/Pet
-            amicus_side = 1 if num_pet > num_res else -1 if num_pet < num_res else 0
+            ## Create variable -1/0/1 for Pet/None/Res.  
+            amicus_side = -1 if num_pet > num_res else 1 if num_pet < num_res else 0
 
             feature_key = (winning_side, amicus_side, int_side)
             #cases[docket] = feature_key
@@ -559,7 +559,7 @@ def main():
     ## Output the justice speech to different files
     for j in ['JUSTICE BREYER', 'JUSTICE GINSBURG', 'JUSTICE KENNEDY', 'CHIEF JUSTICE ROBERTS', 'JUSTICE SCALIA']:
         for s in ['Pet','Res']:
-            num = '1' if s == 'Pet' else '0'
+            num = '0' if s == 'Pet' else '1'
             speech_file = q_dir + 'questions_' + j.split()[-1] + '_' + num + '.txt'  
             with open(speech_file, 'a') as f:
                 for docket in case_features.index:    ## for ordering correctly

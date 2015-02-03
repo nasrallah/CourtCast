@@ -1,0 +1,21 @@
+Cross-validation
+
+The sklearn cross_val_score() function will by default use the ‘score’ function for whatever classifier method is chosen. To compare across classifier types you can specify the score type to use. cross_val_score(scoring=‘my_scoring_choice’)
+Options: 'accuracy', 'adjusted_rand_score', 'average_precision', 'f1', 'log_loss', 'mean_absolute_error', 'mean_squared_error', 'precision', 'r2', 'recall', 'roc_auc'
+see http://scikit-learn.org/stable/modules/model_evaluation.html#scoring-parameter
+and http://scikit-learn.org/stable/modules/cross_validation.html
+--> Random Forests, Decision trees, and SVC all use ‘mean accuracy’ as their default score function. 
+
+
+To understand:
+“In the case of the Iris dataset, the samples are balanced across target classes hence the accuracy and the F1-score are almost equal.”
+In my case the samples are not balanced (Pet wins more than Res), but I’m not sure how these scores are affected by this.
+
+I haven’t figured this out, but the Matthews correlation coefficient takes into account the true/false positive/negative (all four), and so is more robust to imbalanced data. 
+It is in the metrics module as metrics.matthews_corrcoef, but is not a default option for the cross_val_score function. But you can create a custom scoring function with metrics.make_scorer(), as shown here: 
+mc_scorer = metrics.make_scorer(metrics.matthews_corrcoef)
+Now mc_scorer is a function that can be passed to the scoring parameter of cross_val_score (not in quotes though).
+
+
+Between Random Forest, SVC (either linear or rbf), and Decision Tree, Random Forest seems to be performing the best. But I haven’t played with the C parameter of the SVM, which is supposed to be crucial.....
+Nope, using a linear SVC and lowering the C parameter to 0.2 does better than the Random Forest. Go through SVC and learn more about the params and how to introduce a penalty for more features.

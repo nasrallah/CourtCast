@@ -1,0 +1,20 @@
+thought. Train on everything Kennedy has said in oral arguments. Classify not as ‘good’ or ‘bad’ but as ‘for’ and ‘against’ to whomever he was speaking based on how he voted in that case.
+
+Is semantic analysis of Anthony Kennedy’s speech essentially a CLASSIFICATION problem, since we want to know if everything he says in a single case results in a “for” or “against” vote. Like classifying an email as spam or ham based on the words present? Those words might carry sentiment, just as words in an email may or may not. 
+
+But here we have what is essentially a PAIRED sentiment problem. We don’t need to decide if any single tweet or review is positive or negative, but rather which set of questions is more/less favorable. The two sides are not independent. 
+
+Lets say I use some oral arguments to train on. Classify everything he says to lawyer A (who wins) as ‘for’ and to lawyer B (who loses) as ‘against.’ If we did this for a bunch of cases and threw them together in a training set this would be training exactly like for movie reviews. But There is more information than this, since we know that comments directed to lawyer A and lawyer B are related. Maybe we can safely ignore this. 
+
+But when it comes to the test data set, we will need to decide which of the two sides is right. If he spoke to both sides, get a score for each side. If he didn’t speak to one side, set it to zero or neutral. Then decide his vote based on the ‘least bad’ of the two.
+
+- Preprocess:
+    punctuation
+    lowercase
+- Tokenize
+- Filter stopwords 
+- Stem
+
+chunking (nltk has one) is breaking into parts of sentences that seem important. I might not need this.
+
+word information gain is how increasing the number of words affects info gain. Remove least frequent words.

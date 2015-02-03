@@ -1,0 +1,15 @@
+## Start the mysql server
+mysql.server start
+## Open the client as root, since I don’t have another user installed
+mysql -u root
+
+##Do Stuff
+
+## Close the client
+exit
+
+## Stop the server
+mysql.server stop
+
+
+## Robert suggests putting an .mycnf file (?) in the home directory and then you won’t have to enter a password when connecting to the database. I haven’t needed a password though.

@@ -1,0 +1,14 @@
+SCDB		order in SCDB		folder	in text	
+
+128 ORIG	after 04-1581		2004	128, Orig.	ignored
+8 ORIG		after 04-1067
+134 ORIG	after 06-989			134. Orig.	changed
+08A332		after 07-10689		?
+105, Orig.	after 08-88		2004	105, Orig.	ok
+(105, Orig actually occurs twice)	2008	105, Orig.	ok
+08A1096		after 07-1309		?
+138, Orig.	after 08-9156		2009	138, Orig.	ok
+09A648		after 09-5270		?
+132, Orig.	after 08-1555		2009	132, Orig.	ok
+137, Orig.	after 10-1000		2010	137, Orig.	ok
+11\x965001	after 10-238

@@ -61,6 +61,7 @@ from textblob import TextBlob
 S = {}
 for i in range(len(dockets)):
     docket = dockets[i]
+    ## Respondent - Petitioner > 0 favors Respondent
     S[docket] = {'sentiment_BREYER':0.0, 'sentiment_GINSBURG':0.0, 'sentiment_KENNEDY':0.0, 'sentiment_ROBERTS':0.0, 'sentiment_SCALIA':0.0}
     S[docket]['sentiment_BREYER'] = TextBlob(X[1][i]).sentiment[0] - TextBlob(X[0][i]).sentiment[0]
     S[docket]['sentiment_GINSBURG'] = TextBlob(X[3][i]).sentiment[0] - TextBlob(X[2][i]).sentiment[0]
