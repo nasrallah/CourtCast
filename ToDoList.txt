@@ -2,6 +2,9 @@ To Do List
 ----------
 
 1. Front-end. Figure integration.
+	- figures just keep adding to the plot.
+	- needing to refresh to get plot to appear
+	- get figure integration onto AWS
 2. Feature importance plot
 3. Recent data -> cases just argued but not decided. and important cases. others if time.
 4. Revisit classifier choice
