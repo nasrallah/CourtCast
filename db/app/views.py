@@ -3,27 +3,37 @@ from app import app
 import pymysql as mdb
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-import seaborn as sns
+#import seaborn as sns
 from a_Model import ModelIt
-
+import socket
 
 def plot_features(df):
     ## Transpose the series
     df = df.T
     
     ## get the list of colors we want
-    my_colors = sns.color_palette("coolwarm_r", 5)
+#    my_colors = sns.color_palette("coolwarm_r", 5)
+    my_colors = [(.8,0,0),(1,.4,.4),(1,.8,.8),(.6,.8,1),(.2,.6,1)]
     my_colors = my_colors + my_colors + my_colors
     #my_colors = my_colors + [(102,102,102)]
-    my_colors = my_colors + [(0.3984375,0.3984375,0.3984375)]
+    my_colors = my_colors + [(0.75,0.75,0.75)]
     
     df.plot(kind="barh", color=my_colors, legend=False, grid=False, xlim=(-1,1))
-    plt.axhline(10.5, color = 'k', linestyle = ':', linewidth=1.0)            
+    plt.axhline(10.5, color='k', linestyle = ':', linewidth=1.0)            
     plt.tight_layout()
     #plt.show()
+    
+    ## get the right path
+    host = socket.gethostname()
+    if 'Tatum' in host:
+        path = 'app/static/'
+    else:
+        path = '/home/ubuntu/app/static/'
     ## Make sure the relative path is right...the 'home' directory here is ..courtcast/db/app/
-    plt.savefig('/Users/nasrallah/Desktop/Insight/courtcast/db/app/static/images/fig.png')
+    plt.savefig(path + 'images/fig.png')
 
 
 ## Right now the indicator is an integer. I'm not sure how I will store unknown case outcomes. This assumes there is nothing there.

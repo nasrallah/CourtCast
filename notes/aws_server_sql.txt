@@ -4,7 +4,7 @@
 mysqldump -u root scotus > scotus_dump.sql
 
 ## Copy dump file from local machine to AWS server, using the identity key
-scp -i ./Insight2014C.pem scotus_dump.sql ubuntu@54.152.45.149:~/
+scp -i ./Insight2014C.pem scotus_dump.sql ubuntu@courtcast.org:~/
 
 ## Log into mysql on the AWS server and create database (once)
 mysql -u root -p 
@@ -24,8 +24,8 @@ mysql -u root -p scotus < scotus_dump.sql
 	    main()
 
 ## Copy the run.py file and the app/ folder to the server
-scp -i ./Insight2014C.pem run.py ubuntu@54.152.45.149:~/
-scp -i ./Insight2014C.pem -r app/ ubuntu@54.152.45.149:~/
+scp -i ./Insight2014C.pem run.py ubuntu@courtcast.org:~/
+scp -i ./Insight2014C.pem -r app/ ubuntu@courtcast.org:~/
 
 
 ## Set up domains.google.com to forward the domain name to the elastic IP address I set up at AWS. Now works, so courtcast.org is live. But the IP address has changed form the initial one. But instead of using an IP address I can ssh or scp in using ubuntu@courtcast.org:~/
@@ -41,3 +41,20 @@ sudo pkill supervisord
 ## Restart the site
 sudo supervisord -c simple.conf
 
+
+######################
+
+Ran into problems with packages. The seaborn package for making nice plots insisted on calling a file called six.py that needed a _winreg that is supposed to be for writing to the windows registry. This is weird since the server is Linux. I removed seaborn references and it was better.
+
+But in making sure that I had all the right packages installed (matplotlib was a bitch to install) I used several commands.
+
+
+apt-cache search <modulename> was for searching the repository to see if a module can be installed with apt-get
+apt-cache policy <module> was for seeing what has been installed already
+apt-get is a way to load precompiled binary files for Linux.
+sudo apt-get install <modulename>
+
+pip search <modulename> does something similar for python, seeing if it can be installed with pip
+pip freeze shows everything installed for python on the machine.
+sudo pip install <modulename>
+or with --upgrade to upgrade an existing package rather than install a new one.
