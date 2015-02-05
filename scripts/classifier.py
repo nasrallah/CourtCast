@@ -26,11 +26,24 @@ def main():
     #print(d.head())
     #print(d.shape)
 
-    ## Get a numpy ndarray X (2d) of the case features and the labels y (1d) for the non-gold set
-    X = d[feature_names].values.astype(np.float)    
-    y = preprocessing.LabelEncoder().fit_transform(d.winner)
+
+    ## Divide into test and train sets
+    X = d[d.argYear < 2013]
+    W = d[d.argYear >= 2013]
     
-    ## Split this into training and testing sets
+    ## Separate out the undecided cases for prediction
+    U = W[pd.isnull(W.winner)]
+    W = W[pd.notnull(W.winner)]
+    
+    ## Pull out the winners of the test and train set
+    y = preprocessing.LabelEncoder().fit_transform(X.winner)
+    z = preprocessing.LabelEncoder().fit_transform(W.winner)
+           
+    ## Get a numpy ndarray X (2d) of just the case features for train and test set
+    X = X[feature_names].values.astype(np.float)    
+    W = W[feature_names].values.astype(np.float)    
+    
+    ## Split this into training and validation sets
 #    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)    
 
     ## Ensure the same split occurs every time we run the program, for now, to compare methods and hyperparameters

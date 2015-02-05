@@ -15,23 +15,20 @@ import pandas as pd
 
 def main():
 
-    infile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/feature_table_2.txt'
+    infile = '/Users/nasrallah/Desktop/Insight/courtcast/db/feature_table_2.txt'
 
     ## Kennedy's words carry low weight among the justices, indicating that perhaps his speech is the least predictive of the outcome. Doesn't reveal much. That is IF the order is preserved...
-    feature_names = ['amicus', 'argYear', 'argMonth', 'cutoffs_ALL', 'cutoffs_BREYER', 'cutoffs_GINSBURG', 'cutoffs_KENNEDY', 'cutoffs_ROBERTS', 'cutoffs_SCALIA', 'words_BREYER', 'words_GINSBURG', 'words_KENNEDY', 'words_ROBERTS', 'words_SCALIA']
+    feature_names = ['amicus', 'argYear', 'argMonth', 'cutoffs_ALL', 'cutoffs_BREYER', 'cutoffs_GINSBURG', 'cutoffs_KENNEDY', 'cutoffs_ROBERTS', 'cutoffs_SCALIA', 'words_BREYER', 'words_GINSBURG', 'words_KENNEDY', 'words_ROBERTS', 'words_SCALIA', 'sentiment_BREYER', 'sentiment_GINSBURG', 'sentiment_KENNEDY', 'sentiment_ROBERTS', 'sentiment_SCALIA']
     #print(feature_names)
 
     ## get the feature table and partition into a 'gold' testing set and a training set (rest)
     d = pd.read_csv(infile, sep='\t', index_col=0)    
-    print(d.head())
+    #print(d.head())
     #print(d.shape)
-    d_gold_start = int(d.shape[0] * 0.8)
-    d_gold = d.iloc[d_gold_start:]
-    d_rest = d.iloc[:d_gold_start]
 
     ## Get a numpy ndarray X (2d) of the case features and the labels y (1d) for the non-gold set
-    X = d_rest[feature_names].values.astype(np.float32)    
-    y = preprocessing.LabelEncoder().fit_transform(d_rest.winner)
+    X = d[feature_names].values.astype(np.float)    
+    y = preprocessing.LabelEncoder().fit_transform(d.winner)
     
     ## Split this into training and testing sets
 #    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)    
@@ -43,7 +40,7 @@ def main():
     y_train = y[:this_test_start]
     y_test = y[this_test_start:]
 
-    X_train = np.nan_to_num(X_train)
+    #X_train = np.nan_to_num(X_train)
 
 
     ## Define a scoring function with the Matthew correlation coefficient for cross-validation with unbalanced data
@@ -51,8 +48,8 @@ def main():
 
     ##################### Random Forest #####################
     print('\nRandom Forest analyses:')   
-    RF = RandomForestClassifier(n_estimators=50)
-    RF_fit = RF.fit(X,y)
+    RF = RandomForestClassifier(n_estimators=80)
+    RF_fit = RF.fit(X_train,y_train)
     RF_pred = RF_fit.predict(X_test)
     RF_prob = RF_fit.predict_proba(X_test)      ## Average outcome of all trees
 
@@ -130,6 +127,7 @@ def main():
     print(metrics.confusion_matrix(y_train, svm_pred_self))
     print('Test Accuracy:', svm_fit.score(X_train, y_train))
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_train, svm_pred_self))
+    print('-'*20)
 
 
 
@@ -165,6 +163,7 @@ def main():
     print(metrics.confusion_matrix(y_train, LR_pred_self))
     print('Test Accuracy:', LR_fit.score(X_train, y_train))
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y_train, LR_pred_self))
+    print('-'*20)
 
 
 
@@ -173,25 +172,30 @@ def main():
 
     #### ******* To DO: Do this for ALL cases, including gold set. - predict X_gold, save all d not just d_rest *******
 
+    RF = RandomForestClassifier(n_estimators=80)
+    RF_fit = RF.fit(X,y)
+
     ## Once I've picked a model, test all cases and save the predictions and probabilities
     ## along with the case features as a database_table to put into mysql
     RF_final_predictions = RF_fit.predict(X)
     RF_final_probabilities = RF_fit.predict_proba(X)
+
     ## Get max of each probability tuple
     RF_final_probabilities = np.apply_along_axis(max, arr=RF_final_probabilities,axis=1)
-    ## Drop old columns (fix this) and add new ones
-    #d_rest.drop('prediction', axis=1, inplace=True)  ## probably just remove these from the transcripts.py output instead of manually here. Same w/probs.
-    #d_rest.drop('confidence', axis=1, inplace=True)  ## probably just remove these from the transcripts.py output instead of manually here. Same w/probs.
-    #d_rest['prediction'] = RF_final_predictions
-    #d_rest['confidence'] = RF_final_probabilities
 
-    d_rest['prediction'] = pd.Series(RF_final_predictions, index=d_rest.index)
-    d_rest['confidence'] = pd.Series(RF_final_probabilities, index=d_rest.index)
+    RF_scores = cross_val_score(RF, X, y, cv=5)
+    #print('\nCross-validation scores:', RF_scores)
+    print("CV Avg Accuracy: %0.2f (+/- %0.2f)" % (RF_scores.mean(), RF_scores.std() * 2))    
+
+
+    ## Add prediction and confidence to DataFrame
+    d['prediction'] = pd.Series(RF_final_predictions, index=d.index)
+    d['confidence'] = pd.Series(RF_final_probabilities, index=d.index)
     ## Produces a warning b/c d_rest is a copy of d, so the warning is that d isn't being modified.
     ## Doesn't really need to be a pd.Series...can just be: d_rest['prediction'] = RF_final_predictions
 
-    outfile = '/Users/nasrallah/Desktop/Insight/scotus_predict/db/database_table.txt'
-    d_rest.to_csv(outfile, sep='\t')
+    outfile = '/Users/nasrallah/Desktop/Insight/courtcast/db/database_table.txt'
+    d.to_csv(outfile, sep='\t')
     
     
 if __name__ == '__main__':
