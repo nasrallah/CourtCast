@@ -124,7 +124,7 @@ def append_new_case_info(infile, case_info):
             majority_votes = sl[majcol]
             minority_votes = sl[mincol]
             argDate = sl[argdatecol]        
-            argYear, argMonth = argDate.split(', ')
+            argMonth, argYear = argDate.split(', ')
 
             if docket not in d:
                 d[docket] = {}
@@ -458,7 +458,6 @@ def main():
     all_speech = {}
     scdb_file = '/Users/nasrallah/Desktop/Insight/courtcast/data/SCDB/SCDB_2014_01_justiceCentered_Citation_tab.txt'
     case_info = get_SCDB_info(scdb_file)
-    print(case_info.shape)    
     new_case_file = '/Users/nasrallah/Desktop/Insight/courtcast/data/new_cases.txt'
     case_info = append_new_case_info(new_case_file, case_info)
     winner_dict = get_docket_winners(case_info)
@@ -500,8 +499,8 @@ def main():
             ## Is the winning side the Petitioner or Respondent?
             winning_side = winner_dict[docket] 
                              
-            if winning_side not in ['Pet', 'Res']:
-                print('hmm. neither the petitioner nor repondent won?')
+            #if winning_side not in ['Pet', 'Res']:
+            #    print('hmm. neither the petitioner nor repondent won?')
             
 #             ## Convert petitioner/respondent into winner/loser for this case.
 #             outcomes = get_winning_lawyers(sides, winning_side)
@@ -579,13 +578,20 @@ def main():
             ## Create variable -1/0/1 for Pet/None/Res.  
             amicus_side = -1 if num_pet > num_res else 1 if num_pet < num_res else 0
 
+
             
             if docket not in case_features:
                 case_features[docket] = {}
                 case_features[docket]['amicus'] = amicus_side 
                 case_features[docket]['cutoffs_ALL'] = side_cuts_diff
                 ## convert winning_side into 0/1
-                case_features[docket]['winner'] = 1 if winning_side == 'Pet' else 0
+                if winning_side == 'Pet':
+                    win = 1
+                elif winning_side == 'Res':
+                    win = 0
+                else:
+                    win = 'NaN'
+                case_features[docket]['winner'] = win
                 #for j in words_to_sides.index.values:
                 for j in ['JUSTICE BREYER', 'JUSTICE GINSBURG', 'JUSTICE KENNEDY', 'CHIEF JUSTICE ROBERTS', 'JUSTICE SCALIA']:
                     case_features[docket]['words_%s' % j.split()[-1]] = words_to_sides.score[j] if j in words_to_sides.index.values else 0
@@ -598,6 +604,7 @@ def main():
     ## Convert the case_features into a DataFrame and join with the info from SCDB
     case_features = pd.DataFrame.from_dict(case_features, orient='index')
     case_features = case_features.join(case_info,how='inner')
+    print(case_features)
     case_features.drop('partyWinning', axis=1, inplace=True)
     case_features.sort(axis=1, inplace=True)
     #print(case_features)
