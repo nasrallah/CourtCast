@@ -155,30 +155,39 @@ def find_docket_number(text):
     return match.group(1)
 
 
-def get_docket_winners(infile):
-    ''' Takes as input the Supreme Court Database file and returns 
-        a dictionary whose key is the docket number and value is 
-        the case winner ('Pet'/'Res') [petitioner/respondent]
+# def get_docket_winners(infile):
+#     ''' Takes as input the Supreme Court Database file and returns 
+#         a dictionary whose key is the docket number and value is 
+#         the case winner ('Pet'/'Res') [petitioner/respondent]
+#     '''
+#     ## Create a dictionary to store info
+#     d = {}
+#     ## open the file and read the header
+#     f = open(infile, 'r')
+#     header = f.next().split('\t')
+#     ## Find index of "majority" column. Note the quotes are in the name.
+#     dcol = header.index('docket')
+#     #print('dcol = ', dcol)
+#     wcol = header.index('partyWinning')
+#     for line in f:
+#         split_line = line.split('\t')
+#         docket = split_line[dcol]
+#         winner = 'Res'
+#         if split_line[wcol] == '1':
+#             winner = 'Pet'
+#         if docket not in d:
+#             d[docket] = winner            
+#     f.close()
+#     return d
+
+
+def get_docket_winners(case_info):
+    ''' Takes as input the DataFrame of case info from SCDB and new cases,
+        and returns only a dictionary whose key is the docket number and value is 
+        the case winner ('Pet'/'Res'/'?') [petitioner/respondent/undecided]
     '''
-    ## Create a dictionary to store info
-    d = {}
-    ## open the file and read the header
-    f = open(infile, 'r')
-    header = f.next().split('\t')
-    ## Find index of "majority" column. Note the quotes are in the name.
-    dcol = header.index('docket')
-    #print('dcol = ', dcol)
-    wcol = header.index('partyWinning')
-    for line in f:
-        split_line = line.split('\t')
-        docket = split_line[dcol]
-        winner = 'Res'
-        if split_line[wcol] == '1':
-            winner = 'Pet'
-        if docket not in d:
-            d[docket] = winner            
-    f.close()
-    return d
+    return case_info.partyWinning.to_dict()
+
 
 
 def get_case_names(infile):
@@ -449,11 +458,12 @@ def main():
     all_speech = {}
     scdb_file = '/Users/nasrallah/Desktop/Insight/courtcast/data/SCDB/SCDB_2014_01_justiceCentered_Citation_tab.txt'
     case_info = get_SCDB_info(scdb_file)
-    winner_dict = get_docket_winners(scdb_file)
-    
+    print(case_info.shape)    
     new_case_file = '/Users/nasrallah/Desktop/Insight/courtcast/data/new_cases.txt'
     case_info = append_new_case_info(new_case_file, case_info)
+    winner_dict = get_docket_winners(case_info)
 
+    
     ## Analyze the transcripts for all cases in each year    
     years = map(str, range(int(first_year),int(last_year)+1))
     for year in years:
@@ -493,8 +503,8 @@ def main():
             if winning_side not in ['Pet', 'Res']:
                 print('hmm. neither the petitioner nor repondent won?')
             
-            ## Convert petitioner/respondent into winner/loser for this case.
-            outcomes = get_winning_lawyers(sides, winning_side)
+#             ## Convert petitioner/respondent into winner/loser for this case.
+#             outcomes = get_winning_lawyers(sides, winning_side)
              
             ## Analyze the oral argument text for the number of cutoffs and the sentence length distributions
             cutoffs, ind_phrases, words, justice_questions = count_cutoffs_and_words(text, sides)
@@ -540,7 +550,7 @@ def main():
                             cutoffs_to_sides[this_side][justice] += cutoffs[lawyer][justice]
             ## Convert to a DataFrame and calculate normalized word score
             cutoffs_to_sides = pd.DataFrame.from_dict(cutoffs_to_sides, orient='columns')
-            cutoffs_to_sides.replace(to_replace=float('NaN'),value=0.0, inplace=True)            
+            cutoffs_to_sides.replace(to_replace=float('NaN'),value=0.0, inplace=True)       
             cutoffs_to_sides['score'] = (cutoffs_to_sides.Res - cutoffs_to_sides.Pet) / (cutoffs_to_sides.Res + cutoffs_to_sides.Pet)
             cutoffs_to_sides.replace(to_replace=float('inf'),value=0.0, inplace=True)
             #print(cutoffs_to_sides)
@@ -568,12 +578,6 @@ def main():
             num_res = sides.values().count('Res')
             ## Create variable -1/0/1 for Pet/None/Res.  
             amicus_side = -1 if num_pet > num_res else 1 if num_pet < num_res else 0
-
-            feature_key = (winning_side, amicus_side, int_side)
-            #cases[docket] = feature_key
-            if feature_key not in factors:
-                factors[feature_key] = 0
-            factors[feature_key] += 1
 
             
             if docket not in case_features:

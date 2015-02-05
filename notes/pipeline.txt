@@ -1,0 +1,26 @@
+Pipeline
+
+## Extract features from transcripts
+transcripts.py
+
+## Analyze sentiment of questions
+sentiment_tb.py
+
+## Train classifier, get probabilities, and make predictions
+classifier.py
+#### Need to separate future from past cases and predict the future ones. Also 2014.
+
+## Remove old entries from mySQL database
+mysql -u root -p
+use scotus
+truncate table cases;
+
+## Transfer details, features, and predictions of each case to mysql database
+table_to_mysql.py
+
+## Switch to the AWS instructions to:
+1. Dump the mysql database to fil
+2. scp that file to server
+3. copy it to mysql database on server (maybe truncate it first)
+4. kill the running processes
+5. restart the processes

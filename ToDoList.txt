@@ -2,10 +2,15 @@ To Do List
 ----------
 
 1. Recent data -> cases just argued but not decided. and important cases. others if time.
-	- preprocess files
-	- integrate with scdb
-	- transcript process decided and undecided cases
+	x preprocess files
+	x integrate with scdb
+	x transcript process decided and undecided cases
+	- classify
 	- add cases to database
+1b. Front end display:
+	- undecided outcomes
+	- maj/min votes
+	- argument date, decision date
 1a. Demo List
 	- chat with Kevin/Genevieve
 2. Feature importance plot
