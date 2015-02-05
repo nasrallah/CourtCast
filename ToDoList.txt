@@ -1,18 +1,26 @@
 To Do List
 ----------
 
-1. Front-end. Figure integration.
-	- figures just keep adding to the plot.
-	- needing to refresh to get plot to appear
-	- get figure integration onto AWS
+1. Recent data -> cases just argued but not decided. and important cases. others if time.
+	- preprocess files
+	- integrate with scdb
+	- transcript process decided and undecided cases
+	- add cases to database
+1a. Demo List
+	- chat with Kevin/Genevieve
 2. Feature importance plot
-3. Recent data -> cases just argued but not decided. and important cases. others if time.
+3. Data story plots
+	- unanimous decisions over time
+	- affirmations over time
 4. Revisit classifier choice
-5. Figure of feature scores relative to average??
 6. Topic as feature
-7. Sentiment using specialized legal dictionary
+7. Sentiment using specialized legal dictionary or other textblob option
 
-x AWS
+
+x Front-end. Figure integration.
+	x figures just keep adding to the plot.
+	x needing to refresh to get plot to appear
+	x get figure integration onto AWSx AWS
 x sentiment using dictionaries -> scores as features
 - sentiment using Bag of words lists as features
 x SVM Classifier, lasso penalty or something

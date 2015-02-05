@@ -96,52 +96,6 @@ def get_SCDB_info(infile):
     return pd.DataFrame.from_dict(d,orient='index')
 
 
-def append_new_case_info(infile, case_info):
-    ''' Takes a text file of the new case info and the existing DataFrame and 
-        returns a DataFrame with the new entries appended at the end.
-        Based heavily on the get_SCDB_info() function but without a few columns.'''
-        
-    ## Create a dictionary to store info
-    d = {}
-    ## open the file and read the header
-    f = open(infile, 'r')
-    header = f.next().split('\t')
-    ## Find index of columns of interest.
-    dcol = header.index('docket')
-    ncol = header.index('caseName')
-    wcol = header.index('partyWinning')
-    majcol = header.index('majVotes')
-    mincol = header.index('minVotes')
-    argdatecol = header.index('argDate')
-    
-    for line in f:
-        sl = line.split('\t')
-        #print(sl)
-        docket = sl[dcol]
-        if docket not in case_info.index:
-            caseName = sl[ncol].strip()
-            winner = sl[wcol]
-            majority_votes = sl[majcol]
-            minority_votes = sl[mincol]
-            argDate = sl[argdatecol]        
-            argYear, argMonth = argDate.split(', ')
-
-            if docket not in d:
-                d[docket] = {}
-                d[docket]['caseName'] = caseName
-                d[docket]['partyWinning'] = winner
-                d[docket]['majVotes'] = majority_votes
-                d[docket]['minVotes'] = minority_votes 
-                d[docket]['argDate'] = argDate  
-                d[docket]['argMonth'] = argMonth  
-                d[docket]['argYear'] = argYear 
-    f.close()
-    ## convert to a DataFrame and append to the scdb case_info
-    d = pd.DataFrame.from_dict(d,orient='index')
-    return case_info.append(d)
-    
-        
-
 def find_docket_number(text):
     ''' Takes the oral argument text as input and returns the docket number for the case. '''
     match = re.search(r'No\.\s*(\d+\-\d+)', text)
@@ -281,14 +235,14 @@ def get_petitioners_and_respondents_speakers(text):
             print('well, shit.')
             print(d.values())
         ## Find out if it is the petitioner or respondent that is not represented
-        unrepresented = 'Pet'
-        if 'Res' not in d.values():
-            unrepresented = 'Res'
-        ## This will change any lawyer not the 'Pet' or 'Res' (whichever one was found) into the unrepresented side
-        for lawyer in d:
-            if d[lawyer] not in ['Pet','Res']:
-                d[lawyer] = unrepresented
-        for x in d: print(x, d[x])
+#         unrepresented = 'Pet'
+#         if 'Res' not in d.values():
+#             unrepresented = 'Res'
+#         ## This will change any lawyer not the 'Pet' or 'Res' (whichever one was found) into the unrepresented side
+#         for lawyer in d:
+#             if d[lawyer] not in ['Pet','Res']:
+#                 d[lawyer] = unrepresented
+        #for x in d: print(x, d[x])
     
     return d
 
@@ -433,10 +387,10 @@ def purge_dir(dir):
 def main():
 
     ## Define the years we want to analyze
-    first_year = '2005'
+    first_year = '2014'
     last_year = '2014'
     
-    outfile_id = ''
+    outfile_id = '_test'
 
     ## Get the main directory in which each years' cases are stored
     main_path = '/Users/nasrallah/Desktop/Insight/courtcast/data/transcripts/'  
@@ -450,9 +404,6 @@ def main():
     scdb_file = '/Users/nasrallah/Desktop/Insight/courtcast/data/SCDB/SCDB_2014_01_justiceCentered_Citation_tab.txt'
     case_info = get_SCDB_info(scdb_file)
     winner_dict = get_docket_winners(scdb_file)
-    
-    new_case_file = '/Users/nasrallah/Desktop/Insight/courtcast/data/new_cases.txt'
-    case_info = append_new_case_info(new_case_file, case_info)
 
     ## Analyze the transcripts for all cases in each year    
     years = map(str, range(int(first_year),int(last_year)+1))
@@ -599,7 +550,7 @@ def main():
     #print(case_features)
  
 
-    feature_outfile = '/Users/nasrallah/Desktop/Insight/courtcast/db/feature_table' + outfile_id + '.txt'
+    feature_outfile = '/Users/nasrallah/Desktop/Insight/courtcast/db/feature_table.txt'
     case_features.to_csv(feature_outfile, sep='\t')
 
     ## directory to write question files

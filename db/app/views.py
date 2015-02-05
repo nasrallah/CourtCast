@@ -22,7 +22,7 @@ def plot_features(df):
     my_colors = my_colors + [(0.75,0.75,0.75)]
     
     df.plot(kind="barh", color=my_colors, legend=False, grid=False, xlim=(-1,1))
-    plt.axhline(10.5, color='k', linestyle = ':', linewidth=1.0)            
+    plt.axhline(9.5, color='k', linestyle = ':', linewidth=1.0)            
     plt.tight_layout()
     #plt.show()
     
