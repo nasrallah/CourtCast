@@ -211,6 +211,9 @@ def main():
     ## Combine these two now complete dataframes
     dXWU = dXW.append(dU)
  
+    ## Replace missing values with something for the database
+    dXWU.fillna('?', inplace=True)
+ 
     ## Save the case info, features, SVM predictions and probabilities to file      
     outfile = '/Users/nasrallah/Desktop/Insight/courtcast/db/database_table.txt'
     dXWU.to_csv(outfile, sep='\t')
