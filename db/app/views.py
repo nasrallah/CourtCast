@@ -28,7 +28,7 @@ def plot_features(df):
     
     ## get the right path
     host = socket.gethostname()
-    if 'Tatum' in host:
+    if 'atum' in host:
         path = 'app/static/'
     else:
         path = '/home/ubuntu/app/static/'
@@ -38,10 +38,10 @@ def plot_features(df):
 
 ## Right now the indicator is an integer. I'm not sure how I will store unknown case outcomes. This assumes there is nothing there.
 def winlose(indicator):
-    if indicator == 1:
+    if indicator == '1':
         pet = 'won'
         res = 'lost'
-    elif indicator == 0:
+    elif indicator == '0':
         pet = 'lost'
         res = 'won'
     else:
@@ -149,8 +149,8 @@ def scotus_output():
     ## Get the probability of winning for each side
     pet_confidence = float(result[1])
     res_confidence = 1.0 - pet_confidence 
-    pet_predict, res_predict = winlose(int(result[2]))
-    pet_result, res_result = winlose(int(result[3]))
+    pet_predict, res_predict = winlose(result[2].split('.')[0])
+    pet_result, res_result = winlose(result[3].split('.')[0])
     items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result})
   #return render_template('scotus.html', items=items)
   the_result = ''
