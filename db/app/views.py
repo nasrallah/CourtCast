@@ -13,20 +13,26 @@ import socket
 def plot_features(df):
     ## Transpose the series
     df = df.T
+    ## Change labels to just justice names
+    df.index = [x.split('_')[1].capitalize() if x != 'amicus' else x for x in df.index ]
     
     ## get the list of colors we want
 #    my_colors = sns.color_palette("coolwarm_r", 5)
-    my_colors = [(.8,0,0),(1,.4,.4),(1,.8,.8),(.6,.8,1),(.2,.6,1)]
+    #my_colors = [(.8,0,0),(1,.4,.4),(1,.8,.8),(.6,.8,1),(.2,.6,1)]
+    my_colors = [(1,.4,.4),(1,.6,.6),(1,.8,.8),(.6,.8,1),(.4,.7,1)]
     my_colors = my_colors + my_colors + my_colors
-    #my_colors = my_colors + [(102,102,102)]
     my_colors = my_colors + [(0.75,0.75,0.75)]
     
-    df.plot(kind="barh", color=my_colors, legend=False, grid=False, xlim=(-1,1))
+    ## Create the plot
+    df.plot(kind="barh", color=my_colors, legend='reverse', grid=False, xlim=(-1,1))
+    plt.ylabel('interruptions\t\tword count\t\t\tsentiment\t', fontsize=14, labelpad=25)
+    plt.xlabel('relative negativity', fontsize=14, labelpad=10)
     plt.axhline(14.5, color='k', linestyle = ':', linewidth=1.0)            
     plt.axhline(9.5, color='k', linestyle = ':', linewidth=1.0)            
     plt.axhline(4.5, color='k', linestyle = ':', linewidth=1.0)            
     plt.tight_layout()
     #plt.show()
+
     
     ## get the right path
     host = socket.gethostname()
