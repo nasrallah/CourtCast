@@ -3,15 +3,13 @@ To Do List
 
 1b. Front end display:
 	x undecided outcomes
-	- limit decimal places, as percent
+	x limit decimal places, as percent
 	x invert sentiment and amicus
-	- lines between groups
+	x lines between groups
 	- headings for y axis, x axis
 	- maj/min votes
 	- argument date, decision date
-1a. Demo List
-	x chat with Kevin/Genevieve
-	x submit list
+
 2. Feature importance plot
 3. Data story plots
 	- unanimous decisions over time
@@ -23,7 +21,9 @@ To Do List
 
 
 
-x Recent data -> cases just argued but not decided. and important cases. others if time.
+x Demo List
+	x chat with Kevin/Genevieve
+	x submit listx Recent data -> cases just argued but not decided. and important cases. others if time.
 	x preprocess files
 	x integrate with scdb
 	x transcript process decided and undecided cases

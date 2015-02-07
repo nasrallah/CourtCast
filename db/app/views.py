@@ -47,9 +47,23 @@ def winlose(indicator):
         pet = 'lost'
         res = 'won'
     else:
-        pet = '?'
-        res = '?'
+        pet = 'TBD'
+        res = 'TBD'
     return pet, res    
+
+
+def winloseVotes(indicator, majVotes, minVotes):
+    majVotes = majVotes.split('.')[0]
+    minVotes = minVotes.split('.')[0]
+    if indicator == '1':
+        return majVotes, minVotes
+    elif indicator == '0':
+        return minVotes, majVotes
+    else:
+        return 'TBD', 'TBD'
+
+
+
 
 
 ## Connect to the database
@@ -134,7 +148,7 @@ def scotus_output():
   with db:
     cur = db.cursor()
     ## Get the case details to print to screen
-    cur.execute("SELECT caseName, confidence, prediction, winner, docket FROM cases WHERE docket='%s';" % docket)
+    cur.execute("SELECT caseName, confidence, prediction, winner, docket, majVotes, minVotes FROM cases WHERE docket='%s';" % docket)
     query_results = cur.fetchall()
 
     ### use pandas to get record from db and plot it    
@@ -149,11 +163,12 @@ def scotus_output():
     ## Get the petitioner and respondent names from the case name
     pet_name, res_name = result[0].split(' v. ')
     ## Get the probability of winning for each side
-    pet_confidence = float(result[1])
-    res_confidence = 1.0 - pet_confidence 
+    pet_confidence = int(round(float(result[1])*100))
+    res_confidence = 100 - pet_confidence 
     pet_predict, res_predict = winlose(result[2].split('.')[0])
     pet_result, res_result = winlose(result[3].split('.')[0])
-    items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result})
+    pet_votes, res_votes = winloseVotes(result[2].split('.')[0], result[5], result[6])
+    items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result, 'pet_votes':pet_votes, 'res_votes':res_votes})
   #return render_template('scotus.html', items=items)
   the_result = ''
   return render_template("output.html", items=items, the_result=the_result)  

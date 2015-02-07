@@ -59,8 +59,9 @@
       <table class="table table-hover">
         <col width="50">                   <col width="130">                     <col width="10">   <col width="130">
         <tr><td>&nbsp;</td>                <td>{{ item['pet_name'] }}</td>       <td> v.</td>       <td>{{ item['res_name']}}</td></tr>
-        <tr><td>Predicted Winner:</td>    <td>{{ item['pet_confidence']}}</td>  <td>&nbsp;</td>    <td>{{ item['res_confidence']}}</td></tr>
-        <tr><td>Actual Outcome:</td>              <td>{{ item['pet_result']}}</td>      <td>&nbsp;</td>    <td>{{ item['res_result']}}</td></tr>
+        <tr><td>Predicted Winner:</td>      <td>{{ item['pet_confidence']}}%</td>  <td>&nbsp;</td>    <td>{{ item['res_confidence']}}%</td></tr>
+        <tr><td>Actual Outcome:</td>        <td>{{ item['pet_result']}}</td>      <td>&nbsp;</td>    <td>{{ item['res_result']}}</td></tr>
+        <tr><td>Actual Votes:</td>          <td>{{ item['pet_votes']}}</td>      <td>&nbsp;</td>    <td>{{ item['res_votes']}}</td></tr>
       {% endfor %}      
       </table>
 
