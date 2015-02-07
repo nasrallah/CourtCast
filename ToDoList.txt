@@ -7,8 +7,9 @@ To Do List
 	x invert sentiment and amicus
 	x lines between groups
 	- headings for y axis, x axis
-	- maj/min votes
-	- argument date, decision date
+	x maj/min votes
+	. argument date, decision date --> make pretty format
+	- make larger
 
 2. Feature importance plot
 3. Data story plots

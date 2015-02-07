@@ -55,6 +55,8 @@
       <div class="starter-template">
       {% for item in items %}
         <h4>Case {{ item['docket'] }}</h4> 
+        <p>Argued: {{ item['arg_date'] }}</p> 
+        <p>Decided: {{ item['dec_date'] }}</p> 
       </div>
       <table class="table table-hover">
         <col width="50">                   <col width="130">                     <col width="10">   <col width="130">

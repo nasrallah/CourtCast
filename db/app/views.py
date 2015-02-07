@@ -148,7 +148,7 @@ def scotus_output():
   with db:
     cur = db.cursor()
     ## Get the case details to print to screen
-    cur.execute("SELECT caseName, confidence, prediction, winner, docket, majVotes, minVotes FROM cases WHERE docket='%s';" % docket)
+    cur.execute("SELECT caseName, confidence, prediction, winner, docket, majVotes, minVotes, argDate, decDate FROM cases WHERE docket='%s';" % docket)
     query_results = cur.fetchall()
 
     ### use pandas to get record from db and plot it    
@@ -168,7 +168,9 @@ def scotus_output():
     pet_predict, res_predict = winlose(result[2].split('.')[0])
     pet_result, res_result = winlose(result[3].split('.')[0])
     pet_votes, res_votes = winloseVotes(result[2].split('.')[0], result[5], result[6])
-    items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result, 'pet_votes':pet_votes, 'res_votes':res_votes})
+    arg_date = result[7]
+    dec_date = result[8]
+    items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result, 'pet_votes':pet_votes, 'res_votes':res_votes, 'arg_date':arg_date, 'dec_date':dec_date})
   #return render_template('scotus.html', items=items)
   the_result = ''
   return render_template("output.html", items=items, the_result=the_result)  
