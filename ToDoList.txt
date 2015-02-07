@@ -1,18 +1,17 @@
 To Do List
 ----------
 
-1. Recent data -> cases just argued but not decided. and important cases. others if time.
-	x preprocess files
-	x integrate with scdb
-	x transcript process decided and undecided cases
-	- classify
-	- add cases to database
 1b. Front end display:
-	- undecided outcomes
+	x undecided outcomes
+	- limit decimal places, as percent
+	- invert sentiment and amicus
+	- lines between groups
+	- headings for y axis, x axis
 	- maj/min votes
 	- argument date, decision date
 1a. Demo List
-	- chat with Kevin/Genevieve
+	x chat with Kevin/Genevieve
+	x submit list
 2. Feature importance plot
 3. Data story plots
 	- unanimous decisions over time
@@ -22,6 +21,15 @@ To Do List
 7. Sentiment using specialized legal dictionary or other textblob option
 
 
+
+
+x Recent data -> cases just argued but not decided. and important cases. others if time.
+	x preprocess files
+	x integrate with scdb
+	x transcript process decided and undecided cases
+	x classify
+	x add cases to database
+	x onto server
 x Front-end. Figure integration.
 	x figures just keep adding to the plot.
 	x needing to refresh to get plot to appear

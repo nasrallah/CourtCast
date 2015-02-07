@@ -1,7 +1,7 @@
 ## Assuming the current working directory is ~/Desktop/Insight/courtcast/db/
 
 ## dump local machine database to file
-mysqldump -u root scotus > scotus_dump.sql
+mysqldump -u root -p scotus > scotus_dump.sql
 
 ## Copy dump file from local machine to AWS server, using the identity key
 scp -i ./Insight2014C.pem scotus_dump.sql ubuntu@courtcast.org:~/
