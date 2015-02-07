@@ -576,7 +576,7 @@ def main():
             num_pet = sides.values().count('Pet')
             num_res = sides.values().count('Res')
             ## Create variable -1/0/1 for Pet/None/Res.  
-            amicus_side = -1 if num_pet > num_res else 1 if num_pet < num_res else 0
+            amicus_side = 1 if num_pet > num_res else -1 if num_pet < num_res else 0
 
 
             
