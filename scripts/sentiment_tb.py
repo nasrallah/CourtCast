@@ -64,11 +64,11 @@ for i in range(len(dockets)):
     ## Petitioner is file 0; Respondent is file 1.  Res - Pet > 0 favors Respondent
     ## files 0,2,4,6,8 should be petitioners, 1,3,5,7,9 should be respondents
     S[docket] = {'sentiment_BREYER':0.0, 'sentiment_GINSBURG':0.0, 'sentiment_KENNEDY':0.0, 'sentiment_ROBERTS':0.0, 'sentiment_SCALIA':0.0}
-    S[docket]['sentiment_BREYER'] = TextBlob(X[1][i]).sentiment[0] - TextBlob(X[0][i]).sentiment[0]
-    S[docket]['sentiment_GINSBURG'] = TextBlob(X[3][i]).sentiment[0] - TextBlob(X[2][i]).sentiment[0]
-    S[docket]['sentiment_KENNEDY'] = TextBlob(X[5][i]).sentiment[0] - TextBlob(X[4][i]).sentiment[0]
-    S[docket]['sentiment_ROBERTS'] = TextBlob(X[7][i]).sentiment[0] - TextBlob(X[6][i]).sentiment[0]
-    S[docket]['sentiment_SCALIA'] = TextBlob(X[9][i]).sentiment[0] - TextBlob(X[8][i]).sentiment[0]
+    S[docket]['sentiment_BREYER'] = TextBlob(X[0][i]).sentiment[0] - TextBlob(X[1][i]).sentiment[0]
+    S[docket]['sentiment_GINSBURG'] = TextBlob(X[2][i]).sentiment[0] - TextBlob(X[3][i]).sentiment[0]
+    S[docket]['sentiment_KENNEDY'] = TextBlob(X[4][i]).sentiment[0] - TextBlob(X[5][i]).sentiment[0]
+    S[docket]['sentiment_ROBERTS'] = TextBlob(X[6][i]).sentiment[0] - TextBlob(X[7][i]).sentiment[0]
+    S[docket]['sentiment_SCALIA'] = TextBlob(X[8][i]).sentiment[0] - TextBlob(X[9][i]).sentiment[0]
      
 
 ## Convert to a DataFrame, sort columns by name, and inner join with feature_table
