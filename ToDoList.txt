@@ -4,7 +4,7 @@ To Do List
 1b. Front end display:
 	x undecided outcomes
 	- limit decimal places, as percent
-	- invert sentiment and amicus
+	x invert sentiment and amicus
 	- lines between groups
 	- headings for y axis, x axis
 	- maj/min votes
