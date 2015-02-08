@@ -24,8 +24,9 @@ def plot_features(df):
     my_colors = my_colors + [(0.75,0.75,0.75)]
     
     ## Create the plot
-    df.plot(kind="barh", color=my_colors, legend='reverse', grid=False, xlim=(-1,1))
-    plt.ylabel('interruptions\t\tword count\t\t\tsentiment\t', fontsize=14, labelpad=25)
+    df.plot(kind="barh", color=my_colors, legend=False, grid=False, xlim=(-1,1))
+    plt.title('How Features Hurt Each Side', fontdict={'fontsize':20})
+    plt.ylabel('interruptions         word count         sentiment      ', fontsize=14, labelpad=25, horizontalalignment='center')
     plt.xlabel('relative negativity', fontsize=14, labelpad=10)
     plt.axhline(14.5, color='k', linestyle = ':', linewidth=1.0)            
     plt.axhline(9.5, color='k', linestyle = ':', linewidth=1.0)            

@@ -6,7 +6,7 @@ To Do List
 	x limit decimal places, as percent
 	x invert sentiment and amicus
 	x lines between groups
-	- headings for y axis, x axis
+	x headings for y axis, x axis
 	x maj/min votes
 	. argument date, decision date --> make pretty format
 	- make larger
