@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 #import seaborn as sns
 from a_Model import ModelIt
 import socket
+import datetime
 
 def plot_features(df):
     ## Transpose the series
@@ -25,7 +26,7 @@ def plot_features(df):
     
     ## Create the plot
     df.plot(kind="barh", color=my_colors, legend=False, grid=False, xlim=(-1,1))
-    plt.title('How Features Hurt Each Side', fontdict={'fontsize':20})
+    plt.title('Features Predict the Losing Side', fontdict={'fontsize':20})
     plt.ylabel('interruptions         word count         sentiment      ', fontsize=14, labelpad=25, horizontalalignment='center')
     plt.xlabel('relative negativity', fontsize=14, labelpad=10)
     plt.axhline(14.5, color='k', linestyle = ':', linewidth=1.0)            
@@ -175,8 +176,8 @@ def scotus_output():
     pet_predict, res_predict = winlose(result[2].split('.')[0])
     pet_result, res_result = winlose(result[3].split('.')[0])
     pet_votes, res_votes = winloseVotes(result[2].split('.')[0], result[5], result[6])
-    arg_date = result[7]
-    dec_date = result[8]
+    arg_date = datetime.datetime.strptime(result[7], "%Y-%m-%d").strftime("%B %d, %Y")
+    dec_date = datetime.datetime.strptime(result[8], "%Y-%m-%d").strftime("%B %d, %Y")
     items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result, 'pet_votes':pet_votes, 'res_votes':res_votes, 'arg_date':arg_date, 'dec_date':dec_date})
   #return render_template('scotus.html', items=items)
   the_result = ''
