@@ -46,6 +46,15 @@ def plot_features(df):
     plt.savefig(path + 'images/fig.png')
 
 
+def format_date_string(s):
+    if '-' in s:
+        return datetime.datetime.strptime(s, "%Y-%m-%d").strftime("%B %d, %Y")        
+    elif ',' in s:
+        return datetime.datetime.strptime(s, "%m, %Y").strftime("%B, %Y")    
+    else:
+        return 'TBD'
+
+
 ## Right now the indicator is an integer. I'm not sure how I will store unknown case outcomes. This assumes there is nothing there.
 def winlose(indicator):
     if indicator == '1':
@@ -176,8 +185,8 @@ def scotus_output():
     pet_predict, res_predict = winlose(result[2].split('.')[0])
     pet_result, res_result = winlose(result[3].split('.')[0])
     pet_votes, res_votes = winloseVotes(result[2].split('.')[0], result[5], result[6])
-    arg_date = datetime.datetime.strptime(result[7], "%Y-%m-%d").strftime("%B %d, %Y")
-    dec_date = datetime.datetime.strptime(result[8], "%Y-%m-%d").strftime("%B %d, %Y")
+    arg_date = format_date_string(result[7])
+    dec_date = format_date_string(result[8])
     items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result, 'pet_votes':pet_votes, 'res_votes':res_votes, 'arg_date':arg_date, 'dec_date':dec_date})
   #return render_template('scotus.html', items=items)
   the_result = ''
