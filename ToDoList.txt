@@ -8,7 +8,7 @@ To Do List
 	x lines between groups
 	x headings for y axis, x axis
 	x maj/min votes
-	. argument date, decision date --> make pretty format
+	x argument date, decision date --> make pretty format
 	- make larger
 
 2. Feature importance plot

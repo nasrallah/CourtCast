@@ -51,9 +51,9 @@
 
 
 
+    {% for item in items %}
     <div class="container">
       <div class="starter-template">
-      {% for item in items %}
         <h4>Case {{ item['docket'] }}</h4> 
         <p>Argued: {{ item['arg_date'] }}</p> 
         <p>Decided: {{ item['dec_date'] }}</p> 
@@ -64,7 +64,6 @@
         <tr><td>Predicted Winner:</td>      <td>{{ item['pet_confidence']}}%</td>  <td>&nbsp;</td>    <td>{{ item['res_confidence']}}%</td></tr>
         <tr><td>Actual Outcome:</td>        <td>{{ item['pet_result']}}</td>      <td>&nbsp;</td>    <td>{{ item['res_result']}}</td></tr>
         <tr><td>Actual Votes:</td>          <td>{{ item['pet_votes']}}</td>      <td>&nbsp;</td>    <td>{{ item['res_votes']}}</td></tr>
-      {% endfor %}      
       </table>
 
     </div><!-- /.container -->
@@ -75,42 +74,47 @@
             <div class="row">
                 <div class="col-lg-12">
                     <img class="center-block" src="{{url_for('return_image',filename='fig.png')}}" alt="Whoops! No figure?" style="width:580px" align="center">
-
                 </div>
             </div>
         </div>
     </header>
 
-  <br><br>
+    <br><br>
 
-  <div class="container">
+    <div class="container">
 
-    <div class="starter-template">
-        <h4>Find another case</h4>
-    </div>
+      <div class="starter-template">
+        <h4><a href={{ item['sb_link']}} target="_blank">Learn more about this case</a></h4>
+      </div>
 
-    <div class = "container">
+      <br>
+      {% endfor %}      
 
-      <form  action="/output" method="GET">
-        <div class="form-group">
-        <div class="row">
-          <div class="col-md-2">
-          <label for="ID">  Case Number:</label>
+      <div class="starter-template">
+          <h4>Find another case</h4>
+      </div>
+  
+      <div class = "container">
+        <form  action="/output" method="GET">
+          <div class="form-group">
+          <div class="row">
+            <div class="col-md-2">
+            <label for="ID">  Case Number:</label>
+            </div>
+            <div class="col-md-2">
+            <input type="text" id="ID" name='ID' placeholder="e.g. 13-352"> 
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-default btn-sm">Predict!</button>
+            </div>
           </div>
-          <div class="col-md-2">
-          <input type="text" id="ID" name='ID' placeholder="e.g. 12-696 "> 
           </div>
-          <div class="col-md-2">
-              <button type="submit" class="btn btn-default btn-sm">Predict!</button>
-          </div>
-        </div>
-        </div>
-      </form>
-    </div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
+        </form>
+      </div>
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="static/js/bootstrap.min.js"></script>
 
-  </div> <!-- /.container-->
+    </div> <!-- /.container-->
   <br><br>
 
 

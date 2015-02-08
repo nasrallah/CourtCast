@@ -48,14 +48,14 @@ def plot_features(df):
 
 def format_date_string(s):
     if '-' in s:
-        return datetime.datetime.strptime(s, "%Y-%m-%d").strftime("%B %d, %Y")        
+        new_s = datetime.datetime.strptime(s, "%Y-%m-%d").strftime("%B %d, %Y")        
     elif ',' in s:
-        return datetime.datetime.strptime(s, "%m, %Y").strftime("%B, %Y")    
+        new_s = datetime.datetime.strptime(s, "%m, %Y").strftime("%B, %Y")    
     else:
-        return 'TBD'
+        new_s = 'TBD'
+    return new_s
 
 
-## Right now the indicator is an integer. I'm not sure how I will store unknown case outcomes. This assumes there is nothing there.
 def winlose(indicator):
     if indicator == '1':
         pet = 'won'
@@ -184,10 +184,11 @@ def scotus_output():
     res_confidence = 100 - pet_confidence 
     pet_predict, res_predict = winlose(result[2].split('.')[0])
     pet_result, res_result = winlose(result[3].split('.')[0])
-    pet_votes, res_votes = winloseVotes(result[2].split('.')[0], result[5], result[6])
+    pet_votes, res_votes = winloseVotes(result[3].split('.')[0], result[5], result[6])
     arg_date = format_date_string(result[7])
     dec_date = format_date_string(result[8])
-    items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result, 'pet_votes':pet_votes, 'res_votes':res_votes, 'arg_date':arg_date, 'dec_date':dec_date})
+    sb_link = 'http://www.scotusblog.com/?s=' + docket + '&searchsubmit=Blog'
+    items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result, 'pet_votes':pet_votes, 'res_votes':res_votes, 'arg_date':arg_date, 'dec_date':dec_date, 'sb_link':sb_link})
   #return render_template('scotus.html', items=items)
   the_result = ''
   return render_template("output.html", items=items, the_result=the_result)  
