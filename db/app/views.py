@@ -25,10 +25,11 @@ def plot_features(df):
     my_colors = my_colors + [(0.75,0.75,0.75)]
     
     ## Create the plot
-    df.plot(kind="barh", color=my_colors, legend=False, grid=False, xlim=(-1,1))
-    plt.title('Features Predict the Losing Side', fontdict={'fontsize':20})
+    df.plot(kind="barh", color=my_colors, legend=False, grid=False, xlim=(-1,1), xticks=[])
+    #plt.xaxis.set_ticklabels([])
+    plt.title('Features Predicting the Losing Side', fontdict={'fontsize':20})
     plt.ylabel('interruptions         word count         sentiment      ', fontsize=14, labelpad=25, horizontalalignment='center')
-    plt.xlabel('relative negativity', fontsize=14, labelpad=10)
+    plt.xlabel('Petitioner                              Respondent', fontsize=14, labelpad=10)
     plt.axhline(14.5, color='k', linestyle = ':', linewidth=1.0)            
     plt.axhline(9.5, color='k', linestyle = ':', linewidth=1.0)            
     plt.axhline(4.5, color='k', linestyle = ':', linewidth=1.0)            

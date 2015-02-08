@@ -27,8 +27,10 @@
     <![endif]-->
   </head>
 
-  <body>
-
+  <body style="background-image:url(images/background.jpg);
+            background-size: 1296px 720px;
+            background-repeat:no-repeat;
+            display: compact; ">
 
     <nav class="navbar navbar-default">
       <div class="container">
@@ -50,19 +52,19 @@
       </div>
     </nav>
 
-<br><br> 
 
  <div class="container">
 
     <div class="starter-template">
-        <h3>Predicting Supreme Court Case Outcomes</h3>
+        <h3><font color="white">Predicting the Supreme Court</font></h3>
     </div>
     <br>
     <div class = "container">
 
       <form  action="/output" method="GET">
         <div class="form-group">
-          <label for="ID">Docket Number:</label>
+          <label for="ID"><font color="white">Docket:</font></label>
+          <br>
           <input type="text" id="ID" name='ID' placeholder="e.g. 13-461">
         </div>
 
