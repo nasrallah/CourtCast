@@ -1,7 +1,19 @@
 To Do List
 ----------
 
-1b. Front end display:
+
+1. Internal Service Error
+2. Feature importance plot
+3. Data story plots
+	- unanimous decisions over time
+	- affirmations over time
+6. Topic as feature
+7. Sentiment using specialized legal dictionary or other textblob option
+
+
+
+x Revisit classifier choice
+x Front end display:
 	x undecided outcomes
 	x limit decimal places, as percent
 	x invert sentiment and amicus
@@ -9,19 +21,7 @@ To Do List
 	x headings for y axis, x axis
 	x maj/min votes
 	x argument date, decision date --> make pretty format
-	- make larger
-
-2. Feature importance plot
-3. Data story plots
-	- unanimous decisions over time
-	- affirmations over time
-4. Revisit classifier choice
-6. Topic as feature
-7. Sentiment using specialized legal dictionary or other textblob option
-
-
-
-
+	x make larger
 x Demo List
 	x chat with Kevin/Genevieve
 	x submit listx Recent data -> cases just argued but not decided. and important cases. others if time.
