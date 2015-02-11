@@ -1,11 +1,9 @@
 To Do List
 ----------
 
-
 - Important recent cases
 - Under 4 minutes
 - SVM details
-- Static image front page
 - Error page suggest cases
 
 . Feature importance plot
@@ -17,6 +15,7 @@ To Do List
 
 
 
+x Static image front page
 x Error Page
 x Internal Service Error
 x Revisit classifier choice
