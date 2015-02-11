@@ -174,7 +174,7 @@ def scotus_output():
 
     ## If there is no such entry in the database, return an error page and allow new input. Maybe suggest some dockets?
     if df.empty:
-      return render_template("input_error.html")    
+      return render_template("input_error.html", docket=docket)    
     ## Otherwise display the output page
     else:
       ## Plot the features and save the plot
