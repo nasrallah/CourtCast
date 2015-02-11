@@ -27,11 +27,21 @@
     <![endif]-->
   </head>
 
-  <body style="background-image:url(images/background.jpg);
-            background-size: 1296px 720px;
-            background-repeat:no-repeat;
-            display: compact; ">
+  <body>
 
+    <style>
+    html { background:
+         url(images/background.jpg)
+         no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-position: -60px 40px;
+         background-size: cover;
+         overflow: scroll}
+         body {background: transparent; }
+    </style>
+    
     <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
