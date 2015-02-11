@@ -2,16 +2,23 @@ To Do List
 ----------
 
 
-1. Internal Service Error
-2. Feature importance plot
-3. Data story plots
+- Error Page
+- Important recent cases
+- Under 4 minutes
+- SVM details
+- Static image front page
+
+
+. Feature importance plot
+- Data story plots
 	- unanimous decisions over time
 	- affirmations over time
-6. Topic as feature
-7. Sentiment using specialized legal dictionary or other textblob option
+- Topic as feature
+- Sentiment using specialized legal dictionary or other textblob option
 
 
 
+x Internal Service Error
 x Revisit classifier choice
 x Front end display:
 	x undecided outcomes

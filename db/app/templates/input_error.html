@@ -27,7 +27,10 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body style="background-image:url(images/background.jpg);
+            background-size: 1296px 720px;
+            background-repeat:no-repeat;
+            display: compact; ">
 
     <nav class="navbar navbar-default">
       <div class="container">
@@ -38,81 +41,45 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">CourtCast</a>
+          <a class="navbar-brand" href="#">CourtCast</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="#about">About</a></li>
-            <li><a href="#slides">Slides</a></li>
+            <li><a href="http://www.slideshare.net/slideshow/embed_code/44457336">Slides</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
 
-
-    <div class="container">
-      <div class="starter-template">
-      {% for item in items %}
-        <h4>Case {{ item['docket'] }}</h4> 
-      </div>
-      <table class="table table-hover">
-        <col width="50">                   <col width="130">                     <col width="10">   <col width="130">
-        <tr><td>&nbsp;</td>                <td>{{ item['pet_name'] }}</td>       <td> v.</td>       <td>{{ item['res_name']}}</td></tr>
-        <tr><td>Predicted Winner:</td>    <td>{{ item['pet_confidence']}}</td>  <td>&nbsp;</td>    <td>{{ item['res_confidence']}}</td></tr>
-        <tr><td>Actual Outcome:</td>              <td>{{ item['pet_result']}}</td>      <td>&nbsp;</td>    <td>{{ item['res_result']}}</td></tr>
-      {% endfor %}      
-      </table>
-
-    </div><!-- /.container -->
-
-
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="center-block" src="{{url_for('return_image',filename='fig.png')}}" alt="Whoops! No figure?" style="width:580px" align="center">
-
-                </div>
-            </div>
-        </div>
-    </header>
-
-  <br><br>
-
-  <div class="container">
+ <div class="container">
 
     <div class="starter-template">
-        <h4>Find another case</h4>
+        <h3><font color="white">Predicting the Supreme Court</font></h3>
     </div>
-
+    <br>
     <div class = "container">
 
       <form  action="/output" method="GET">
         <div class="form-group">
-        <div class="row">
-          <div class="col-md-2">
-          <label for="ID">  Case Number:</label>
-          </div>
-          <div class="col-md-2">
-          <input type="text" id="ID" name='ID' placeholder="e.g. 12-696 "> 
-          </div>
-          <div class="col-md-2">
-              <button type="submit" class="btn btn-default btn-sm">Predict!</button>
-          </div>
+          <label for="ID"><font color="white">Docket:</font></label>
+          <br>
+          <input type="text" id="ID" name='ID' placeholder="e.g. 13-461">
         </div>
+
+        <div>
+          <button type="submit" class="btn btn-default btn-lg">Predict!</button>
         </div>
+
       </form>
     </div>
+
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
 
   </div> <!-- /.container-->
-  <br><br>
 
-
-  </div> <!-- /.container-->
-  
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

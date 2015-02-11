@@ -172,27 +172,33 @@ def scotus_output():
     ### use pandas to get record from db and plot it    
     df = pd.read_sql(("SELECT cutoffs_SCALIA, cutoffs_ROBERTS, cutoffs_KENNEDY, cutoffs_BREYER, cutoffs_GINSBURG, words_SCALIA, words_ROBERTS, words_KENNEDY, words_BREYER, words_GINSBURG, sentiment_SCALIA, sentiment_ROBERTS, sentiment_KENNEDY, sentiment_BREYER, sentiment_GINSBURG, amicus from cases WHERE docket='%s';" % docket), db)
 
-  ## Plot the features and save the plot
-  plot_features(df)
+    ## If there is no such entry in the database, return an error page and allow new input. Maybe suggest some dockets?
+    if df.empty:
+      return render_template("input_error.html")    
+    ## Otherwise display the output page
+    else:
+      ## Plot the features and save the plot
+      plot_features(df)
       
-  ## Compile the text to a list of dicts to send to the html  
-  items = []
-  for result in query_results:
-    ## Get the petitioner and respondent names from the case name
-    pet_name, res_name = result[0].split(' v. ')
-    ## Get the probability of winning for each side
-    pet_confidence = int(round(float(result[1])*100))
-    res_confidence = 100 - pet_confidence 
-    pet_predict, res_predict = winlose(result[2].split('.')[0])
-    pet_result, res_result = winlose(result[3].split('.')[0])
-    pet_votes, res_votes = winloseVotes(result[3].split('.')[0], result[5], result[6])
-    arg_date = format_date_string(result[7])
-    dec_date = format_date_string(result[8])
-    sb_link = 'http://www.scotusblog.com/?s=' + docket + '&searchsubmit=Blog'
-    items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result, 'pet_votes':pet_votes, 'res_votes':res_votes, 'arg_date':arg_date, 'dec_date':dec_date, 'sb_link':sb_link})
-  #return render_template('scotus.html', items=items)
-  the_result = ''
-  return render_template("output.html", items=items, the_result=the_result)  
+      ## Compile the text to a list of dicts to send to the html  
+      items = []
+      for result in query_results:
+        ## Get the petitioner and respondent names from the case name
+        pet_name, res_name = result[0].split(' v. ')
+        ## Get the probability of winning for each side
+        pet_confidence = int(round(float(result[1])*100))
+        res_confidence = 100 - pet_confidence 
+        pet_predict, res_predict = winlose(result[2].split('.')[0])
+        pet_result, res_result = winlose(result[3].split('.')[0])
+        pet_votes, res_votes = winloseVotes(result[3].split('.')[0], result[5], result[6])
+        arg_date = format_date_string(result[7])
+        dec_date = format_date_string(result[8])
+        sb_link = 'http://www.scotusblog.com/?s=' + docket + '&searchsubmit=Blog'
+        items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result, 'pet_votes':pet_votes, 'res_votes':res_votes, 'arg_date':arg_date, 'dec_date':dec_date, 'sb_link':sb_link})
+      return render_template("output.html", items=items)    
+
+    
+    
 #   if items:
 #     #call a function from a_Model package. note we are only pulling one result in the query
 #     #pop_input = items[0]['population']
