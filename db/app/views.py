@@ -81,9 +81,20 @@ def winloseVotes(indicator, majVotes, minVotes):
         return 'TBD', 'TBD'
 
 
-
-
-
+def winloseProbs(pred_winner, win_prob):
+    win_percent = int(round(float(win_prob)*100))
+    if pred_winner == '1':
+        p_win = win_percent
+        r_win = 100 - win_percent
+    elif pred_winner == '0':
+        p_win = 100 - win_percent
+        r_win = win_percent
+    else:
+        p_win = '?'
+        r_win = '?'
+    return p_win, r_win
+    
+    
 ## Connect to the database
 db = mdb.connect(user="root", password="maddox79", host="localhost", db="scotus", charset='utf8')
 
@@ -185,14 +196,18 @@ def scotus_output():
       for result in query_results:
         ## Get the petitioner and respondent names from the case name
         pet_name, res_name = result[0].split(' v. ')
-        ## Get the probability of winning for each side
-        pet_confidence = int(round(float(result[1])*100))
-        res_confidence = 100 - pet_confidence 
+        ## get the predicted winner/loser
         pet_predict, res_predict = winlose(result[2].split('.')[0])
+        ## Get the probability of winning for each side
+        pet_confidence, res_confidence = winloseProbs(result[2], result[1])
+        ## get the actual winner/loser
         pet_result, res_result = winlose(result[3].split('.')[0])
+        ## get the actual votes for each side
         pet_votes, res_votes = winloseVotes(result[3].split('.')[0], result[5], result[6])
+        ## get the date info about the case
         arg_date = format_date_string(result[7])
         dec_date = format_date_string(result[8])
+        ## get the scotusblog link for more info
         sb_link = 'http://www.scotusblog.com/?s=' + docket + '&searchsubmit=Blog'
         items.append({'docket':docket, 'pet_name':pet_name, 'res_name':res_name, 'pet_confidence':pet_confidence, 'res_confidence':res_confidence, 'pet_result':pet_result, 'res_result':res_result, 'pet_votes':pet_votes, 'res_votes':res_votes, 'arg_date':arg_date, 'dec_date':dec_date, 'sb_link':sb_link})
       return render_template("output.html", items=items)    
