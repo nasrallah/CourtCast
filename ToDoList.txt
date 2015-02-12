@@ -1,20 +1,29 @@
 To Do List
 ----------
 
-- Important recent cases
 - Under 4 minutes
-- SVM details
-- Error page suggest cases
+- Anticipate questions:
+	- SVM details
+	- Cross validation
+	- Mathews corr coef
+- learn about MSKCC and Spotify
 
+
+
+- Error page suggest cases
 . Feature importance plot
-- Data story plots
-	- unanimous decisions over time
-	- affirmations over time
+
+
 - Topic as feature
 - Sentiment using specialized legal dictionary or other textblob option
 
 
 
+x watch self video
+x Important recent cases
+x Data story plots
+	x unanimous decisions over time
+	x affirmations over time
 x Static image front page
 x Error Page
 x Internal Service Error

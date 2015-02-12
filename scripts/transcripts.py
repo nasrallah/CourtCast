@@ -604,7 +604,7 @@ def main():
     ## Convert the case_features into a DataFrame and join with the info from SCDB
     case_features = pd.DataFrame.from_dict(case_features, orient='index')
     case_features = case_features.join(case_info,how='inner')
-    print(case_features)
+    #print(case_features)
     case_features.drop('partyWinning', axis=1, inplace=True)
     case_features.sort(axis=1, inplace=True)
     #print(case_features)
