@@ -98,7 +98,7 @@ def main():
 #### class_weight='auto'
 
     print('\nSVM analyses:')
-    my_svm = svm.SVC(C=0.2, kernel='linear', probability=True)
+    my_svm = svm.SVC(C=1.0, kernel='linear', probability=True, class_weight='auto')
     svm_fit = my_svm.fit(X, y)
     svm_pred = svm_fit.predict(W)
     svm_prob = svm_fit.predict_proba(W)            ## Class probabilities, based on log regression on distance to hyperplane.
@@ -135,7 +135,7 @@ def main():
     print('\nLR analyses:')
     from sklearn.linear_model import LogisticRegression
     # Train
-    LR = LogisticRegression(penalty='l2',C=1.0, fit_intercept=True)
+    LR = LogisticRegression(penalty='l2',C=1.0, fit_intercept=True, class_weight='auto')
     LR_fit = LR.fit(X, y) 
 
 
@@ -216,7 +216,7 @@ def main():
  
     ## Save the case info, features, SVM predictions and probabilities to file      
     outfile = '/Users/nasrallah/Desktop/Insight/courtcast/db/database_table.txt'
-    dXWU.to_csv(outfile, sep='\t')
+#    dXWU.to_csv(outfile, sep='\t')
     
     
 if __name__ == '__main__':
