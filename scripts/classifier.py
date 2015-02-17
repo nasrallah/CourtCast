@@ -13,6 +13,36 @@ import pandas as pd
 
 
 
+def auc_shuffle(y, pred_y, ntimes):
+    y_s = y.copy()
+    permuted_auc = np.array([])
+    for i in range(ntimes):
+        shuffle(y_s)
+        permuted_auc = np.append(permuted_auc, metrics.roc_auc_score(y_s, pred_y))
+    return permuted_auc
+
+
+
+####### Plot some AUC permutations
+a = pd.Series(auc_shuffle(y, svm_pred_self, 1000))
+a.hist()
+plt.axis([0.25, 0.75, 0, 300])
+#plt.axvline(0.683897166585, color='k', linewidth=1.0)            
+plt.arrow( 0.684, 50.0, 0.0, -30, fc="k", ec="k", head_width=0.02, head_length=20 )
+
+b = pd.Series(auc_shuffle(z, svm_pred, 5000))
+b.hist()
+plt.axis([0.25, 0.75, 0, 1500])
+#plt.axvline(0.0.696117804552, color='k', linewidth=1.0)            
+plt.arrow( 0.696, 100.0, 0.0, -50, fc="k", ec="k", head_width=0.015, head_length=50 )
+plt.title('AUC permutation test')
+plt.ylabel('count', fontsize=14, labelpad=10)
+plt.xlabel('AUC', fontsize=14, labelpad=10)
+plt.tight_layout()
+########
+
+
+
 def main():
 
     infile = '/Users/nasrallah/Desktop/Insight/courtcast/db/feature_table_2.txt'
@@ -97,7 +127,7 @@ def main():
 
 #### class_weight='auto'
 
-    print('\nSVM analyses:')
+    print('\n' + '#'*15 + ' SVM ' + '#'*15)
     my_svm = svm.SVC(C=1.0, kernel='linear', probability=True, class_weight='auto')
     svm_fit = my_svm.fit(X, y)
     svm_pred = svm_fit.predict(W)
@@ -113,6 +143,7 @@ def main():
     print(metrics.confusion_matrix(z, svm_pred))
     print('Test Accuracy:', svm_fit.score(W,z))
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(z, svm_pred))
+    print('AUC:', metrics.roc_auc_score(z,svm_pred))
     
     SVM_scores = cross_val_score(my_svm, X, y, cv=5, scoring=mc_scorer)
     #print('\nCross-validation scores:', SVM_scores)
@@ -126,6 +157,7 @@ def main():
     print(metrics.confusion_matrix(y, svm_pred_self))
     print('Test Accuracy:', svm_fit.score(X, y))
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y, svm_pred_self))
+    print('AUC:', metrics.roc_auc_score(y,svm_pred_self))
     print('-'*20)
 
 
@@ -148,7 +180,8 @@ def main():
     print(metrics.confusion_matrix(z, LR_pred))
     print('Test Accuracy:', LR_fit.score(W,z))
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(z, LR_pred))
-    
+    print('AUC:', metrics.roc_auc_score(z, LR_pred))
+   
     LR_scores = cross_val_score(LR_fit, X, y, cv=5, scoring=mc_scorer)
     #print('\nCross-validation scores:', LR_scores)
     print("CV Avg Matthews CC: %0.2f (+/- %0.2f)" % (LR_scores.mean(), LR_scores.std() * 2))    
@@ -161,6 +194,7 @@ def main():
     print(metrics.confusion_matrix(y, LR_pred_self))
     print('Test Accuracy:', LR_fit.score(X, y))
     print('Test Matthews corrcoef', metrics.matthews_corrcoef(y, LR_pred_self))
+    print('AUC:', metrics.roc_auc_score(y,LR_pred_self))
     print('-'*20)
 
 
