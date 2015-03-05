@@ -6,7 +6,10 @@ mysqldump -u root -p scotus > scotus_dump.sql
 ## Copy dump file from local machine to AWS server, using the identity key
 scp -i ./Insight2014C.pem scotus_dump.sql ubuntu@courtcast.org:~/
 
-## Log into mysql on the AWS server and create database (once)
+## Log into mysql on the AWS server 
+ssh -i ./Insight2014C.pem ubuntu@courtcast.org
+
+## Create the database (do this only the first time)
 mysql -u root -p 
 [enter password scipw]
 CREATE DATABASE scotus;
